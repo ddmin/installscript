@@ -1,4 +1,7 @@
 # Install Sublime Text
+
+# install vim
+
 # .bashrc
 # .vimrc
 # Install neofetch, ranger, ueberzug, asciiquarium, cmatrix, tty-clock, mpsyt
