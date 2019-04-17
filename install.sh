@@ -9,8 +9,13 @@ sudo apt-get install sublime-text
 sudo apt install vim
 
 # .bashrc
+cd /tmp
+git clone https://github.com/ddmin/dotfiles.git
+mv .bashrc ~/.bashrc
+mv .bash_aliases ~/.bash_aliases
 
 # .vimrc
+mv .vimrc ~/.vimrc
 
 # Install neofetch
 sudo apt install neofetch
@@ -37,12 +42,13 @@ sudo apt install virtualbox-qt
 # Move playlists
 
 # Install fortune && fortunes
+sudo apt install cowsay
+sudo apt install fortune
+sudo apt install fortunes
 
 # Install pip3 and pip
 sudo apt install python3-pip
 sudo apt install python-pip
-
-# papirus icons
 
 # panel settings
 
