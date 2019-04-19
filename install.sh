@@ -10,7 +10,7 @@ sudo apt install vim
 
 # .bashrc
 cd /tmp
-git clone https://github.com/ddmin/dotfiles.git
+git clone https://github.com/ddmin/Dotfiles.git
 mv .bashrc ~/.bashrc
 mv .bash_aliases ~/.bash_aliases
 
