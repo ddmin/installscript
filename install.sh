@@ -24,27 +24,12 @@ sudo apt install neofetch
 
 # ueberzug
 
-# asciiquarium
-
-# cmatrix
-sudo apt install cmatrix
-
-# tty-clock
-
 # mpsyt
 
 # Install virtualbox
-wget -q https://www.virtualbox.org/download/oracle_vbox_2016.asc -O- | sudo apt-key add -
-wget -q https://www.virtualbox.org/download/oracle_vbox.asc -O- | sudo apt-key add -
-sudo apt update
 sudo apt install virtualbox-qt
 
 # Move playlists
-
-# Install fortune && fortunes
-sudo apt install cowsay
-sudo apt install fortune
-sudo apt install fortunes
 
 # Install pip3 and pip
 sudo apt install python3-pip
@@ -53,5 +38,7 @@ sudo apt install python-pip
 # panel settings
 
 # install gimp
+sudo apt install gimp
 
 # fzf
+
