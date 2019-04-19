@@ -10,4 +10,4 @@ Installs:
 * gimp
 * mpsyt
 
-In addition it uses my .bashrc, .bash_aliases, and .vimrc from (my dotfiles)[https://github.com/ddmin/Dotfiles]
+In addition it uses my .bashrc, .bash_aliases, and .vimrc from [my dotfiles](https://github.com/ddmin/Dotfiles)
