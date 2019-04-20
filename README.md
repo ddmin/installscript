@@ -1,7 +1,7 @@
 # installscript
 Bash script to automatically install programs and make changes to bashrc and vimrc.
 
-List of installations:
+# List of installations:
 
 * python3-pip and python-pip
 
