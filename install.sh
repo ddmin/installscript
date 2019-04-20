@@ -34,9 +34,9 @@ sudo apt-y -get install sublime-text
 
 # ranger
 git clone https://github.com/ranger/ranger.git /tmp/ranger
-pushd /tmp/ranger
+cd /tmp/ranger
 sudo make install
-popd
+cd ~
 
 # ueberzug
 
