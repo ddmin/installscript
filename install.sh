@@ -65,6 +65,7 @@ mv .gitconfig ~/.gitconfig
 mv commands.py ~/.config/ranger
 mv rc.conf ~/.config/ranger
 mv rifle.conf ~/.config/ranger
+mv scope.sh ~/.config/ranger
 
 # panel settings
 mv panelsettings ~/panelsettings
