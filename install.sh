@@ -62,10 +62,14 @@ mv .vimrc ~/.vimrc
 mv .gitconfig ~/.gitconfig
 
 # ranger configs
-mv commands.py ~/.config/ranger
-mv rc.conf ~/.config/ranger
-mv rifle.conf ~/.config/ranger
-mv scope.sh ~/.config/ranger
+mv commands.py ~/.config/ranger/commands.py
+mv rc.conf ~/.config/ranger/rc.conf
+mv rifle.conf ~/.config/ranger/rifle.conf
+mv scope.sh ~/.config/ranger/scope.sh
+
+# powerline configs
+mkdir ~/.config/powerline
+mv config.json ~/.config/powerline/config.json
 
 # panel settings
 mv panelsettings ~/panelsettings
