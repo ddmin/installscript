@@ -1,6 +1,5 @@
 # Update apt
 sudo apt -y update
-sudo apt -y upgrade
 
 # Install git
 sudo apt -y install git
