@@ -1,12 +1,9 @@
-# Prompt for root access
-sudo -i
-
 # Update apt
-sudo apt update
-sudo apt upgrade
+sudo apt -y update
+sudo apt -y upgrade
 
 # Install git
-sudo apt install git
+sudo apt -y install git
 
 # Install fzf
 # NOTE: This must be manually installed
@@ -14,27 +11,27 @@ git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 ~/.fzf/install
 
 # Install pip3 and pip
-sudo apt install python3-pip
-sudo apt install python-pip
+sudo apt -y install python3-pip
+sudo apt -y install python-pip
 
 # Install gimp
-sudo apt install gimp
+sudo apt -y install gimp
 
 # Install neofetch
-sudo apt install neofetch
+sudo apt -y install neofetch
 
 # Install virtualbox
-sudo apt install virtualbox-qt
+sudo apt -y install virtualbox-qt
 
 # Install vim
-sudo apt install vim
+sudo apt -y install vim
 
 # Install Sublime Text
-sudo apt-get install apt-transport-https
-wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -
+sudo apt-y -get install apt-transport-https
+wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-y -key add -
 echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list
-sudo apt-get update
-sudo apt-get install sublime-text
+sudo apt-y -get update
+sudo apt-y -get install sublime-text
 
 # ranger
 git clone https://github.com/ranger/ranger.git /tmp/ranger
@@ -45,9 +42,9 @@ popd
 # ueberzug
 
 # First install dependencies
-sudo apt install libjpeg-dev
-sudo apt install zlib1g-dev
-sudo apt install libxtst-dev
+sudo apt -y install libjpeg-dev
+sudo apt -y install zlib1g-dev
+sudo apt -y install libxtst-dev
 
 # Then install ueberzug
 sudo pip3 install ueberzug
