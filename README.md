@@ -1,24 +1,27 @@
 # installscript
-Bash script to automatically install programs and make changes to bashrc and vimrc.
+Bash script to automatically install programs and make changes to bashrc and vimrc. Uses apt as the package manager, so this only works in Ubuntu and its derivatives.
 
-# List of installations:
+# Installations:
 
+
+# Python
 * python3-pip and python-pip
 
 # Image Editor
-* gimp
+* gimp (not automatically installed on older versions of xubuntu)
 
 # Text Editor(s)
-* Vim
-* Sublime Text
+* vim
+* [Sublime Text](https://www.sublimetext.com/)
 
 # File Manager
 * fzf (fuzzy finder)
-* ueberzug
-* ranger (with Ueberzug image previews and fzf compatability)
+* ueberzug (image viewer)
 * zathura (pdf viewer)
+* ranger (w/ ueberzug image previews, fzf, and pdf previews)
 
 # Pizazz
 * neofetch
+* powerline-shell
 
-In addition it uses my .bashrc, .bash_aliases, and .vimrc from [my dotfiles](https://github.com/ddmin/Dotfiles)
+In addition, this script copies my .bashrc, .bash_aliases, and .vimrc from [my dotfiles](https://github.com/ddmin/Dotfiles)

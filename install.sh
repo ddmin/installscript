@@ -48,6 +48,14 @@ sudo apt-get -y install libxtst-dev
 # Then install ueberzug
 sudo pip3 install ueberzug
 
+# powerline-shell
+pip install git+git://github.com/Lokaltog/powerline
+wget https://github.com/powerline/powerline/raw/develop/font/PowerlineSymbols.otf
+wget https://github.com/powerline/powerline/raw/develop/font/10-powerline-symbols.conf
+mv PowerlineSymbols.otf /usr/share/fonts/
+fc-cache -vf /usr/share/fonts/
+mv 10-powerline-symbols.conf /etc/fonts/conf.d/
+
 # Clone my dotfile repo
 git clone https://github.com/ddmin/Dotfiles.git /tmp/dot
 
@@ -62,7 +70,21 @@ mv /tmp/dot/.vimrc ~/.vimrc
 mv /tmp/dot/.gitconfig ~/.gitconfig
 
 # ranger configs
+<<<<<<< HEAD
 mv /tmp/dot/commands.py ~/.config/ranger
 mv /tmp/dot/rc.conf ~/.config/ranger
 mv /tmp/dot/rifle.conf ~/.config/ranger
 mv /tmp/dot/scope.sh ~/.config/ranger
+=======
+mv commands.py ~/.config/ranger/commands.py
+mv rc.conf ~/.config/ranger/rc.conf
+mv rifle.conf ~/.config/ranger/rifle.conf
+mv scope.sh ~/.config/ranger/scope.sh
+
+# powerline configs
+mkdir ~/.config/powerline
+mv config.json ~/.config/powerline/config.json
+
+# panel settings
+mv panelsettings ~/panelsettings
+>>>>>>> 857f15a0884cf1110205a98d67223d3093ab35ad
