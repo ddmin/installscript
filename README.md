@@ -14,11 +14,14 @@ Bash script to automatically install programs and make changes to bashrc and vim
 * vim
 * [Sublime Text](https://www.sublimetext.com/)
 
-# File Manager
+# Files
 * fzf (fuzzy finder)
 * ueberzug (image viewer)
 * zathura (pdf viewer)
 * ranger (w/ ueberzug image previews, fzf, and pdf previews)
+
+# Reddit
+* rtv
 
 # Pizazz
 * neofetch
