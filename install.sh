@@ -49,6 +49,8 @@ sudo apt-get -y install libxtst-dev
 sudo pip3 install ueberzug
 
 # powerline-shell
+sudo apt-get -y install powerline
+
 pip install git+git://github.com/Lokaltog/powerline
 wget https://github.com/powerline/powerline/raw/develop/font/PowerlineSymbols.otf
 wget https://github.com/powerline/powerline/raw/develop/font/10-powerline-symbols.conf
