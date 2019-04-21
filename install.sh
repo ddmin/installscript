@@ -36,7 +36,6 @@ sudo apt-get -y install sublime-text
 git clone https://github.com/ranger/ranger.git /tmp/ranger
 cd /tmp/ranger
 sudo make install
-cd ~
 
 # ueberzug
 
@@ -47,6 +46,11 @@ sudo apt-get -y install libxtst-dev
 
 # Then install ueberzug
 sudo pip3 install ueberzug
+
+# rtv (reddit terminal viewer)
+git clone https://github.com/michael-lazar/rtv.git
+cd rtv
+sudo setup.py install
 
 # powerline-shell
 sudo apt-get -y install powerline
@@ -76,6 +80,9 @@ mv /tmp/dot/commands.py ~/.config/ranger
 mv /tmp/dot/rc.conf ~/.config/ranger
 mv /tmp/dot/rifle.conf ~/.config/ranger
 mv /tmp/dot/scope.sh ~/.config/ranger
+
+# rtv .mailcap
+mv /tmp/dot/.mailcap ~/.mailcap
 
 # powerline configs
 mkdir ~/.config/powerline
