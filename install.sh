@@ -70,21 +70,11 @@ mv /tmp/dot/.vimrc ~/.vimrc
 mv /tmp/dot/.gitconfig ~/.gitconfig
 
 # ranger configs
-<<<<<<< HEAD
 mv /tmp/dot/commands.py ~/.config/ranger
 mv /tmp/dot/rc.conf ~/.config/ranger
 mv /tmp/dot/rifle.conf ~/.config/ranger
 mv /tmp/dot/scope.sh ~/.config/ranger
-=======
-mv commands.py ~/.config/ranger/commands.py
-mv rc.conf ~/.config/ranger/rc.conf
-mv rifle.conf ~/.config/ranger/rifle.conf
-mv scope.sh ~/.config/ranger/scope.sh
 
 # powerline configs
 mkdir ~/.config/powerline
 mv config.json ~/.config/powerline/config.json
-
-# panel settings
-mv panelsettings ~/panelsettings
->>>>>>> 857f15a0884cf1110205a98d67223d3093ab35ad
