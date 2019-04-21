@@ -52,9 +52,9 @@ sudo pip3 install ueberzug
 pip install git+git://github.com/Lokaltog/powerline
 wget https://github.com/powerline/powerline/raw/develop/font/PowerlineSymbols.otf
 wget https://github.com/powerline/powerline/raw/develop/font/10-powerline-symbols.conf
-mv PowerlineSymbols.otf /usr/share/fonts/
+sudo mv PowerlineSymbols.otf /usr/share/fonts/
 fc-cache -vf /usr/share/fonts/
-mv 10-powerline-symbols.conf /etc/fonts/conf.d/
+sudo mv 10-powerline-symbols.conf /etc/fonts/conf.d/
 
 # Clone my dotfile repo
 git clone https://github.com/ddmin/Dotfiles.git /tmp/dot
@@ -77,4 +77,4 @@ mv /tmp/dot/scope.sh ~/.config/ranger
 
 # powerline configs
 mkdir ~/.config/powerline
-mv config.json ~/.config/powerline/config.json
+mv /tmp/dot/config.json ~/.config/powerline/config.json
