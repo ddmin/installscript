@@ -79,6 +79,7 @@ mv /tmp/dot/.gitconfig ~/.gitconfig
 
 # ranger configs
 mkdir ~/.config/ranger
+ranger --copy-config=all
 
 mv /tmp/dot/commands.py ~/.config/ranger
 mv /tmp/dot/rc.conf ~/.config/ranger
