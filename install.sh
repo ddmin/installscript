@@ -50,6 +50,10 @@ sudo pip3 install ueberzug
 # rtv (reddit terminal viewer)
 sudo apt-get -y install rtv
 
+# Media for rtv
+sudo apt-get -y install feh
+sudo apt-get -y install mpv
+
 # powerline-shell
 sudo apt-get -y install powerline
 
