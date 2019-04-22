@@ -1,9 +1,6 @@
 # Install git
 sudo apt-get -y install git
 
-# panel settings
-mv panelsettings ~/panelsettings
-
 # Install fzf
 # NOTE: This must be manually installed
 git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
