@@ -48,9 +48,7 @@ sudo apt-get -y install libxtst-dev
 sudo pip3 install ueberzug
 
 # rtv (reddit terminal viewer)
-git clone https://github.com/michael-lazar/rtv.git
-cd rtv
-sudo setup.py install
+sudo apt-get -y install rtv
 
 # powerline-shell
 sudo apt-get -y install powerline
@@ -76,6 +74,8 @@ mv /tmp/dot/.vimrc ~/.vimrc
 mv /tmp/dot/.gitconfig ~/.gitconfig
 
 # ranger configs
+mkdir ~/.config/ranger
+
 mv /tmp/dot/commands.py ~/.config/ranger
 mv /tmp/dot/rc.conf ~/.config/ranger
 mv /tmp/dot/rifle.conf ~/.config/ranger
