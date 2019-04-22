@@ -3,7 +3,6 @@ Bash script to automatically install programs and make changes to bashrc and vim
 
 # Installations:
 
-
 # Python
 * python3-pip and python-pip
 
