@@ -5,7 +5,8 @@ echo Done
 
 # Install fzf
 # NOTE: This must be manually installed
-git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
+echo Installing fzf... 
+git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf > /dev/null
 ~/.fzf/install
 
 # Install pip3 and pip
@@ -38,7 +39,7 @@ sudo apt-get -y install vim > /dev/null
 echo Done
 
 # Install Sublime Text
-sudo apt-get -y install apt-transport-https
+sudo apt-get -y install apt-transport-https > /dev/null
 wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -
 echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list 
 sudo apt-get -y update > /dev/null
@@ -48,9 +49,11 @@ sudo apt-get -y install sublime-text > /dev/null
 echo Done
 
 # ranger
-git clone https://github.com/ranger/ranger.git /tmp/ranger
+echo Installing ranger... 
+git clone https://github.com/ranger/ranger.git /tmp/ranger > /dev/null
 cd /tmp/ranger
-sudo make install
+sudo make install > /dev/null
+echo Done
 
 # ueberzug
 
@@ -85,38 +88,54 @@ echo Installing powerline-shell
 sudo apt-get -y install powerline > /dev/null
 echo Done
 
-pip install git+git://github.com/Lokaltog/powerline
-wget https://github.com/powerline/powerline/raw/develop/font/PowerlineSymbols.otf
-wget https://github.com/powerline/powerline/raw/develop/font/10-powerline-symbols.conf
-sudo mv PowerlineSymbols.otf /usr/share/fonts/
-fc-cache -vf /usr/share/fonts/
-sudo mv 10-powerline-symbols.conf /etc/fonts/conf.d/
+pip install git+git://github.com/Lokaltog/powerline > /dev/null
+wget https://github.com/powerline/powerline/raw/develop/font/PowerlineSymbols.otf > /dev/null
+wget https://github.com/powerline/powerline/raw/develop/font/10-powerline-symbols.conf > /dev/null
+sudo mv PowerlineSymbols.otf /usr/share/fonts/ > /dev/null
+fc-cache -vf /usr/share/fonts/ > /dev/null
+sudo mv 10-powerline-symbols.conf /etc/fonts/conf.d/ > /dev/null
 
 # Clone my dotfile repo
-git clone https://github.com/ddmin/Dotfiles.git /tmp/dot
+echo Installing dotfiles...
+git clone https://github.com/ddmin/Dotfiles.git /tmp/dot > /dev/null
 
 # .bashrc and aliases
+echo Moving bashrc and aliases... 
 mv /tmp/dot/.bashrc ~/.bashrc
 mv /tmp/dot/.bash_aliases ~/.bash_aliases
+echo Done
 
 # .vimrc
+echo Moving vimrc...
 mv /tmp/dot/.vimrc ~/.vimrc
+echo Done
 
 # .gitconfig
+echo Moving gitconfig... 
 mv /tmp/dot/.gitconfig ~/.gitconfig
+echo Done
 
 # ranger configs
 mkdir ~/.config/ranger
-ranger --copy-config=all
+ranger --copy-config=all > /dev/null
 
+echo Moving ranger configs... 
 mv /tmp/dot/commands.py ~/.config/ranger
 mv /tmp/dot/rc.conf ~/.config/ranger
 mv /tmp/dot/rifle.conf ~/.config/ranger
 mv /tmp/dot/scope.sh ~/.config/ranger
+echo Done
 
 # rtv .mailcap
+echo Moving rtv configs... 
 mv /tmp/dot/.mailcap ~/.mailcap
+echo Done
 
 # powerline configs
+echo Moving powerline configs... 
 mkdir ~/.config/powerline
-mv /tmp/dot/config.json ~/.config/powerline/config.json
+mv /tmp/dot/config.json ~/.config/powerline/config.json > /dev/null
+echo Done
+
+echo Finished Installing!
+echo Machine has been configured
