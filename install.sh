@@ -17,6 +17,10 @@ echo Installing pip...
 sudo apt-get -y install python-pip > /dev/null
 echo Done
 
+# pywal
+echo Installing pywal...
+pip3 install pywal
+
 # Install gimp
 echo Installing gimp... 
 sudo apt-get -y install gimp > /dev/null
@@ -45,6 +49,10 @@ sudo apt-get -y update > /dev/null
 
 echo Installing sublime-text... 
 sudo apt-get -y install sublime-text > /dev/null
+echo Done
+
+echo Installing zathura...
+sudo apt-get -y install zathura > /dev/null
 echo Done
 
 # ranger
@@ -78,6 +86,10 @@ echo Done
 
 echo Installing mpv... 
 sudo apt-get -y install mpv > /dev/null
+echo Done
+
+echo Installing vlc...
+sudo apt-get -y install vlc > /dev/null
 echo Done
 
 # powerline-shell
