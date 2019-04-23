@@ -1,5 +1,7 @@
 # Install git
-sudo apt-get -y install git
+echo Installing git... 
+sudo apt-get -y install git > /dev/null
+echo Done
 
 # Install fzf
 # NOTE: This must be manually installed
@@ -7,27 +9,43 @@ git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 ~/.fzf/install
 
 # Install pip3 and pip
-sudo apt-get -y install python3-pip
-sudo apt-get -y install python-pip
+echo Installing pip3... 
+sudo apt-get -y install python3-pip > /dev/null
+echo Done
+
+echo Installing pip... 
+sudo apt-get -y install python-pip > /dev/null
+echo Done
 
 # Install gimp
-sudo apt-get -y install gimp
+echo Installing gimp... 
+sudo apt-get -y install gimp > /dev/null
+echo Done
 
 # Install neofetch
-sudo apt-get -y install neofetch
+echo Installing neofetch...
+sudo apt-get -y install neofetch > /dev/null
+echo Done
 
 # Install virtualbox
-sudo apt-get -y install virtualbox-qt
+echo Installing virtualbox... 
+sudo apt-get -y install virtualbox-qt > /dev/null
+echo Done
 
 # Install vim
-sudo apt-get -y install vim
+echo Installing vim... 
+sudo apt-get -y install vim > /dev/null
+echo Done
 
 # Install Sublime Text
 sudo apt-get -y install apt-transport-https
 wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -
-echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list
-sudo apt-get -y update
-sudo apt-get -y install sublime-text
+echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list 
+sudo apt-get -y update > /dev/null
+
+echo Installing sublime-text... 
+sudo apt-get -y install sublime-text > /dev/null
+echo Done
 
 # ranger
 git clone https://github.com/ranger/ranger.git /tmp/ranger
@@ -37,22 +55,35 @@ sudo make install
 # ueberzug
 
 # First install dependencies
-sudo apt-get -y install libjpeg-dev
-sudo apt-get -y install zlib1g-dev
-sudo apt-get -y install libxtst-dev
+echo Installing dependencies for Ueberzug...
+sudo apt-get -y install libjpeg-dev > /dev/null
+sudo apt-get -y install zlib1g-dev > /dev/null
+sudo apt-get -y install libxtst-dev > /dev/null
+echo Done
 
 # Then install ueberzug
-sudo pip3 install ueberzug
+echo Installing Ueberzug... 
+sudo pip3 install ueberzug > /dev/null
+echo Done
 
 # rtv (reddit terminal viewer)
-sudo apt-get -y install rtv
+echo Installing rtv... 
+sudo apt-get -y install rtv > /dev/null
+echo Done
 
 # Media for rtv
-sudo apt-get -y install feh
-sudo apt-get -y install mpv
+echo Installing feh... 
+sudo apt-get -y install feh > /dev/null
+echo Done
+
+echo Installing mpv... 
+sudo apt-get -y install mpv > /dev/null
+echo Done
 
 # powerline-shell
-sudo apt-get -y install powerline
+echo Installing powerline-shell 
+sudo apt-get -y install powerline > /dev/null
+echo Done
 
 pip install git+git://github.com/Lokaltog/powerline
 wget https://github.com/powerline/powerline/raw/develop/font/PowerlineSymbols.otf
