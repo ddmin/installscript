@@ -20,7 +20,13 @@ echo Done
 
 # pywal
 echo Installing pywal...
-pip3 install pywal
+pip3 install pywal > /dev/null
+echo Done
+
+# imagemagick
+echo Installing imagemagic...
+sudo apt-get -y install imagemagick > /dev/null
+echo Done
 
 # Install gimp
 echo Installing gimp... 
