@@ -1,3 +1,7 @@
+# For message
+sudo apt-get -y install figlet > /dev/null
+figlet installscript
+
 # Install git
 echo Installing git... 
 sudo apt-get -y install git > /dev/null
@@ -115,7 +119,8 @@ sudo mv 10-powerline-symbols.conf /etc/fonts/conf.d/ > /dev/null
 
 # Clone my dotfile repo
 echo Installing dotfiles...
-git clone https://github.com/ddmin/Dotfiles.git /tmp/dot > /dev/null
+git clone https://github.com/ddmin/Dotfiles.git /tmp/dotfiles > /dev/null
+mv /tmp/dotfiles/installscript /tmp/dot
 
 # .bashrc and aliases
 echo Moving bashrc and aliases... 
