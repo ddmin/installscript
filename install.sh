@@ -28,7 +28,7 @@ pip3 install pywal > /dev/null
 echo Done
 
 # imagemagick
-echo Installing imagemagic...
+echo Installing imagemagick...
 sudo apt-get -y install imagemagick > /dev/null
 echo Done
 
@@ -110,6 +110,7 @@ echo Installing powerline-shell
 sudo apt-get -y install powerline > /dev/null
 echo Done
 
+# install powerline dependencies
 pip install git+git://github.com/Lokaltog/powerline > /dev/null
 wget https://github.com/powerline/powerline/raw/develop/font/PowerlineSymbols.otf > /dev/null
 wget https://github.com/powerline/powerline/raw/develop/font/10-powerline-symbols.conf > /dev/null
