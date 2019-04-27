@@ -1,7 +1,7 @@
 # installscript
 Bash script to automatically install programs and make changes to bashrc and vimrc. Uses apt as the package manager, so this only works in Ubuntu and its derivatives.
 
-[Screenshot](https://github.com/ddmin/installscript/blob/master/setup.png)
+![Screenshot](https://github.com/ddmin/installscript/blob/master/setup.png)
 
 # Installations:
 
