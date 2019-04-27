@@ -28,3 +28,5 @@ Bash script to automatically install programs and make changes to bashrc and vim
 * panel configuration (probably only works in xubuntu)
 
 In addition, this script copies my .bashrc, .bash_aliases, and .vimrc from [my dotfiles](https://github.com/ddmin/Dotfiles)
+
+The script also allows the user to specify extra downloads in the installconf.sh file.
