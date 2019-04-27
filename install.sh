@@ -1,3 +1,6 @@
+# Copy optional installs to home directory
+cp ./installconf.sh ~/installconf.sh
+
 # For message
 sudo apt-get -y install figlet > /dev/null
 figlet installscript
@@ -5,6 +8,11 @@ figlet installscript
 # Install git
 echo Installing git... 
 sudo apt-get -y install git > /dev/null
+echo Done
+
+# Install wget
+echo Installing wget...
+sudo apt-get -y install wget > /dev/null
 echo Done
 
 # Install fzf
@@ -161,5 +169,11 @@ mkdir ~/.config/powerline
 mv /tmp/dot/config.json ~/.config/powerline/config.json > /dev/null
 echo Done
 
+# Run optional downloads
+echo Installing installconf downloads
+sh ~/installconf.sh
+echo Finished installing extra downloads
+
+echo Done.
 echo Finished Installing!
-echo Machine has been configured
+echo Machine has been configured!
