@@ -27,6 +27,7 @@ Bash script to automatically install programs and make changes to bashrc and vim
 # Pizazz
 * neofetch
 * powerline-shell
+* pywal (change terminal color scheme)
 * panel configuration (probably only works in xubuntu)
 
 In addition, this script copies my .bashrc, .bash_aliases, and .vimrc from [my dotfiles](https://github.com/ddmin/Dotfiles)
