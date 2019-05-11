@@ -30,6 +30,12 @@ echo Installing pip...
 sudo apt-get -y install python-pip > /dev/null
 echo Done
 
+# fix the python egg_info error
+echo Installing python setuptools
+sudo pip install --upgrade setuptools > /dev/null
+sudo pip3 install --upgrade setuptools > /dev/null
+echo Done
+
 # pywal
 echo Installing pywal...
 pip3 install pywal > /dev/null
@@ -115,7 +121,7 @@ echo Done
 
 # powerline-shell
 echo Installing powerline-shell 
-sudo apt-get -y install powerline > /dev/null
+sudo apt -y install powerline > /dev/null
 echo Done
 
 # install powerline dependencies
