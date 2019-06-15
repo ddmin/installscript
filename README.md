@@ -1,35 +1,30 @@
 # installscript
-Bash script to automatically install programs and make changes to bashrc and vimrc. Uses apt as the package manager, so this only works in Ubuntu and its derivatives.
+Automatically configure machine and install appropriate applications and dotfiles
 
 ![Screenshot](https://github.com/ddmin/installscript/blob/master/setup.png)
 
 # Installations:
 
-# Python
-* python3-pip and python-pip
+Font: SourceCodePro Nerd Font
+Text Editor: Vim
 
-# Image Editor
-* gimp (not automatically installed on older versions of xubuntu)
+== File Management ==
+    - [ ] ranger
+        - [ ] ranger-devicons
+        - [ ] ueberzug
+    - [ ] vim + plugins
+        - [ ] vim-airline
+        - [ ] vim-plug
+        - [ ] goyo
+        - [ ] vimwiki
+    - [ ] vlc
+    - [ ] feh
+    - [ ] sxiv
+    - [ ] cmus
 
-# Text Editor(s)
-* vim
-* [Sublime Text](https://www.sublimetext.com/)
-
-# Files
-* fzf (fuzzy finder)
-* ueberzug (image viewer)
-* zathura (pdf viewer)
-* ranger (w/ ueberzug image previews, fzf, and pdf previews)
-
-# Reddit
-* rtv
-
-# Pizazz
-* neofetch
-* powerline-shell
-* pywal (change terminal color scheme)
-* panel configuration (probably only works in xubuntu)
-
-In addition, this script copies my .bashrc, .bash_aliases, and .vimrc from [my dotfiles](https://github.com/ddmin/Dotfiles)
-
-The script also allows the user to specify extra downloads in the installconf.sh file.
+== Aesthetics ==
+    - [ ] lsd
+    - [ ] neofetch
+    - [ ] pywal
+    - [ ] sudo bee lecture
+    - [ ] powerline-shell
