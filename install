@@ -1,4 +1,48 @@
 #!/bin/bash
 # install - installs and configure machine automatically
 
+# Install vim
+    yes | sudo apt install vim
 
+# Install ranger
+    yes | sudo apt install ranger
+
+# Copy ranger configs
+    ranger --copy-config=all
+
+# Install cmus
+    yes | sudo apt install cmus
+
+# Install git
+    yes | sudo apt install git
+
+# Install neofetch
+    yes | sudo apt install neofetch
+
+# Install python and pip
+    yes | sudo apt install python
+    yes | sudo apt install python-pip
+
+# Install python3 and pip3
+    yes | sudo apt install python3
+    yes | sudo apt install python3-pip
+
+# Install powerline-shell
+    pip install powerline-shell
+
+# Dependencies
+    yes | sudo apt install libjpeg-dev
+    yes | sudo apt install zlib1g-dev
+    yes | sudo apt install libxtst-dev
+
+# Install ueberzug
+    sudo pip3 install ueberzug
+
+# Install mpv
+    yes | sudo apt install mpv
+
+# Install vlc
+    yes | sudo apt install vlc
+
+# Install feh
+    yes | sudo apt install feh
