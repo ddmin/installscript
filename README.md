@@ -6,9 +6,11 @@ Automatically configure machine and install appropriate applications and dotfile
 # Installations:
 
 Font: SourceCodePro Nerd Font
+
 Text Editor: Vim
 
-== File Management ==
+## File Management
+
     - [ ] ranger
 
         - [ ] ranger-devicons
@@ -34,7 +36,7 @@ Text Editor: Vim
     - [ ] cmus
 
 
-== Aesthetics ==
+## Aesthetics
 
     - [ ] lsd
 
