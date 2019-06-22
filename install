@@ -1,6 +1,13 @@
 #!/bin/bash
 # install - installs and configure machine automatically
 
+# Install git
+    yes | sudo apt install git
+
+# Install fzf
+    git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
+    yes | ~/.fzf/install
+
 # Install vim
     yes | sudo apt install vim
 
@@ -22,10 +29,12 @@
 # Install python and pip
     yes | sudo apt install python
     yes | sudo apt install python-pip
+    sudo -H pip install --upgrade setuptools
 
 # Install python3 and pip3
     yes | sudo apt install python3
     yes | sudo apt install python3-pip
+    sudo -H pip3 install --upgrade setuptools
 
 # Install powerline-shell
     pip install powerline-shell
@@ -46,3 +55,12 @@
 
 # Install feh
     yes | sudo apt install feh
+
+# Install pywal
+    pip3 install pywal
+
+# Install imagemagick
+    yes | sudo apt install imagemagick
+
+# Install zathura
+    yes | sudo apt install zathura
