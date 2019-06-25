@@ -64,3 +64,10 @@
 
 # Install zathura
     yes | sudo apt install zathura
+
+# Dotfiles
+    cd /tmp
+    git clone https://github.com/ddmin/Dotfiles.git
+    cd Dotfiles
+    cd main
+    ./setup.sh
