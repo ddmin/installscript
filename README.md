@@ -1,9 +1,9 @@
 # installscript
 Automatically configure machine and install appropriate applications and dotfiles
 
-## Disco Dingo Rice
+## Disco Dingo Rice (Xubuntu 19.04)
 ![Screenshot](https://github.com/ddmin/installscript/blob/master/ubuntu_rice.png)
-## Catalina Rice
+## Catalina Rice (Zorin OS 15)
 ![Mac Rice](https://github.com/ddmin/installscript/blob/master/mac_rice.png)
 
 # Installations:
