@@ -2,7 +2,7 @@
 Automatically configure machine and install appropriate applications and dotfiles
 
 ## Disco Dingo Rice
-![Screenshot](https://github.com/ddmin/installscript/blob/master/setup.png)
+![Screenshot](https://github.com/ddmin/installscript/blob/master/ubuntu_rice.png)
 ## Catalina Rice
 ![Mac Rice](https://github.com/ddmin/installscript/blob/master/mac_rice.png)
 
