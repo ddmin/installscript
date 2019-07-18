@@ -37,7 +37,7 @@
     sudo -H pip3 install --upgrade setuptools
 
 # Install powerline-shell
-    pip install powerline-shell
+    sudo -H pip install powerline-shell
 
 # Dependencies
     yes | sudo apt install python3-dev
@@ -58,7 +58,7 @@
     yes | sudo apt install feh
 
 # Install pywal
-    pip3 install pywal
+    sudo -H pip3 install pywal
 
 # Install imagemagick
     yes | sudo apt install imagemagick
