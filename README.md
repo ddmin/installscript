@@ -1,6 +1,9 @@
 # installscript
 Automatically configure machine and install appropriate applications and dotfiles
 
+## Mint Rice (Linux Mint 19.1)
+![Screenshot](https://github.com/ddmin/installscript/blob/master/mint.png)
+
 ## Disco Dingo Rice (Xubuntu 19.04)
 ![Screenshot](https://github.com/ddmin/installscript/blob/master/ubuntu_rice.png)
 ## Catalina Rice (Zorin OS 15)
