@@ -1,0 +1,10 @@
+# Frequently Encountered Problems
+
+1. Ranger returns an error code
+        I aliased ranger to 'ranger && wal'. Probably has something to do with wal
+
+2. Can't access Cinnamon settings
+        You have to downgrade the PIL to 5.4.1
+
+3. Weather info not displaying in the homepage
+        Set mixed content to false in about:config
