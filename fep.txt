@@ -8,3 +8,6 @@
 
 3. Weather info not displaying in the homepage
         Set mixed content to false in about:config
+
+4. What's the command for rofi?
+        `rofi -modi drun -show drun -show-icons`
