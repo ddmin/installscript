@@ -14,3 +14,6 @@
 
 5. Get rid of Gnome-Terminal titlebar?
         run `gsettings set org.gnome.Terminal.Legacy.Settings headerbar "@mb false"`
+
+6. Gnome-Terminal doesn't recognized installed Nerd Font
+        Use Gnome-Tweak-Tools and change the monospace font globally
