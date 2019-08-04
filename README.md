@@ -4,6 +4,8 @@ Automatically configure machine and install appropriate applications and dotfile
 ## Mint Rice (Linux Mint 19.1)
 ![Screenshot](https://github.com/ddmin/installscript/blob/master/mint.png)
 
+## Regolith Rice (Ubuntu Regolith 19.04)
+![Screenshot](https://github.com/ddmin/installscript/blob/master/regolith_rice.png)
 ## Disco Dingo Rice (Xubuntu 19.04)
 ![Screenshot](https://github.com/ddmin/installscript/blob/master/ubuntu_rice.png)
 ## Catalina Rice (Zorin OS 15)
