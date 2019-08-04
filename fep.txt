@@ -11,3 +11,6 @@
 
 4. What's the command for rofi?
         `rofi -modi drun -show drun -show-icons`
+
+5. Get rid of Gnome-Terminal titlebar?
+        run `gsettings set org.gnome.Terminal.Legacy.Settings headerbar "@mb false"`
