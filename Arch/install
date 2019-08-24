@@ -73,6 +73,9 @@
 # Install imagemagick
     yes | sudo pacman -S imagemagick
 
+# Install calcurse
+    yes | sudo pacman -S calcurse
+
 # Install zathura
     yes | sudo pacman -S zathura
 

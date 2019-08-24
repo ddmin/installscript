@@ -74,6 +74,9 @@
 # Install imagemagick
     yes | sudo apt install imagemagick
 
+# Install calcurse
+    yes | sudo apt install calcurse
+
 # Install zathura
     yes | sudo apt install zathura
 
