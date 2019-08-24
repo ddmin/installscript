@@ -2,84 +2,83 @@
 # install - installs and configure machine automatically (Ubuntu)
 
 # Update system
-    yes | sudo apt update
-    yes | sudo apt upgrade
+    yes | sudo pacman -Syu
 
 # Install git
-    yes | sudo apt install git
+    yes | sudo pacman -S git
 
 # Install fzf
     git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
     yes | ~/.fzf/install
 
 # Install curl
-    yes | sudo apt install curl
+    yes | sudo pacman -S curl
 
 # Install vim
-    yes | sudo apt install vim
+    yes | sudo pacman -S vim
 
 # Install ranger
-    yes | sudo apt install ranger
+    yes | sudo pacman -S ranger
 
 # Copy ranger configs
     ranger --copy-config=all
 
 # Install cmus
-    yes | sudo apt install cmus
+    yes | sudo pacman -S cmus
 
 # Install git
-    yes | sudo apt install git
+    yes | sudo pacman -S git
 
 # Install neofetch
-    yes | sudo apt install neofetch
+    yes | sudo pacman -S neofetch
 
 # Install rofi
     # Command to run rofi: rofi -modi drun -show drun -show-icons
-    yes | sudo apt install rofi
+    yes | sudo pacman -S rofi
 
 # Install python and pip
-    yes | sudo apt install python
-    yes | sudo apt install python-pip
+    yes | sudo pacman -S python
+    yes | sudo pacman -S python-pip
     sudo -H pip install --upgrade setuptools
 
 # Install python3 and pip3
-    yes | sudo apt install python3
-    yes | sudo apt install python3-pip
+    yes | sudo pacman -S python3
+    yes | sudo pacman -S python3-pip
     sudo -H pip3 install --upgrade setuptools
 
 # Install powerline-shell
     sudo -H pip install powerline-shell
 
 # Dependencies
-    yes | sudo apt install python3-dev
-    yes | sudo apt install libjpeg-dev
-    yes | sudo apt install zlib1g-dev
-    yes | sudo apt install libxtst-dev
+    yes | sudo pacman -S python3-dev
+    yes | sudo pacman -S libjpeg-dev
+    yes | sudo pacman -S zlib1g-dev
+    yes | sudo pacman -S libxtst-dev
 
 # Install ueberzug
     sudo pip3 install ueberzug
 
 # Install mpv
-    yes | sudo apt install mpv
+    yes | sudo pacman -S mpv
 
 # Install vlc
-    yes | sudo apt install vlc
+    yes | sudo pacman -S vlc
 
 # Install feh
-    yes | sudo apt install feh
+    yes | sudo pacman -S feh
 
 # Install pywal
     sudo -H pip3 install pywal
 
 # Install imagemagick
-    yes | sudo apt install imagemagick
+    yes | sudo pacman -S imagemagick
 
 # Install zathura
-    yes | sudo apt install zathura
+    yes | sudo pacman -S zathura
 
 # Install and configure sdcv
-    yes | sudo apt install wget
-    yes | sudo apt install sdcv
+    yes | sudo pacman -S wget
+    yes | sudo pacman -S sdcv
     wget https://web.archive.org/web/20140428003644/http://abloz.com/huzheng/stardict-dic/dict.org/stardict-dictd_www.dict.org_gcide-2.4.2.tar.bz2
     sudo mkdir -p /usr/share/stardict/dic/
     sudo tar -xvjf  stardict-dictd_www.dict.org_gcide-2.4.2.tar.bz2 -C /usr/share/stardict/dic
