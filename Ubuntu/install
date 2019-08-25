@@ -80,6 +80,9 @@
 # Install zathura
     yes | sudo apt install zathura
 
+# Install id3v2
+    yes | sudo apt install id3v2
+
 # Install and configure sdcv
     yes | sudo apt install wget
     yes | sudo apt install sdcv

@@ -79,6 +79,9 @@
 # Install zathura
     yes | sudo pacman -S zathura
 
+# Install id3v2
+    yes | sudo pacman -S id3v2
+
 # Install and configure sdcv
     yes | sudo pacman -S wget
     yes | sudo pacman -S sdcv
