@@ -23,6 +23,9 @@
 # Copy ranger configs
     ranger --copy-config=all
 
+# Install lsd   
+    yes | pacman -S lsd
+
 # Install cmus
     yes | sudo pacman -S cmus
 
