@@ -10,6 +10,8 @@ Automatically configure machine and install appropriate applications and dotfile
 ![Regolith Rice](https://github.com/ddmin/installscript/blob/master/scrot/regolith_rice.png)
 ## Mint Rice (Linux Mint 19.1)
 ![Mint](https://github.com/ddmin/installscript/blob/master/scrot/mint.png)
+## Kilimanjaro (Manjaro Illyria)
+![Manjaro](https://github.com/ddmin/installscript/blob/master/scrot/manjaro.png)
 
 # Installations:
 
