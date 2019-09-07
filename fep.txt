@@ -17,3 +17,6 @@
 
 6. Gnome-Terminal doesn't recognized installed Nerd Font
         Use Gnome-Tweak-Tools and change the monospace font globally
+
+7. Change wallpaper in XFCE using ranger?
+        `map bg shell wal --vte -q -i %f && xfconf-query -c xfce4-desktop -p /backdrop/screen0/monitoreDP1/workspace0/last-image -s %d/%f`
