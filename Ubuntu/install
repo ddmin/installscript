@@ -93,12 +93,24 @@
 # Install id3v2
     yes | sudo apt install id3v2
 
+# Install lsd
+    wget https://github.com/Peltoche/lsd/releases/download/0.16.0/lsd_0.16.0_amd64.deb
+
+    sudo dpkg -i lsd_0.16.0_amd64.deb
+
+    # Remove deb file
+    rm lsd_0.16.0_amd64.deb
+
 # Install and configure sdcv
     yes | sudo apt install wget
     yes | sudo apt install sdcv
+
     wget https://web.archive.org/web/20140428003644/http://abloz.com/huzheng/stardict-dic/dict.org/stardict-dictd_www.dict.org_gcide-2.4.2.tar.bz2
+
     sudo mkdir -p /usr/share/stardict/dic/
+
     sudo tar -xvjf  stardict-dictd_www.dict.org_gcide-2.4.2.tar.bz2 -C /usr/share/stardict/dic
+
     rm stardict-dictd_www.dict.org_gcide-2.4.2.tar.bz2
 
 # Dotfiles
