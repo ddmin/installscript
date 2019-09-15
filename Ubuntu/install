@@ -101,6 +101,10 @@
     # Remove deb file
     rm lsd_0.16.0_amd64.deb
 
+# Install SauceCodePro
+    wget https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/SourceCodePro/Semibold/complete/Sauce%20Code%20Pro%20Semibold%20Nerd%20Font%20Complete%20Mono.ttf
+    sudo mv Sauce Code Pro Semibold Nerd Font Complete Mono.ttf /usr/share/fonts
+
 # Install and configure sdcv
     yes | sudo apt install wget
     yes | sudo apt install sdcv
