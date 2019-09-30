@@ -107,3 +107,8 @@
     cd Dotfiles
     cd dotfiles
     ./setup.sh
+
+# Firefox Addons
+    cd /tmp/installscript
+    python3 firefox_setup.py &
+    echo 'Setup Complete'
