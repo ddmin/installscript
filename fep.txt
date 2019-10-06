@@ -21,3 +21,6 @@
 7. Change wallpaper in XFCE using ranger?
         1. Run in Terminal: xfconf-query -c xfce4-desktop -m and change background.
         2. `map bg shell wal --vte -q -i %f && xfconf-query -c xfce4-desktop -p /backdrop/screen0/monitoreDP1/workspace0/last-image -s %d/%f`
+
+8. Set Google as default search engine in Linux Mint?
+	https://www.linuxmint.com/searchengines.php
