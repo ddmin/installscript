@@ -21,38 +21,37 @@ Text Editor: Vim
 
 ## File Management
 
-    - [ ] ranger
+    - ranger
 
-        - [ ] ranger-devicons
+        - ranger-devicons
 
-        - [ ] ueberzug
+        - ueberzug
 
-    - [ ] vim + plugins
+    - vim + plugins
 
-        - [ ] vim-airline
+        - vim-airline
 
-        - [ ] vim-plug
+        - vim-plug
 
-        - [ ] goyo
+        - goyo
 
-        - [ ] vimwiki
+        - vimwiki
 
-    - [ ] vlc
+    - vlc
 
-    - [ ] feh
+    - feh
 
-    - [ ] sxiv
+    - sxiv
 
-    - [ ] cmus
+    - cmus
 
 
 ## Aesthetics
 
-    - [ ] lsd
+    - lsd
 
-    - [ ] neofetch
+    - neofetch
 
-    - [ ] pywal
+    - pywal
 
-    - [ ] powerline-shell
-
+    - powerline-shell
