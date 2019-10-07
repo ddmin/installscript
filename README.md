@@ -13,11 +13,6 @@ Automatically configure machine and install appropriate applications and dotfile
 ## Kilimanjaro (Manjaro Illyria)
 ![Manjaro](https://github.com/ddmin/installscript/blob/master/scrot/manjaro.png)
 
-# Installations:
-
-Font: SourceCodePro Nerd Font
-
-Text Editor: Vim
 
 ## File Management
 
@@ -33,6 +28,7 @@ Text Editor: Vim
     - feh
     - sxiv
     - cmus
+    - mpv
 ## Aesthetics
     - lsd
     - neofetch
