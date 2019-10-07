@@ -7,6 +7,13 @@
 # Install git
     yes | sudo pacman -S git
 
+# Firefox Addons
+    cd /tmp/installscript
+    python3 firefox_setup.py
+
+# Go back to Arch Directory
+    cd /tmp/installscript/Arch
+
 # Install fzf
     git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
     yes | ~/.fzf/install
@@ -108,7 +115,4 @@
     cd dotfiles
     ./setup.sh
 
-# Firefox Addons
-    cd /tmp/installscript
-    python3 firefox_setup.py &
-    echo 'Setup Complete'
+echo 'Setup Complete'
