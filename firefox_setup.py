@@ -19,6 +19,9 @@ def open_webpages():
     # SauceCodePro NerdFont
     SITES.append('https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/SourceCodePro/Semibold/complete/Sauce%20Code%20Pro%20Semibold%20Nerd%20Font%20Complete%20Mono.ttf')
 
+    # Stylus
+    SITES.append('https://github.com/StylishThemes/GitHub-Dark')
+
     for site in SITES:
         webbrowser.open(site)
 
