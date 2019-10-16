@@ -22,9 +22,6 @@ def open_webpages():
     # Stylus
     SITES.append('https://github.com/StylishThemes/GitHub-Dark')
 
-    # Vimium FF
-    SITES.append('https://addons.mozilla.org/en-US/firefox/addon/vimium-ff/')
-
     for site in SITES:
         webbrowser.open(site)
 
