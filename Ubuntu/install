@@ -1,9 +1,15 @@
 #!/bin/bash
 # install - installs and configure machine automatically (Ubuntu)
 
+# Papirus PPA
+    sudo add-apt-repository ppa:papirus/papirus
+
 # Update system
     yes | sudo apt update
     yes | sudo apt upgrade
+
+# Papirus Icons
+    yes | sudo apt-get install papirus-icon-theme
 
 # Firefox Addons
     cd /tmp/installscript
@@ -99,6 +105,9 @@
 
 # Install id3v2
     yes | sudo apt install id3v2
+
+# Arc Theme
+    yes | sudo apt install arc-theme
 
 # Install lsd
     wget https://github.com/Peltoche/lsd/releases/download/0.16.0/lsd_0.16.0_amd64.deb
