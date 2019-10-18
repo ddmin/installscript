@@ -31,6 +31,9 @@
 # Install vim
     yes | sudo apt install vim
 
+# Install gnome-tweaks
+    yes | sudo apt install gnome-tweak-tool
+
 # Install ranger
     git clone https://github.com/ranger/ranger.git /tmp/ranger
     cd /tmp/ranger
