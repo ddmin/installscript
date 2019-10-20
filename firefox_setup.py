@@ -22,6 +22,17 @@ def open_webpages():
     # Stylus
     SITES.append('https://github.com/StylishThemes/GitHub-Dark')
 
+    # CAVA
+    # Ubuntu Dependencies: sudo apt-get install automake libfftw3-dev libasound2-dev libncursesw5-dev libpulse-dev libtool
+
+    # Ubuntu Install:
+    #   ./autogen.sh
+    #   ./configure
+    #   make
+    #   sudo make install
+
+    SITES.append('https://github.com/karlstav/cava')
+
     for site in SITES:
         webbrowser.open(site)
 
