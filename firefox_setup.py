@@ -23,7 +23,7 @@ def open_webpages():
     SITES.append('https://github.com/StylishThemes/GitHub-Dark')
 
     # CAVA
-    # Ubuntu Dependencies: sudo apt-get install automake libfftw3-dev libasound2-dev libncursesw5-dev libpulse-dev libtool
+    # Ubuntu Dependencies: yes | sudo apt-get install automake libfftw3-dev libasound2-dev libncursesw5-dev libpulse-dev libtool
 
     # Ubuntu Install:
     #   ./autogen.sh
