@@ -106,9 +106,6 @@
 # Install zathura
     yes | sudo apt install zathura
 
-# Pinta
-    yes | sudo apt install pinta
-
 # Install id3v2
     yes | sudo apt install id3v2
 
