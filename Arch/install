@@ -24,6 +24,9 @@
 # Install vim
     yes | sudo pacman -S vim
 
+# Install nvim
+    yes | sudo pacman -S neovim
+
 # Install ranger
     yes | sudo pacman -S ranger
 

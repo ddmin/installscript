@@ -31,6 +31,9 @@
 # Install vim
     yes | sudo apt install vim
 
+# Install nvim
+    yes | sudo apt install neovim
+
 # Install gnome-tweaks
     yes | sudo apt install gnome-tweak-tool
 
