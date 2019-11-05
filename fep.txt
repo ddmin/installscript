@@ -24,3 +24,6 @@
 
 8. Set Google as default search engine in Linux Mint?
 	https://www.linuxmint.com/searchengines.php
+
+9. Red error indication in powerline every time I open terminal
+    Probably because I didn't install fzf
