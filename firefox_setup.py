@@ -22,6 +22,9 @@ def open_webpages():
     # Stylus
     SITES.append('https://github.com/StylishThemes/GitHub-Dark')
 
+    # Firefox Arc Dark Theme
+    SITES.append('https://addons.mozilla.org/en-US/firefox/addon/arc-dark-theme-we/')
+
     # CAVA
     # Ubuntu Dependencies: yes | sudo apt-get install automake libfftw3-dev libasound2-dev libncursesw5-dev libpulse-dev libtool
 
