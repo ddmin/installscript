@@ -69,15 +69,15 @@
 # Install python and pip
     yes | sudo apt install python
     yes | sudo apt install python-pip
-    pip install --upgrade --user setuptools
+    sudo -H pip install --upgrade setuptools
 
 # Install python3 and pip3
     yes | sudo apt install python3
     yes | sudo apt install python3-pip
-    pip3 install --upgrade --user setuptools
+    sudo -H pip3 install --upgrade setuptools
 
 # Install powerline-shell
-    pip install --user powerline-shell
+    sudo -H pip install powerline-shell
 
 # Dependencies
     yes | sudo apt install python3-dev
@@ -86,7 +86,7 @@
     yes | sudo apt install libxtst-dev
 
 # Install ueberzug
-    pip3 install --user ueberzug
+    sudo -H pip3 install ueberzug
 
 # Install mpv
     yes | sudo apt install mpv
@@ -98,7 +98,7 @@
     yes | sudo apt install feh
 
 # Install pywal
-    pip3 install --user pywal
+    sudo -H pip3 install pywal
 
 # Install imagemagick
     yes | sudo apt install imagemagick
