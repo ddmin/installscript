@@ -70,12 +70,6 @@
 # Install powerline-shell
     sudo -H pip install powerline-shell
 
-# Dependencies
-    yes | sudo pacman -S python3-dev
-    yes | sudo pacman -S libjpeg-dev
-    yes | sudo pacman -S zlib1g-dev
-    yes | sudo pacman -S libxtst-dev
-
 # Install ueberzug
     sudo pip3 install ueberzug
 
