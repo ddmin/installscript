@@ -2,3 +2,4 @@ PyWal
 Virtual Box
 CAVA
 RetroArch
+gimp-plugin-registry
