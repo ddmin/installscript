@@ -2,5 +2,5 @@ PyWal
 Virtual Box
 CAVA
 RetroArch
-kdenlive
+shotcut
 gimp-plugin-registry
