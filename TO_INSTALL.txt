@@ -3,4 +3,5 @@ Virtual Box
 CAVA
 RetroArch
 shotcut
+BalenaEtcher
 gimp-plugin-registry
