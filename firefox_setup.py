@@ -36,6 +36,10 @@ def open_webpages():
 
     SITES.append('https://github.com/karlstav/cava')
 
+    # Video DownloadHelper
+
+    SITES.append('https://addons.mozilla.org/en-US/firefox/addon/video-downloadhelper/')
+
     for site in SITES:
         webbrowser.open(site)
 
