@@ -43,8 +43,17 @@
 # Install gnome-tweaks
     yes | sudo apt install gnome-tweak-tool
 
+# install python2
+    yes | sudo apt install python
+    yes | sudo apt install python2
+    curl https://bootstrap.pypa.io/get-pip.py --output get-pip.py
+    sudo python2 get-pip.py
+
 # Install powerline-shell
     pip install powerline-shell
+
+# install python2
+    yes | sudo apt install python
 
 # Install python3 and pip3
     yes | sudo apt install python3
@@ -52,7 +61,7 @@
     pip3 install --upgrade setuptools
 
 # install powerline-shell
-    pip install powerline-status
+    pip3 install powerline-status
 
 # powerline fonts
     wget https://github.com/powerline/powerline/raw/develop/font/PowerlineSymbols.otf
@@ -129,7 +138,7 @@
 
 # Remove deb file
     rm lsd_0.16.0_amd64.deb
-    
+
 # Dotfiles
     cd /tmp
     git clone https://github.com/ddmin/Dotfiles.git
