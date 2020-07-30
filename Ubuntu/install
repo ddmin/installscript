@@ -1,5 +1,7 @@
 #!/bin/bash
 # install - installs and configure machine automatically (Ubuntu)
+# this doesn't work anymore
+# use 2install
 
 # Papirus PPA
     sudo add-apt-repository ppa:papirus/papirus
