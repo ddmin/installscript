@@ -30,6 +30,9 @@
 # Install curl
     yes | sudo apt install curl
 
+# install wget
+    yes | sudo apt install wget
+
 # Install vim
     yes | sudo apt install vim
 
@@ -124,9 +127,6 @@
 
     # Remove deb file
     rm lsd_0.16.0_amd64.deb
-
-# Install and configure sdcv
-    yes | sudo apt install wget
 
 # Dotfiles
     cd /tmp
