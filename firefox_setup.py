@@ -4,6 +4,9 @@ import webbrowser
 def open_webpages():
     SITES = []
 
+    # SauceCodePro NerdFont
+    SITES.append('https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/SourceCodePro/Semibold/complete/Sauce%20Code%20Pro%20Semibold%20Nerd%20Font%20Complete%20Mono.ttf')
+
     # Homepage extension
     SITES.append('https://addons.mozilla.org/en-US/firefox/addon/my-homepage/')
 
@@ -15,9 +18,6 @@ def open_webpages():
 
     # Control + Number
     SITES.append('https://addons.mozilla.org/en-US/firefox/addon/ctrl-number-to-switch-tabs/')
-
-    # SauceCodePro NerdFont
-    SITES.append('https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/SourceCodePro/Semibold/complete/Sauce%20Code%20Pro%20Semibold%20Nerd%20Font%20Complete%20Mono.ttf')
 
     # Stylus
     SITES.append('https://github.com/StylishThemes/GitHub-Dark')
@@ -37,7 +37,6 @@ def open_webpages():
     SITES.append('https://github.com/karlstav/cava')
 
     # Video DownloadHelper
-
     SITES.append('https://addons.mozilla.org/en-US/firefox/addon/video-downloadhelper/')
 
     for site in SITES:
