@@ -5,3 +5,4 @@ RetroArch
 shotcut
 BalenaEtcher
 gimp-plugin-registry
+webcamoid
