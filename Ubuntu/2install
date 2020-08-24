@@ -54,8 +54,8 @@
     yes | sudo apt install python3-pip
     pip3 install --upgrade setuptools
 
-# install powerline-shell
-    pip3 install powerline-status
+# install powerline
+    pip install powerline-shell
 
 # powerline fonts
     wget https://github.com/powerline/powerline/raw/develop/font/PowerlineSymbols.otf
@@ -141,3 +141,4 @@
     ./setup.sh
 
 echo 'Setup Complete'
+echo 'Please reboot your machine.'
