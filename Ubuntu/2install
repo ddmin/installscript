@@ -49,12 +49,6 @@
     curl https://bootstrap.pypa.io/get-pip.py --output get-pip.py
     sudo python2 get-pip.py
 
-# Install powerline-shell
-    pip install powerline-shell
-
-# install python2
-    yes | sudo apt install python
-
 # Install python3 and pip3
     yes | sudo apt install python3
     yes | sudo apt install python3-pip
