@@ -88,6 +88,9 @@
 # Copy ranger configs
     ranger --copy-config=all
 
+# Install ffmpegthumbnailer
+    yes | sudo apt install ffmpegthumbnailer
+
 # Install mpv
     yes | sudo apt install mpv
 
