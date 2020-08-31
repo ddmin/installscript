@@ -8,7 +8,7 @@ def open_webpages():
     SITES.append('https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/SourceCodePro/Semibold/complete/Sauce%20Code%20Pro%20Semibold%20Nerd%20Font%20Complete%20Mono.ttf')
 
     # Homepage extension
-    SITES.append('https://addons.mozilla.org/en-US/firefox/addon/my-homepage/')
+    SITES.append('https://addons.mozilla.org/en-US/firefox/addon/custom-new-tab-page/')
 
     # Adblock
     SITES.append('https://addons.mozilla.org/en-US/firefox/addon/adblock-plus/')
