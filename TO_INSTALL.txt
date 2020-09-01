@@ -6,3 +6,5 @@ shotcut
 BalenaEtcher
 gimp-plugin-registry
 webcamoid
+OBS
+Mozc
