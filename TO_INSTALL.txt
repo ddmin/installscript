@@ -8,3 +8,4 @@ gimp-plugin-registry
 webcamoid
 OBS
 Mozc
+Joplin
