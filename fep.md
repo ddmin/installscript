@@ -27,3 +27,6 @@
 
 9. Red error indication in powerline every time I open terminal
     Probably because I didn't install fzf
+
+10. Change screenshot to show more options
+    Set shortcut to `/usr/bin/gnome-screenshot --interactive`
