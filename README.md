@@ -24,11 +24,9 @@ Automatically configure machine and install appropriate applications and dotfile
         - vim-plug
         - goyo
         - vimwiki
-    - vlc
     - feh
     - sxiv
     - cmus
-    - mpv
 ## Aesthetics
     - lsd
     - neofetch

@@ -9,3 +9,4 @@ webcamoid
 OBS
 Mozc
 Joplin
+ProtonVPN
