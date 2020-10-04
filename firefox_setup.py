@@ -1,3 +1,5 @@
+# TODO: make this into a website with a button that opens all links
+
 # Open addons in Firefox to download
 import webbrowser
 
