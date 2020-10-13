@@ -9,5 +9,4 @@ gimp-resynthesizer
 webcamoid
 OBS
 Mozc
-Joplin
 ProtonVPN
