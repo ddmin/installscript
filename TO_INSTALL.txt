@@ -5,6 +5,7 @@ RetroArch
 shotcut
 BalenaEtcher
 gimp-plugin-registry
+gimp-resynthesizer
 webcamoid
 OBS
 Mozc
