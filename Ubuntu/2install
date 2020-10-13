@@ -128,13 +128,12 @@
 # Arc Theme
     yes | sudo apt install arc-theme
 
-# Install lsd
-    wget https://github.com/Peltoche/lsd/releases/download/0.16.0/lsd_0.16.0_amd64.deb
+# install logo-ls
+    wget https://github.com/Yash-Handa/logo-ls/releases/download/v1.3.6/logo-ls_amd64.deb
 
-    sudo dpkg -i lsd_0.16.0_amd64.deb
+    sudo dpkg -i logo-ls_amd64.deb
 
-# Remove deb file
-    rm lsd_0.16.0_amd64.deb
+    rm logo-ls_amd64.deb
 
 # Dotfiles
     cd /tmp
