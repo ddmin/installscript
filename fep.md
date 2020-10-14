@@ -41,3 +41,6 @@
 10. Change screenshot to show more options
 
     Set shortcut to `/usr/bin/gnome-screenshot --interactive`
+
+11. Go Autocomplete in YouCompleteMe
+    Run `./.vim/plugged/YouCompleteMe/install.py --go-completer`
