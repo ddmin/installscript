@@ -125,13 +125,13 @@
 # Install ranger
 
     # Clone Method
-    # idk this isn't working right now
     # local copy stored in ranger directory
     # git clone https://github.com/ranger/ranger.git /tmp/ranger
     # cd /tmp/ranger
     # sudo make install
     # cd -
 
+    # pip install method
     pip3 install ranger-fm
 
 # Install ranger devicons
