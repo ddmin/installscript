@@ -67,16 +67,6 @@
     mkdir -p /home/ddmin/.config/fontconfig
     mv 10-powerline-symbols.conf /home/ddmin/.config/fontconfig/conf.d
 
-# Install ranger
-    git clone https://github.com/ranger/ranger.git /tmp/ranger
-    cd /tmp/ranger
-    sudo make install
-
-# Install ranger devicons
-    git clone https://github.com/ddmin/ranger_devicons.git /tmp/devicons
-    cd /tmp/devicons
-    make install
-
 # Dependencies
     yes | sudo apt install python3-dev
     yes | sudo apt install libjpeg-dev
@@ -137,16 +127,28 @@
 
     rm logo-ls_amd64.deb
 
+# Install ranger
+    git clone https://github.com/ranger/ranger.git /tmp/ranger
+    cd /tmp/ranger
+    sudo make install
+    cd -
+
+# Install ranger devicons
+    git clone https://github.com/ddmin/ranger_devicons.git /tmp/devicons
+    cd /tmp/devicons
+    make install
+    cd -
+
 # Dotfiles
     git clone https://github.com/ddmin/Dotfiles.git /tmp/dots
     cd /tmp/dots/dotfiles
     ./setup.sh
+    cd -
 
 echo 'Setup Complete'
 echo 'Please reboot your machine.'
 
 # Firefox Addons
-    cd -
     cd ..
     go run firefox.go
     firefox localhost:3000
