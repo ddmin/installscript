@@ -7,9 +7,6 @@
 # Universe PPA
     sudo add-apt-repository universe
 
-# install gogh
-    bash -c  "$(wget -qO- https://git.io/vQgMr)"
-
 # Update system
     yes | sudo apt update
     yes | sudo apt upgrade
@@ -73,6 +70,7 @@
     yes | sudo apt install zlib1g-dev
     yes | sudo apt install libxtst-dev
     yes | sudo apt install cmake
+    yes | sudo apt-get install dconf-cli uuid-runtime
 
 # install ueberzug
     pip3 install ueberzug
@@ -152,3 +150,17 @@ echo 'Please reboot your machine.'
     cd ..
     go run firefox.go
     firefox localhost:3000
+
+# Gogh
+# clone the repo into "$HOME/src/gogh"
+    mkdir "/tmp/src"
+    cd /tmp/src
+    git clone https://github.com/Mayccoll/Gogh.git gogh
+    cd gogh/themes
+
+    # necessary on ubuntu
+    export TERMINAL=gnome-terminal
+
+    # install themes
+    ./atom.sh
+    ./dracula.sh
