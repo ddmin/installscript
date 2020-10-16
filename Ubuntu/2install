@@ -7,6 +7,9 @@
 # Universe PPA
     sudo add-apt-repository universe
 
+# install gogh
+    bash -c  "$(wget -qO- https://git.io/vQgMr)"
+
 # Update system
     yes | sudo apt update
     yes | sudo apt upgrade
