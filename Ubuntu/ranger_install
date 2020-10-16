@@ -4,6 +4,7 @@
 sudo echo "Installing ranger..."
 
 cd ..
+pip install ranger
 sudo mv ./ranger/ranger /usr/local/bin
 sudo mv -v ./ranger/* /usr/local/lib/python2.7
 
