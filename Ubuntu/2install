@@ -41,6 +41,9 @@
     sudo tar -C /usr/local -xzf go1.*15*.3.linux-amd64.tar.gz
     export PATH="$PATH:/usr/local/go/bin"
 
+# Install python2
+    ./python2_install
+
 # Install python3 and pip3
     yes | sudo apt install python3
     yes | sudo apt install python3-pip
@@ -68,9 +71,6 @@
 
 # install ueberzug
     pip3 install ueberzug
-
-# Copy ranger configs
-    ranger --copy-config=all
 
 # Install ffmpegthumbnailer
     yes | sudo apt install ffmpegthumbnailer
@@ -127,6 +127,8 @@
     # Clone Method
     # idk this isn't working right now
     # local copy stored in ranger directory
+    pip install ranger
+
     git clone https://github.com/ranger/ranger.git /tmp/ranger
     cd /tmp/ranger
     sudo make install
@@ -137,6 +139,9 @@
     cd /tmp/devicons
     make install
     cd -
+
+# Copy ranger configs
+    ranger --copy-config=all
 
 # Dotfiles
     git clone https://github.com/ddmin/Dotfiles.git /tmp/dots
