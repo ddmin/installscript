@@ -141,16 +141,15 @@
     rm logo-ls_amd64.deb
 
 # Dotfiles
-    cd /tmp
-    git clone https://github.com/ddmin/Dotfiles.git
-    cd Dotfiles
-    cd dotfiles
+    git clone https://github.com/ddmin/Dotfiles.git /tmp/dots
+    cd /tmp/dots/dotfiles
     ./setup.sh
 
 echo 'Setup Complete'
 echo 'Please reboot your machine.'
 
 # Firefox Addons
+    cd -
     cd ..
     go run firefox.go
     firefox localhost:3000
