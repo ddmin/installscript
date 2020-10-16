@@ -132,7 +132,7 @@
     # sudo make install
     # cd -
 
-    pip3 install ranger
+    pip3 install ranger-fm
 
 # Install ranger devicons
     git clone https://github.com/ddmin/ranger_devicons.git /tmp/devicons
