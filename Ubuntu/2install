@@ -148,8 +148,8 @@ echo 'Please reboot your machine.'
 
 # Firefox Addons
     cd ..
-    go run firefox.go
     firefox localhost:3000
+    go run firefox.go
 
 # Gogh
 # clone the repo into "$HOME/src/gogh"
@@ -162,5 +162,4 @@ echo 'Please reboot your machine.'
     export TERMINAL=gnome-terminal
 
     # install themes
-    ./atom.sh
     ./dracula.sh

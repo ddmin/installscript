@@ -27,6 +27,7 @@ func index(w http.ResponseWriter, r *http.Request) {
 
 func main() {
 	http.HandleFunc("/", index)
-	fmt.Println("Server Running...")
+	fmt.Println("Server is running...")
+	fmt.Println("Please Refresh the Page.")
 	http.ListenAndServe(":3000", nil)
 }
