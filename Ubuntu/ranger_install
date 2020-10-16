@@ -1,5 +1,5 @@
 #!/bin/bash
-# 2install - installs and configure machine automatically (Ubuntu)
+# ranger_install install ranger
 
 sudo echo "Installing ranger..."
 
