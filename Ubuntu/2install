@@ -84,6 +84,7 @@
     yes | sudo apt install libjpeg-dev
     yes | sudo apt install zlib1g-dev
     yes | sudo apt install libxtst-dev
+    yes | sudo apt install cmake
 
 # install ueberzug
     pip3 install ueberzug
