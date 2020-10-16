@@ -44,9 +44,6 @@
     sudo tar -C /usr/local -xzf go1.*15*.3.linux-amd64.tar.gz
     export PATH="$PATH:/usr/local/go/bin"
 
-# go back
-    cd Ubuntu
-
 # install python2
     yes | sudo apt install python
     yes | sudo apt install python2
