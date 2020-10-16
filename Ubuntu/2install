@@ -128,7 +128,7 @@
     # idk this isn't working right now
     # local copy stored in ranger directory
     pip install ranger
-    sudo apt install ranger
+    yes | sudo apt install ranger
     git clone https://github.com/ranger/ranger.git /tmp/ranger
     # cd /tmp/ranger
     # sudo make install
