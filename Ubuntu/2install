@@ -19,7 +19,8 @@
 
 # Firefox Addons
     cd ..
-    python3 firefox_setup.py
+    go run firefox.go
+    firefox localhost:3000
 
 # go back
     cd Ubuntu

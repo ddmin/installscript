@@ -43,7 +43,9 @@ def open_webpages():
     SITES.append('https://addons.mozilla.org/en-US/firefox/addon/video-downloadhelper/')
 
     for site in SITES:
-        webbrowser.open(site)
+        print(site)
+        print(len(SITES))
+        #  webbrowser.open(site)
 
 def main():
     open_webpages()
