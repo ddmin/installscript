@@ -17,14 +17,6 @@
 # Papirus Icons
     yes | sudo apt-get install papirus-icon-theme
 
-# Firefox Addons
-    cd ..
-    go run firefox.go
-    firefox localhost:3000
-
-# go back
-    cd Ubuntu
-
 # Install git
     yes | sudo apt install git
 
@@ -50,6 +42,14 @@
 # install golang
     wget "https://golang.org/dl/go1.15.3.linux-amd64.tar.gz"
     sudo tar -C /usr/local -xzf go1.*15*.3.linux-amd64.tar.gz
+
+# Firefox Addons
+    cd ..
+    go run firefox.go
+    firefox localhost:3000
+
+# go back
+    cd Ubuntu
 
 # install python2
     yes | sudo apt install python
