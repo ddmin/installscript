@@ -129,6 +129,10 @@
     rm logo-ls_amd64.deb
 
 # Install ranger
+
+    # Clone Method
+    # idk this isn't working right now
+    # local copy stored in ranger directory
     git clone https://github.com/ranger/ranger.git /tmp/ranger
     cd /tmp/ranger
     sudo make install
