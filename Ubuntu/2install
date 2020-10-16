@@ -46,6 +46,10 @@
 # Install gnome-tweaks
     yes | sudo apt install gnome-tweak-tool
 
+# install golang
+    wget "https://golang.org/dl/go1.15.3.linux-amd64.tar.gz"
+    sudo tar -C /usr/local -xzf go1.*15*.3.linux-amd64.tar.gz
+
 # install python2
     yes | sudo apt install python
     yes | sudo apt install python2
