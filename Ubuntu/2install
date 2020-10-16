@@ -127,12 +127,12 @@
     # Clone Method
     # idk this isn't working right now
     # local copy stored in ranger directory
-    pip install ranger
-    yes | sudo apt install ranger
-    git clone https://github.com/ranger/ranger.git /tmp/ranger
+    # git clone https://github.com/ranger/ranger.git /tmp/ranger
     # cd /tmp/ranger
     # sudo make install
     # cd -
+
+    pip3 install ranger
 
 # Install ranger devicons
     git clone https://github.com/ddmin/ranger_devicons.git /tmp/devicons
