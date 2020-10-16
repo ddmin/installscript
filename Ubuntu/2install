@@ -81,6 +81,9 @@
 # Install ffmpegthumbnailer
     yes | sudo apt install ffmpegthumbnailer
 
+# Install lynx
+    yes | sudo apt install lynx
+
 # Install mpv
     yes | sudo apt install mpv
 
