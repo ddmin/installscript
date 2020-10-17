@@ -7,6 +7,25 @@
 # Universe PPA
     sudo add-apt-repository universe
 
+# Firefox Addons
+    cd ..
+    go run firefox.go & sleep 1 && firefox localhost:3000
+    cd -
+
+# Gogh
+# clone the repo into "$HOME/src/gogh"
+    mkdir /tmp/src
+    git clone https://github.com/Mayccoll/Gogh.git /tmp/src/gogh
+    cd /tmp/src/gogh/themes
+
+    # necessary on ubuntu
+    export TERMINAL=gnome-terminal
+
+    # install themes
+    ./dracula.sh
+
+    cd -
+
 # Update system
     yes | sudo apt update
     yes | sudo apt upgrade
@@ -151,20 +170,3 @@
 
 echo 'Setup Complete'
 echo 'Please reboot your machine.'
-
-# Firefox Addons
-    cd ..
-    go run firefox.go & sleep 1 && firefox localhost:3000
-
-# Gogh
-# clone the repo into "$HOME/src/gogh"
-    mkdir "/tmp/src"
-    cd /tmp/src
-    git clone https://github.com/Mayccoll/Gogh.git gogh
-    cd gogh/themes
-
-    # necessary on ubuntu
-    export TERMINAL=gnome-terminal
-
-    # install themes
-    ./dracula.sh
