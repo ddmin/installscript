@@ -7,6 +7,11 @@
 # Universe PPA
     sudo add-apt-repository universe
 
+# install golang
+    wget "https://golang.org/dl/go1.15.3.linux-amd64.tar.gz"
+    sudo tar -C /usr/local -xzf go1.*15*.3.linux-amd64.tar.gz
+    export PATH="$PATH:/usr/local/go/bin"
+
 # Firefox Addons
     cd ..
     go run firefox.go & sleep 1 && firefox localhost:3000
@@ -54,11 +59,6 @@
 
 # Install gnome-tweaks
     yes | sudo apt install gnome-tweak-tool
-
-# install golang
-    wget "https://golang.org/dl/go1.15.3.linux-amd64.tar.gz"
-    sudo tar -C /usr/local -xzf go1.*15*.3.linux-amd64.tar.gz
-    export PATH="$PATH:/usr/local/go/bin"
 
 # Install python2
     ./python2_install
