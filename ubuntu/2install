@@ -61,7 +61,7 @@
     yes | sudo apt install gnome-tweak-tool
 
 # Install python2
-    ./python2_install
+    # ./python2_install
 
 # Install python3 and pip3
     yes | sudo apt install python3
@@ -69,7 +69,7 @@
     pip3 install --upgrade setuptools
 
 # install powerline
-    pip install powerline-shell
+    pip3 install powerline-shell
 
 # powerline fonts
     wget https://github.com/powerline/powerline/raw/develop/font/PowerlineSymbols.otf
