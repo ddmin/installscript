@@ -1,12 +1,13 @@
-PyWal
-Virtual Box
-CAVA
-RetroArch
-shotcut
 BalenaEtcher
+CAVA
 gimp-plugin-registry
 gimp-resynthesizer
-webcamoid
-OBS
 Mozc
+OBS
 ProtonVPN
+PyWal
+RetroArch
+Shotcut
+Virtual Box
+Webcamoid
+Youtube-dl

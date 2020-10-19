@@ -12,23 +12,3 @@ Automatically configure machine and install appropriate applications and dotfile
 ![Mint](https://github.com/ddmin/installscript/blob/master/scrot/mint.png)
 ## Kilimanjaro (Manjaro Illyria)
 ![Manjaro](https://github.com/ddmin/installscript/blob/master/scrot/manjaro.png)
-
-
-## File Management
-
-    - ranger
-        - ranger-devicons
-        - ueberzug
-    - vim + plugins
-        - vim-airline
-        - vim-plug
-        - goyo
-        - vimwiki
-    - feh
-    - sxiv
-    - cmus
-## Aesthetics
-    - lsd
-    - neofetch
-    - pywal
-    - powerline-shell
