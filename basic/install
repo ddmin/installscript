@@ -1,6 +1,8 @@
 #!/bin/bash
 # install - installs basic configurations
 
+sudo echo ""
+
 # Update system
     yes | sudo apt update
     yes | sudo apt upgrade
@@ -55,6 +57,7 @@
 
 # Install ranger
     # pip install method
+    yes | sudo apt install ranger
     pip3 install ranger-fm
 
 # Copy ranger configs
