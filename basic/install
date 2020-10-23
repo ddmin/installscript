@@ -55,6 +55,9 @@ sudo echo ""
 # Install neofetch
     yes | sudo apt install neofetch
 
+# install rofi
+    yes | sudo apt install rofi
+
 # Install ranger
     # pip install method
     yes | sudo apt install ranger
