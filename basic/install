@@ -32,6 +32,9 @@ sudo echo ""
 # Install vim
     yes | sudo apt install vim
 
+# Install cowsay
+    yes | sudo apt install cowsay
+
 # Install python3 and pip3
     yes | sudo apt install python3
     yes | sudo apt install python3-pip
