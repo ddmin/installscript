@@ -35,6 +35,9 @@ sudo echo ""
 # Install cowsay
     yes | sudo apt install cowsay
 
+# Install fortune
+    yes | sudo apt install fortune
+
 # Install python3 and pip3
     yes | sudo apt install python3
     yes | sudo apt install python3-pip
