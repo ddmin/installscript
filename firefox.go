@@ -31,7 +31,7 @@ func index(w http.ResponseWriter, r *http.Request) {
 		"Video Download Helper": "https://addons.mozilla.org/en-US/firefox/addon/video-downloadhelper/",
 		"SauceCode Pro":         "https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/SourceCodePro/Semibold/complete/Sauce%20Code%20Pro%20Semibold%20Nerd%20Font%20Complete%20Mono.ttf",
 	}
-	fmt.Fprintf(w, "<h1>Firefox Plugins</h1>\n")
+	fmt.Fprintf(w, "<h1>To Install</h1>\n")
 	fmt.Fprintf(w, "<ul>\n")
 	for i := range SITES {
 		fmt.Fprintf(w, "<li><h2><a href=%q target=\"_blank\">%s</h2></li>\n", SITES[i], i)
