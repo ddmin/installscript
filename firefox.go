@@ -1,3 +1,6 @@
+// RIP youtube-dl (2008-2020)
+// never forgetti 🍝
+
 package main
 
 import (
@@ -5,14 +8,25 @@ import (
 	"net/http"
 )
 
+// TO_INSTALL
+// Mozc - alternate language keyboard
+
 func index(w http.ResponseWriter, r *http.Request) {
 	SITES := map[string]string{
+		"Webcamoid":             "http://webcamoid.github.io/",
+		"VirtualBox":            "https://www.virtualbox.org/wiki/Linux_Downloads",
+		"Shotcut":               "https://shotcut.org/download/",
+		"RetroArch":             "https://github.com/libretro/RetroArch",
+		"ProtonVPN":             "https://protonvpn.com/download",
+		"GIMP Resynthesizer":    "https://github.com/bootchk/resynthesizer",
+		"OBS":                   "https://obsproject.com/download",
+		"BalenaEtcher":          "https://www.balena.io/etcher/",
 		"Homepage":              "https://addons.mozilla.org/en-US/firefox/addon/custom-new-tabs/",
 		"Adblock":               "https://addons.mozilla.org/en-US/firefox/addon/adblock-plus/",
 		"Video Speed":           "https://addons.mozilla.org/en-US/firefox/addon/videospeed/",
 		"Ctrl+Number":           "https://addons.mozilla.org/en-US/firefox/addon/ctrl-number-to-switch-tabs/",
-		"Github Dark":           "https://github.com/StylishThemes/GitHub-Dark",
 		"Arc Dark":              "https://addons.mozilla.org/en-US/firefox/addon/arc-dark-theme-we/",
+		"Stylus":                "https://addons.mozilla.org/en-US/firefox/addon/styl-us/",
 		"CAVA":                  "https://github.com/karlstav/cava",
 		"Video Download Helper": "https://addons.mozilla.org/en-US/firefox/addon/video-downloadhelper/",
 		"SauceCode Pro":         "https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/SourceCodePro/Semibold/complete/Sauce%20Code%20Pro%20Semibold%20Nerd%20Font%20Complete%20Mono.ttf",

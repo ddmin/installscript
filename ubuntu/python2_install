@@ -1,6 +1,9 @@
 #!/bin/bash
 # install python2.7
 
+# Universe PPA
+    sudo add-apt-repository universe
+
 # install python2
     yes | sudo apt install python
     yes | sudo apt install python2
