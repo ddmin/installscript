@@ -35,6 +35,7 @@ func index(w http.ResponseWriter, r *http.Request) {
 		{"Video Speed", "https://addons.mozilla.org/en-US/firefox/addon/videospeed/"},
 		{"VirtualBox", "https://www.virtualbox.org/wiki/Linux_Downloads"},
 		{"Webcamoid", "http://webcamoid.github.io/"},
+		{"youtube-dl", "https://youtube-dl.org/"},
 	}
 
 	fmt.Fprintf(w, "<h1>To Install</h1>\n")
