@@ -35,6 +35,9 @@
 # Papirus Icons
     yes | sudo apt-get install papirus-icon-theme
 
+# Arc Theme
+    yes | sudo apt install arc-theme
+
 # Install git
     yes | sudo apt install git
 
@@ -53,9 +56,6 @@
 
 # Install nvim
     yes | sudo apt install neovim
-
-# Install gnome-tweaks
-    yes | sudo apt install gnome-tweak-tool
 
 # Install python2
     # ./python2_install
@@ -125,24 +125,12 @@
 # Install id3v2
     yes | sudo apt install id3v2
 
-# Arc Theme
-    yes | sudo apt install arc-theme
-
 # install logo-ls
     wget https://github.com/Yash-Handa/logo-ls/releases/download/v1.3.6/logo-ls_amd64.deb
-
     sudo dpkg -i logo-ls_amd64.deb
-
     rm logo-ls_amd64.deb
 
 # Install ranger
-
-    # Clone Method
-    # local copy stored in ranger directory
-    # git clone https://github.com/ranger/ranger.git /tmp/ranger
-    # cd /tmp/ranger
-    # sudo make install
-    # cd -
 
     # pip install method
     pip3 install ranger-fm
