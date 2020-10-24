@@ -11,30 +11,36 @@ import (
 // TO_INSTALL
 // Mozc - alternate language keyboard
 
+type link struct {
+	name    string
+	address string
+}
+
 func index(w http.ResponseWriter, r *http.Request) {
-	SITES := map[string]string{
-		"Webcamoid":             "http://webcamoid.github.io/",
-		"VirtualBox":            "https://www.virtualbox.org/wiki/Linux_Downloads",
-		"Shotcut":               "https://shotcut.org/download/",
-		"RetroArch":             "https://github.com/libretro/RetroArch",
-		"ProtonVPN":             "https://protonvpn.com/download",
-		"GIMP Resynthesizer":    "https://github.com/bootchk/resynthesizer",
-		"OBS":                   "https://obsproject.com/download",
-		"BalenaEtcher":          "https://www.balena.io/etcher/",
-		"Homepage":              "https://addons.mozilla.org/en-US/firefox/addon/custom-new-tabs/",
-		"Adblock":               "https://addons.mozilla.org/en-US/firefox/addon/adblock-plus/",
-		"Video Speed":           "https://addons.mozilla.org/en-US/firefox/addon/videospeed/",
-		"Ctrl+Number":           "https://addons.mozilla.org/en-US/firefox/addon/ctrl-number-to-switch-tabs/",
-		"Arc Dark":              "https://addons.mozilla.org/en-US/firefox/addon/arc-dark-theme-we/",
-		"Stylus":                "https://addons.mozilla.org/en-US/firefox/addon/styl-us/",
-		"CAVA":                  "https://github.com/karlstav/cava",
-		"Video Download Helper": "https://addons.mozilla.org/en-US/firefox/addon/video-downloadhelper/",
-		"SauceCode Pro":         "https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/SourceCodePro/Semibold/complete/Sauce%20Code%20Pro%20Semibold%20Nerd%20Font%20Complete%20Mono.ttf",
+	SITES := [...]link{
+		{"Adblock", "https://addons.mozilla.org/en-US/firefox/addon/adblock-plus/"},
+		{"Arc Dark", "https://addons.mozilla.org/en-US/firefox/addon/arc-dark-theme-we/"},
+		{"BalenaEtcher", "https://www.balena.io/etcher/"},
+		{"CAVA", "https://github.com/karlstav/cava"},
+		{"Ctrl+Number", "https://addons.mozilla.org/en-US/firefox/addon/ctrl-number-to-switch-tabs/"},
+		{"GIMP Resynthesizer", "https://github.com/bootchk/resynthesizer"},
+		{"Homepage", "https://addons.mozilla.org/en-US/firefox/addon/custom-new-tabs/"},
+		{"OBS", "https://obsproject.com/download"},
+		{"ProtonVPN", "https://protonvpn.com/download"},
+		{"RetroArch", "https://github.com/libretro/RetroArch"},
+		{"SauceCode Pro", "https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/SourceCodePro/Semibold/complete/Sauce%20Code%20Pro%20Semibold%20Nerd%20Font%20Complete%20Mono.ttf"},
+		{"Shotcut", "https://shotcut.org/download/"},
+		{"Stylus", "https://addons.mozilla.org/en-US/firefox/addon/styl-us/"},
+		{"Video Download Helper", "https://addons.mozilla.org/en-US/firefox/addon/video-downloadhelper/"},
+		{"Video Speed", "https://addons.mozilla.org/en-US/firefox/addon/videospeed/"},
+		{"VirtualBox", "https://www.virtualbox.org/wiki/Linux_Downloads"},
+		{"Webcamoid", "http://webcamoid.github.io/"},
 	}
+
 	fmt.Fprintf(w, "<h1>To Install</h1>\n")
 	fmt.Fprintf(w, "<ul>\n")
-	for i := range SITES {
-		fmt.Fprintf(w, "<li><h2><a href=%q target=\"_blank\">%s</h2></li>\n", SITES[i], i)
+	for _, l := range SITES {
+		fmt.Fprintf(w, "<li><h2><a href=%q target=\"_blank\">%s</h2></li>\n", l.address, l.name)
 	}
 	fmt.Fprintf(w, "</ul>\n")
 }
