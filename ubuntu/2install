@@ -91,6 +91,9 @@
 # Install ffmpegthumbnailer
     yes | sudo apt install ffmpegthumbnailer
 
+# Install xdotool
+    yes | sudo apt install xdotool
+
 # Install lynx
     yes | sudo apt install lynx
 
