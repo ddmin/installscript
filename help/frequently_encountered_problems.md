@@ -44,3 +44,6 @@
 
 11. Go Autocomplete in YouCompleteMe
     Run `./.vim/plugged/YouCompleteMe/install.py --go-completer`
+
+12. Applications not showing up in rofi
+    Add .desktop files to ~/.local/share/applications
