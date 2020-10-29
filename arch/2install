@@ -31,7 +31,7 @@
     cd -
 
 # Arc Dark Theme
-    yes | sudo pacman -S arc-gtk-theme
+    wget -qO- https://raw.githubusercontent.com/PapirusDevelopmentTeam/arc-kde/master/install.sh | sh
 
 # Install fzf
     git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
