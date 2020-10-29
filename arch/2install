@@ -1,0 +1,21 @@
+#!/bin/bash
+# install - installs and configure machine automatically (Arch)
+
+# Papirus Icons
+    wget -qO- https://git.io/papirus-icon-theme-install | DESTDIR="$HOME/.local/share/icons" sh
+
+# install golang
+    wget "https://golang.org/dl/go1.15.3.linux-amd64.tar.gz"
+    sudo tar -C /usr/local -xzf go1.*15*.3.linux-amd64.tar.gz
+    export PATH="$PATH:/usr/local/go/bin"
+
+# Firefox Addons
+    cd ..
+    go run firefox.go & sleep 1 && firefox localhost:3000
+    cd -
+
+# Update System
+    yes | sudo pacman -Syu
+
+# Arc Dark Theme
+    yes | sudo pacman -S arc-gtk-theme
