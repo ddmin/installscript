@@ -15,7 +15,7 @@
     cd -
 
 # Update System
-    yes | sudo pacman -Syu
+    sudo pacman -Syyu
 
 # Install git
     yes | sudo pacman -S git
