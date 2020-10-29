@@ -1,6 +1,15 @@
 #!/bin/bash
 # install - installs and configure machine automatically (Arch)
 
+# Update System
+    sudo pacman -Syyu
+
+# base-devel
+    sudo pacman -S base-devel
+
+# Install git
+    yes | sudo pacman -S git
+
 # Papirus Icons
     wget -qO- https://git.io/papirus-icon-theme-install | DESTDIR="$HOME/.local/share/icons" sh
 
@@ -13,15 +22,6 @@
     cd ..
     go run firefox.go & sleep 1 && firefox localhost:3000
     cd -
-
-# Update System
-    sudo pacman -Syyu
-
-# Install git
-    yes | sudo pacman -S git
-
-# base-devel
-    yes | sudo pacman -S base-devel
 
 # Enable AUR
     git clone https://aur.archlinux.org/yay.git /tmp/yay
