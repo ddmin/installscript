@@ -94,6 +94,10 @@
 # Install lynx
     yes | sudo apt install lynx
 
+# Install latex
+    yes | sudo apt install texlive-full
+    yes | sudo apt install texlive-xetex
+
 # Install mpv
     yes | sudo apt install mpv
 
