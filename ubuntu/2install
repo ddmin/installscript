@@ -116,6 +116,12 @@
     # Command to run rofi: rofi -modi drun -show drun -show-icons
     yes | sudo apt install rofi
 
+# install xdotool
+    yes | sudo apt install xdotool
+
+# install pandoc
+    yes | sudo apt install pandoc
+
 # Install imagemagick
     yes | sudo apt install imagemagick
 
