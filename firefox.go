@@ -18,7 +18,6 @@ type link struct {
 
 func index(w http.ResponseWriter, r *http.Request) {
 	SITES := [...]link{
-		{"Adblock", "https://addons.mozilla.org/en-US/firefox/addon/adblock-plus/"},
 		{"Arc Dark", "https://addons.mozilla.org/en-US/firefox/addon/arc-dark-theme-we/"},
 		{"BalenaEtcher", "https://www.balena.io/etcher/"},
 		{"CAVA", "https://github.com/karlstav/cava"},
@@ -35,6 +34,7 @@ func index(w http.ResponseWriter, r *http.Request) {
 		{"Video Speed", "https://addons.mozilla.org/en-US/firefox/addon/videospeed/"},
 		{"VirtualBox", "https://www.virtualbox.org/wiki/Linux_Downloads"},
 		{"Webcamoid", "http://webcamoid.github.io/"},
+		{"uBlock Origin", "https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/"},
 		{"youtube-dl", "https://youtube-dl.org/"},
 	}
 
