@@ -14,3 +14,9 @@
 
 5. compound (mod+x)
     - gnome-terminal -e /home/ddmin/Code/Python/Chemistry/cmpd
+
+6. emoji (mod+e)
+    - bash -e /home/ddmin/Code/Bash/emoji-selector
+
+7. openPDF (mod+backspace)
+    - /home/ddmin/Code/Bash/openrecent
