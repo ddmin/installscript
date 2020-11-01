@@ -9,6 +9,10 @@
     sudo tar -C /usr/local -xzf go1.*15*.3.linux-amd64.tar.gz
     export PATH="$PATH:/usr/local/go/bin"
 
+# install ripgrep
+    wget "https://github.com/BurntSushi/ripgrep/releases/download/12.1.1/ripgrep_12.1.1_amd64.deb"
+    sudo dpkg -i ripgrep_12.1.1_amd64.deb
+
 # Firefox Addons
     cd ..
     go run firefox.go & sleep 1 && firefox localhost:3000
