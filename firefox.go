@@ -20,6 +20,7 @@ func index(w http.ResponseWriter, r *http.Request) {
 	SITES := [...]link{
 		{"Arc Dark", "https://addons.mozilla.org/en-US/firefox/addon/arc-dark-theme-we/"},
 		{"BalenaEtcher", "https://www.balena.io/etcher/"},
+		{"Bypass Paywalls", "https://github.com/iamadamdev/bypass-paywalls-chrome"},
 		{"CAVA", "https://github.com/karlstav/cava"},
 		{"Ctrl+Number", "https://addons.mozilla.org/en-US/firefox/addon/ctrl-number-to-switch-tabs/"},
 		{"GIMP Resynthesizer", "https://github.com/bootchk/resynthesizer"},
