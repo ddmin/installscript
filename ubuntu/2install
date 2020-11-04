@@ -87,6 +87,7 @@
     yes | sudo apt install zlib1g-dev
     yes | sudo apt install libxtst-dev
     yes | sudo apt install cmake
+    yes | sudo apt install build-essential
     yes | sudo apt-get install dconf-cli uuid-runtime
 
 # install ueberzug
