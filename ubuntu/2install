@@ -4,6 +4,12 @@
 # Papirus PPA
     sudo add-apt-repository ppa:papirus/papirus
 
+# install rust
+    curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+
+# install exa
+    cargo install exa
+
 # install golang
     wget "https://golang.org/dl/go1.15.3.linux-amd64.tar.gz"
     sudo tar -C /usr/local -xzf go1.*15*.3.linux-amd64.tar.gz
