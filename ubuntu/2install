@@ -14,8 +14,7 @@
     export PATH="$PATH:/usr/local/go/bin"
 
 # install ripgrep
-    wget "https://github.com/BurntSushi/ripgrep/releases/download/12.1.1/ripgrep_12.1.1_amd64.deb"
-    sudo dpkg -i ripgrep_12.1.1_amd64.deb
+    cargo install ripgrep
 
 # Firefox Addons
     cd ..
@@ -145,9 +144,7 @@
     yes | sudo apt install id3v2
 
 # install logo-ls
-    wget https://github.com/Yash-Handa/logo-ls/releases/download/v1.3.6/logo-ls_amd64.deb
-    sudo dpkg -i logo-ls_amd64.deb
-    rm logo-ls_amd64.deb
+    go get github.com/ddmin/logo-ls
 
 # Install ranger
 
