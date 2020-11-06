@@ -13,9 +13,6 @@
     sudo tar -C /usr/local -xzf go1.*15*.3.linux-amd64.tar.gz
     export PATH="$PATH:/usr/local/go/bin"
 
-# install ripgrep
-    cargo install ripgrep
-
 # Firefox Addons
     cd ..
     go run firefox.go & sleep 1 && firefox localhost:3000
@@ -145,6 +142,9 @@
 
 # install logo-ls
     go get github.com/ddmin/logo-ls
+
+# install ripgrep
+    cargo install ripgrep
 
 # Install ranger
 
