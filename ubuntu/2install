@@ -12,6 +12,9 @@
     wget "https://golang.org/dl/go1.15.3.linux-amd64.tar.gz"
     sudo tar -C /usr/local -xzf go1.*15*.3.linux-amd64.tar.gz
     export PATH="$PATH:/usr/local/go/bin"
+    export GOPATH="$HOME/Code/Go"
+    export PATH="$PATH:$GOPATH/bin"
+    export GOBIN="$GOPATH/bin"
 
 # Firefox Addons
     cd ..
