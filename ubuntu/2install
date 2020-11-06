@@ -39,6 +39,9 @@
 # Papirus Icons
     yes | sudo apt-get install papirus-icon-theme
 
+# install logo-ls
+    go get github.com/ddmin/logo-ls
+
 # Arc Theme
     yes | sudo apt install arc-theme
 
@@ -139,9 +142,6 @@
 
 # Install id3v2
     yes | sudo apt install id3v2
-
-# install logo-ls
-    go get github.com/ddmin/logo-ls
 
 # install ripgrep
     cargo install ripgrep
