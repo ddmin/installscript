@@ -25,7 +25,6 @@ func index(w http.ResponseWriter, r *http.Request) {
 		{"Ctrl+Number", "https://addons.mozilla.org/en-US/firefox/addon/ctrl-number-to-switch-tabs/"},
 		{"Duplicate Tab", "https://addons.mozilla.org/en-US/firefox/addon/duplicate-tab-shortcut/"},
 		{"GIMP Resynthesizer", "https://github.com/bootchk/resynthesizer"},
-		{"Homepage", "https://addons.mozilla.org/en-US/firefox/addon/custom-new-tabs/"},
 		{"OBS", "https://obsproject.com/download"},
 		{"ProtonVPN", "https://protonvpn.com/download"},
 		{"RetroArch", "https://github.com/libretro/RetroArch"},
