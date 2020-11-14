@@ -23,6 +23,7 @@ func index(w http.ResponseWriter, r *http.Request) {
 		{"Bypass Paywalls", "https://github.com/iamadamdev/bypass-paywalls-chrome"},
 		{"CAVA", "https://github.com/karlstav/cava"},
 		{"Ctrl+Number", "https://addons.mozilla.org/en-US/firefox/addon/ctrl-number-to-switch-tabs/"},
+		{"Custom New Tabs", "https://addons.mozilla.org/en-US/firefox/addon/custom-new-tabs/"},
 		{"Duplicate Tab", "https://addons.mozilla.org/en-US/firefox/addon/duplicate-tab-shortcut/"},
 		{"GIMP Resynthesizer", "https://github.com/bootchk/resynthesizer"},
 		{"OBS", "https://obsproject.com/download"},

@@ -47,6 +47,3 @@
 
 12. Applications not showing up in rofi
     Add .desktop files to ~/.local/share/applications
-
-13. Setting homepage to localhost in Firefox
-    place autoconfig.js in /usr/lib/firefox/defaults/pref and place firefox.cfg in /usr/lib/firefox
