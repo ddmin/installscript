@@ -17,7 +17,7 @@ type link struct {
 }
 
 func index(w http.ResponseWriter, r *http.Request) {
-	SITES := [...]link{
+	FIREFOX := [...]link{
 		{"Arc Dark", "https://addons.mozilla.org/en-US/firefox/addon/arc-dark-theme-we/"},
 		{"BalenaEtcher", "https://www.balena.io/etcher/"},
 		{"Bypass Paywalls", "https://github.com/iamadamdev/bypass-paywalls-chrome"},
@@ -40,9 +40,24 @@ func index(w http.ResponseWriter, r *http.Request) {
 		{"youtube-dl", "https://youtube-dl.org/"},
 	}
 
-	fmt.Fprintf(w, "<h1>To Install</h1>\n")
+	CHROME := [...]link{
+		{"Crono", "https://chrome.google.com/webstore/detail/crono/ffednpkacgekbgkcffkpoinbikhijadl?hl=en"},
+		{"Enable Right Click", "https://chrome.google.com/webstore/detail/enable-right-click/hhojmcideegachlhfgfdhailpfhgknjm?hl=en"},
+		{"LastPass", "https://chrome.google.com/webstore/detail/lastpass-free-password-ma/hdokiejnpimakedhajhdlcegeplioahd?hl=en-US"},
+	}
+
+	// firefox
+	fmt.Fprintf(w, "<h1>Firefox</h1>\n")
 	fmt.Fprintf(w, "<ul>\n")
-	for _, l := range SITES {
+	for _, l := range FIREFOX {
+		fmt.Fprintf(w, "<li><h2><a href=%q target=\"_blank\">%s</a></h2></li>\n", l.address, l.name)
+	}
+	fmt.Fprintf(w, "</ul>\n")
+
+	// chrome
+	fmt.Fprintf(w, "<h1>Chrome</h1>\n")
+	fmt.Fprintf(w, "<ul>\n")
+	for _, l := range CHROME {
 		fmt.Fprintf(w, "<li><h2><a href=%q target=\"_blank\">%s</h2></li>\n", l.address, l.name)
 	}
 	fmt.Fprintf(w, "</ul>\n")
