@@ -34,9 +34,9 @@ func index(w http.ResponseWriter, r *http.Request) {
 		{"Custom New Tabs", "https://addons.mozilla.org/en-US/firefox/addon/custom-new-tabs/"},
 		{"Duplicate Tab", "https://addons.mozilla.org/en-US/firefox/addon/duplicate-tab-shortcut/"},
 		{"Stylus", "https://addons.mozilla.org/en-US/firefox/addon/styl-us/"},
+		{"uBlock Origin", "https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/"},
 		{"Video Download Helper", "https://addons.mozilla.org/en-US/firefox/addon/video-downloadhelper/"},
 		{"Video Speed", "https://addons.mozilla.org/en-US/firefox/addon/videospeed/"},
-		{"uBlock Origin", "https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/"},
 	}
 
 	CHROME := []link{
@@ -44,6 +44,8 @@ func index(w http.ResponseWriter, r *http.Request) {
 		{"Crono", "https://chrome.google.com/webstore/detail/crono/ffednpkacgekbgkcffkpoinbikhijadl?hl=en"},
 		{"Enable Right Click", "https://chrome.google.com/webstore/detail/enable-right-click/hhojmcideegachlhfgfdhailpfhgknjm?hl=en"},
 		{"LastPass", "https://chrome.google.com/webstore/detail/lastpass-free-password-ma/hdokiejnpimakedhajhdlcegeplioahd?hl=en-US"},
+		{"Stylus", "https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne?hl=en"},
+		{"Video Speed Controller", "https://chrome.google.com/webstore/detail/video-speed-controller/nffaoalbilbmmfgbnbgppjihopabppdk?hl=en"},
 	}
 
 	SOURCES := []string{"Software", "Firefox", "Chrome"}
