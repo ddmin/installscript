@@ -152,7 +152,8 @@
 # Install ranger
 
     # pip install method
-    pip3 install ranger-fm
+    # pip3 install ranger-fm
+    yes | sudo apt install ranger
 
 # Install ranger devicons
     git clone https://github.com/ddmin/ranger_devicons.git /tmp/devicons
@@ -165,7 +166,7 @@
 
 # Dotfiles
     git clone https://github.com/ddmin/Dotfiles.git /tmp/dots
-    cd /tmp/dots/dotfiles
+    cd /tmp/dots/
     ./setup.sh
     cd -
 

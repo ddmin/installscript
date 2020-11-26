@@ -9,10 +9,10 @@
 3. extended screenshot (mod+prt sc)
     - /usr/bin/gnome-screenshot --interactive
 
-4. gnome-calculator (mod+c)
-    - /usr/bin/gnome-calculator
+4. gnome-calculator (mod+=)
+    - /usr/bin/gnome-calculator --mode=advanced
 
-5. compound (mod+x)
+5. compound (mod+p)
     - gnome-terminal -e /home/ddmin/Code/Python/Chemistry/cmpd
 
 6. emoji (mod+e)
