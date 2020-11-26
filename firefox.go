@@ -18,6 +18,7 @@ func index(w http.ResponseWriter, r *http.Request) {
 		{"BalenaEtcher", "https://www.balena.io/etcher/"},
 		{"CAVA", "https://github.com/karlstav/cava"},
 		{"GIMP Resynthesizer", "https://github.com/bootchk/resynthesizer"},
+		{"Gogh", "https://github.com/Mayccoll/Gogh"},
 		{"OBS", "https://obsproject.com/download"},
 		{"ProtonVPN", "https://protonvpn.com/download"},
 		{"RetroArch", "https://github.com/libretro/RetroArch"},
