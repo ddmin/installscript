@@ -81,6 +81,7 @@
     yes | sudo apt install cmake
     yes | sudo apt install build-essential
     yes | sudo apt-get install dconf-cli uuid-runtime
+    yes | sudo apt install xsel
 
 # install ueberzug
     pip3 install ueberzug
