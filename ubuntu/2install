@@ -167,11 +167,5 @@
 # Copy ranger configs
     ranger --copy-config=all
 
-# Dotfiles
-    git clone https://github.com/ddmin/Dotfiles.git /tmp/dots
-    cd /tmp/dots/
-    ./setup.sh
-    cd -
-
 echo 'Setup Complete'
 echo 'Please reboot your machine.'
