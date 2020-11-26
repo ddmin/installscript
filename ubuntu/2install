@@ -149,6 +149,9 @@
 # install ripgrep
     cargo install ripgrep
 
+# install exa
+    cargo install exa
+
 # Install ranger
 
     # pip install method
