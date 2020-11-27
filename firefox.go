@@ -36,6 +36,7 @@ func index(w http.ResponseWriter, r *http.Request) {
 		{"Custom New Tabs", "https://addons.mozilla.org/en-US/firefox/addon/custom-new-tabs/"},
 		{"Duplicate Tab", "https://addons.mozilla.org/en-US/firefox/addon/duplicate-tab-shortcut/"},
 		{"Stylus", "https://addons.mozilla.org/en-US/firefox/addon/styl-us/"},
+		{"Stylus Themes", "https://github.com/StylishThemes"},
 		{"uBlock Origin", "https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/"},
 		{"Video Download Helper", "https://addons.mozilla.org/en-US/firefox/addon/video-downloadhelper/"},
 		{"Video Speed", "https://addons.mozilla.org/en-US/firefox/addon/videospeed/"},
