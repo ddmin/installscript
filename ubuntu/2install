@@ -133,6 +133,9 @@
 # Install id3v2
     yes | sudo apt install id3v2
 
+# Install lame
+    yes | sudo apt install lame
+
 # install ripgrep
     cargo install ripgrep
 
