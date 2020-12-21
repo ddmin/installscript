@@ -83,6 +83,11 @@
     yes | sudo apt-get install dconf-cli uuid-runtime
     yes | sudo apt install xsel
 
+    # gimp resynthesizer
+    yes | sudo apt install intltool
+    yes | sudo apt-get install gimp-plugin-registry
+    yes | sudo apt-get install libgimp2.0-dev
+
 # install ueberzug
     pip3 install ueberzug
 
