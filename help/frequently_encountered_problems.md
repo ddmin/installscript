@@ -47,3 +47,6 @@
 
 12. Applications not showing up in rofi
     Add .desktop files to ~/.local/share/applications
+
+13. Icons for rofi?
+    `~/.icons`
