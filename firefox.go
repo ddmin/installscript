@@ -25,6 +25,7 @@ func index(w http.ResponseWriter, r *http.Request) {
 		{"RetroArch", "https://github.com/libretro/RetroArch"},
 		{"SauceCode Pro", "https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/SourceCodePro/Semibold/complete/Sauce%20Code%20Pro%20Semibold%20Nerd%20Font%20Complete%20Mono.ttf"},
 		{"Shotcut", "https://shotcut.org/download/"},
+		{"Tampermonkey", "https://addons.mozilla.org/en-US/firefox/addon/tampermonkey/"},
 		{"VirtualBox", "https://www.virtualbox.org/wiki/Linux_Downloads"},
 		{"Webcamoid", "http://webcamoid.github.io/"},
 		{"youtube-dl", "https://youtube-dl.org/"},
