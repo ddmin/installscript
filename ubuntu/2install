@@ -157,5 +157,8 @@
 # Copy ranger configs
     ranger --copy-config=all
 
+# install fonts
+    yes | sudo apt install ttf-mscorefonts-installer
+
 echo 'Setup Complete'
 echo 'Please reboot your machine.'
