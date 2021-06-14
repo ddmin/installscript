@@ -32,7 +32,6 @@ func index(w http.ResponseWriter, r *http.Request) {
 	}
 
 	FIREFOX := []link{
-		{"Arc Dark", "https://addons.mozilla.org/en-US/firefox/addon/arc-dark-theme-we/"},
 		{"Ctrl+Number", "https://addons.mozilla.org/en-US/firefox/addon/ctrl-number-to-switch-tabs/"},
 		{"Custom New Tabs", "https://addons.mozilla.org/en-US/firefox/addon/custom-new-tabs/"},
 		{"Duplicate Tab", "https://addons.mozilla.org/en-US/firefox/addon/duplicate-tab-shortcut/"},
