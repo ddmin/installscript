@@ -50,3 +50,7 @@
 
 13. Icons for rofi?
     `~/.icons`
+
+14. Firefox backspace to go back a page
+        1. about:config
+        2. browser.backspace_action = 0
