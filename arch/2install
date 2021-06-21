@@ -13,6 +13,9 @@
 # Papirus Icons
     wget -qO- https://git.io/papirus-icon-theme-install | DESTDIR="$HOME/.local/share/icons" sh
 
+# install rust
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+
 # install golang
     wget "https://golang.org/dl/go1.15.3.linux-amd64.tar.gz"
     sudo tar -C /usr/local -xzf go1.*15*.3.linux-amd64.tar.gz
