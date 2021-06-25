@@ -66,16 +66,42 @@
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
-    vim
+    # system
+    neofetch
+    htop
     wget
-    git
-    ranger
+    curl
     networkmanager
+
+    # terminal
+    vim
+    neovim
+    git
+    fzf
+    ranger
+
+    # image
+    feh
+    ueberzug
+    gimp
+    imagemagick
+
+    # video
+    vlc
+    mpv
+    ffmpeg
+    ffmpegthumbnailer
 
     # gui
     firefox
     arc-theme
     papirus-icon-theme
+    nerdfonts
+
+    # programming
+    python39
+    rustup
+    go
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
