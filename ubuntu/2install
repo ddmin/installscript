@@ -64,8 +64,8 @@
     yes | sudo apt install python3-pip
     pip3 install --upgrade setuptools
 
-# install powerline
-    pip3 install powerline-shell
+# install powerline-go
+    go get -u github.com/justjanne/powerline-go
 
 # powerline fonts
     wget https://github.com/powerline/powerline/raw/develop/font/PowerlineSymbols.otf
