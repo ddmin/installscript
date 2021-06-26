@@ -63,45 +63,56 @@
     extraGroups = [ "wheel" ]; # Enable ‘sudo’ for the user.
   };
 
+  # fonts
+  fonts.fonts = with pkgs; [
+    nerdfonts
+  ];
+
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
     # system
-    neofetch
-    htop
-    wget
+    cmake
     curl
+    gnupg
+    htop
+    neofetch
     networkmanager
+    pass
+    rofi
+    wget
+    xsel
+
+    # programming
+    gcc
+    go
+    python39
+    rustup
 
     # terminal
-    vim
-    neovim
-    git
     fzf
+    git
+    neovim
+    powerline-go
     ranger
+    vim
 
     # image
     feh
-    ueberzug
     gimp
     imagemagick
+    ueberzug
 
     # video
-    vlc
-    mpv
     ffmpeg
     ffmpegthumbnailer
+    mpv
+    vlc
 
     # gui
-    firefox
     arc-theme
+    firefox
     papirus-icon-theme
-    nerdfonts
-
-    # programming
-    python39
-    rustup
-    go
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
