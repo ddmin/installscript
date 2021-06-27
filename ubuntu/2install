@@ -53,9 +53,6 @@
 # Install nvim
     yes | sudo apt install neovim
 
-# Install python2
-    # ./python2_install
-
 # Install node version manager
     curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
 
