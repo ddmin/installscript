@@ -1,77 +1,62 @@
 #!/bin/bash
 # 2install - installs and configure machine automatically (Ubuntu)
 
-# Papirus PPA
-    sudo add-apt-repository ppa:papirus/papirus
+# PPA
+    # Papirus
+        sudo add-apt-repository ppa:papirus/papirus
 
-# install rust
-    curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
-    export PATH="$PATH:$HOME/.cargo/bin"
+    # Krita
+        sudo add-apt-repository ppa:kritalime/ppa
 
-# install golang
-    wget "https://golang.org/dl/go1.15.3.linux-amd64.tar.gz"
-    sudo tar -C /usr/local -xzf go1.*15*.3.linux-amd64.tar.gz
-    export PATH="$PATH:/usr/local/go/bin"
-    export GOPATH="$HOME/Code/Go"
-    export PATH="$PATH:$GOPATH/bin"
-    export GOBIN="$GOPATH/bin"
+# Update system
+    yes | sudo apt update
+    yes | sudo apt upgrade
+
+# Programming
+
+    # Python
+        yes | sudo apt install python3
+        yes | sudo apt install python3-pip
+        pip3 install --upgrade setuptools
+
+    # Golang
+        wget "https://golang.org/dl/go1.15.3.linux-amd64.tar.gz"
+        sudo tar -C /usr/local -xzf go1.*15*.3.linux-amd64.tar.gz
+        export PATH="$PATH:/usr/local/go/bin"
+        export GOPATH="$HOME/Code/Go"
+        export PATH="$PATH:$GOPATH/bin"
+        export GOBIN="$GOPATH/bin"
+
+    # Rust
+        curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+        export PATH="$PATH:$HOME/.cargo/bin"
+
+    # node-version-manager
+        curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
 
 # Firefox Addons
     cd ..
     go run firefox.go & sleep 1 && firefox localhost:3000
     cd -
 
-# Update system
-    yes | sudo apt update
-    yes | sudo apt upgrade
+# Theming
 
-# Papirus Icons
-    yes | sudo apt-get install papirus-icon-theme
+    # GTK
+        yes | sudo apt install arc-theme
 
-# install logo-ls
-    go get -u github.com/ddmin/logo-ls
+    # Icons
+        yes | sudo apt-get install papirus-icon-theme
 
-# Arc Theme
-    yes | sudo apt install arc-theme
+    # Fonts
+        wget https://github.com/powerline/powerline/raw/develop/font/PowerlineSymbols.otf
+        wget https://github.com/powerline/powerline/raw/develop/font/10-powerline-symbols.conf
 
-# Install git
-    yes | sudo apt install git
+        mv PowerlineSymbols.otf ~/.local/share/fonts/
+        sudo fc-cache -vf ~/.local/share/fonts/
+        mkdir -p /home/ddmin/.config/fontconfig
+        mv 10-powerline-symbols.conf /home/ddmin/.config/fontconfig/conf.d
 
-# Install fzf
-    git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
-    yes | ~/.fzf/install
-
-# Install curl
-    yes | sudo apt install curl
-
-# install wget
-    yes | sudo apt install wget
-
-# Install vim
-    yes | sudo apt install vim
-
-# Install nvim
-    yes | sudo apt install neovim
-
-# Install node version manager
-    curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
-
-# Install python3 and pip3
-    yes | sudo apt install python3
-    yes | sudo apt install python3-pip
-    pip3 install --upgrade setuptools
-
-# install powerline-go
-    go get -u github.com/justjanne/powerline-go
-
-# powerline fonts
-    wget https://github.com/powerline/powerline/raw/develop/font/PowerlineSymbols.otf
-    wget https://github.com/powerline/powerline/raw/develop/font/10-powerline-symbols.conf
-
-    mv PowerlineSymbols.otf ~/.local/share/fonts/
-    sudo fc-cache -vf ~/.local/share/fonts/
-    mkdir -p /home/ddmin/.config/fontconfig
-    mv 10-powerline-symbols.conf /home/ddmin/.config/fontconfig/conf.d
+        yes | sudo apt install ttf-mscorefonts-installer
 
 # Dependencies
     yes | sudo apt install python3-dev
@@ -81,84 +66,75 @@
     yes | sudo apt install cmake
     yes | sudo apt install build-essential
     yes | sudo apt-get install dconf-cli uuid-runtime
-    yes | sudo apt install xsel
 
-# install ueberzug
-    pip3 install ueberzug
+# Install vim
+    yes | sudo apt install vim
+    yes | sudo apt install neovim
 
-# Install ffmpegthumbnailer
-    yes | sudo apt install ffmpegthumbnailer
-
-# Install lynx
+# Install system tools
+    yes | sudo apt install git
+    yes | sudo apt install openssh-server
+    yes | sudo apt install curl
+    yes | sudo apt install wget
     yes | sudo apt install lynx
-
-# Install latex
-    yes | sudo apt install texlive-full
-    yes | sudo apt install texlive-xetex
-
-# Install mpv
-    yes | sudo apt install mpv
-
-# Install vlc
-    yes | sudo apt install vlc
-
-# Install feh
-    yes | sudo apt install feh
-
-# pywal
-    pip3 install pywal
-
-# Install cmus
-    yes | sudo apt install cmus
-
-# Install neofetch
-    yes | sudo apt install neofetch
-
-# Install rofi
-    # Command to run rofi: rofi -modi drun -show drun -show-icons
-    yes | sudo apt install rofi
-
-# install xdotool
+    yes | sudo apt install xsel
     yes | sudo apt install xdotool
 
-# install pandoc
-    yes | sudo apt install pandoc
+# Install utilities
 
-# Install imagemagick
+    # rofi
+        yes | sudo apt install rofi
+
+    # neofetch
+        yes | sudo apt install neofetch
+
+    # ranger
+        yes | sudo apt install ranger
+        ranger --copy-config=all
+
+        # devicons
+        git clone https://github.com/ddmin/ranger_devicons.git /tmp/devicons
+        cd /tmp/devicons
+        make install
+        cd -
+
+    # fzf
+        git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
+        yes | ~/.fzf/install
+
+    # logo-ls
+        go get -u github.com/ddmin/logo-ls
+
+    # powerline-go
+        go get -u github.com/justjanne/powerline-go
+
+    # ripgrep
+        cargo install ripgrep
+
+    # exa
+        cargo install exa
+
+# Graphics
+    pip3 install ueberzug
+    pip3 install pywal
+    yes | sudo apt install gimp
+    yes | sudo apt install krita
+    yes | sudo apt install feh
     yes | sudo apt install imagemagick
 
-# Install zathura
-    yes | sudo apt install zathura
-
-# Install id3v2
+# Audio
+    yes | sudo apt install mpv
+    yes | sudo apt install vlc
+    yes | sudo apt install ffmpegthumbnailer
+    yes | sudo apt install cmus
     yes | sudo apt install id3v2
-
-# Install lame
     yes | sudo apt install lame
 
-# install ripgrep
-    cargo install ripgrep
-
-# install exa
-    cargo install exa
-
-# Install ranger
-
-    # pip install method
-    # pip3 install ranger-fm
-    yes | sudo apt install ranger
-
-# Install ranger devicons
-    git clone https://github.com/ddmin/ranger_devicons.git /tmp/devicons
-    cd /tmp/devicons
-    make install
-    cd -
-
-# Copy ranger configs
-    ranger --copy-config=all
-
-# install fonts
-    yes | sudo apt install ttf-mscorefonts-installer
+# Documents
+    yes | sudo apt install texlive-full
+    yes | sudo apt install texlive-xetex
+    yes | sudo apt install pandoc
+    yes | sudo apt install zathura
 
 echo 'Setup Complete'
 echo 'Please reboot your machine.'
