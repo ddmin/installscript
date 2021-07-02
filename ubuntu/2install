@@ -5,9 +5,6 @@
     # Papirus
         sudo add-apt-repository ppa:papirus/papirus
 
-    # Krita
-        sudo add-apt-repository ppa:kritalime/ppa
-
 # Update system
     yes | sudo apt update
     yes | sudo apt upgrade
@@ -118,7 +115,6 @@
     pip3 install ueberzug
     pip3 install pywal
     yes | sudo apt install gimp
-    yes | sudo apt install krita
     yes | sudo apt install feh
     yes | sudo apt install imagemagick
 
