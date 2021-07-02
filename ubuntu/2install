@@ -33,7 +33,7 @@
 
 # Firefox Addons
     cd ..
-    go run firefox.go & sleep 1 && firefox localhost:3000
+    go run firefox.go & sleep 1 && firefox localhost:3000 &
     cd -
 
 # Theming
