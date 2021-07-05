@@ -54,7 +54,7 @@
         defaultSession = "none+qtile";
         lightdm = {
             enable = true;
-            greeter.enable = false;
+            greeter.enable = true;
         };
       };
   };
