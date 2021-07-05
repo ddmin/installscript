@@ -52,13 +52,13 @@
 
       displayManager = {
         defaultSession = "none+qtile";
+        autoLogin = {
+            enable = true;
+            user = "ddmin";
+        };
         lightdm = {
             enable = true;
             greeter.enable = false;
-            autoLogin = {
-                enable = true;
-                user = "ddmin";
-            };
         };
       };
   };
