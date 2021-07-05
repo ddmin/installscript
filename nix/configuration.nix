@@ -16,8 +16,8 @@
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
-  networking.hostName = "hostname"; # Define your hostname.
-  networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
+  networking.hostName = "nixos"; # Define your hostname.
+  networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant
 
   # Set your time zone.
   time.timeZone = "America/Amsterdam";
@@ -37,13 +37,34 @@
   };
 
   # Enable the X11 windowing system.
-  services.xserver.enable = true;
-  services.xserver.desktopManager.xfce.enable = true;
-  services.xserver.displayManager.defaultSession = "xfce";
+  services.xserver = {
+      enable = true;
+      layout = "us";
 
-  # Configure keymap in X11
-  services.xserver.layout = "us";
-  # services.xserver.xkbOptions = "eurosign:e";
+      windowManager.qtile = {
+        enable = true;
+      };
+
+      windowManager.default = "qtile";
+
+      desktopManager.xterm.enable = false;
+      desktopManager.default = "none";
+
+      displayManager = {
+        defaultSession = "none+qtile";
+        lightdm = {
+            enable = true;
+            greeter.enable = false;
+            autoLogin = {
+                enable = true;
+                user = "ddmin";
+            };
+        };
+      };
+  };
+
+  # Enable compton
+  services.compton.enable = true;
 
   # Enable CUPS to print documents.
   services.printing.enable = true;
@@ -86,6 +107,7 @@
     rustup
 
     # terminal
+    gnome.gnome-terminal
     fzf
     git
     neovim
