@@ -100,7 +100,7 @@
     rustup
 
     # terminal
-    gnome.gnome-terminal
+    alacritty
     fzf
     git
     neovim
