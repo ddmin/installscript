@@ -48,7 +48,6 @@
       windowManager.default = "qtile";
 
       desktopManager.xterm.enable = false;
-      desktopManager.default = "none";
 
       displayManager = {
         defaultSession = "none+qtile";
