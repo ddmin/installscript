@@ -45,8 +45,6 @@
         enable = true;
       };
 
-      windowManager.default = "qtile";
-
       desktopManager.xterm.enable = false;
 
       displayManager = {
