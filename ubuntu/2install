@@ -5,6 +5,16 @@
     # Papirus
         sudo add-apt-repository ppa:papirus/papirus
 
+    # OBS
+        sudo add-apt-repository ppa:obsproject/obs-studio
+
+    # Brave
+        sudo apt install apt-transport-https curl
+
+        sudo curl -fsSLo /usr/share/keyrings/brave-browser-archive-keyring.gpg https://brave-browser-apt-release.s3.brave.com/brave-browser-archive-keyring.gpg
+
+        echo "deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg arch=amd64] https://brave-browser-apt-release.s3.brave.com/ stable main"|sudo tee /etc/apt/sources.list.d/brave-browser-release.list
+
 # Update system
     yes | sudo apt update
     yes | sudo apt upgrade
@@ -35,6 +45,9 @@
     cd ..
     go run firefox.go & sleep 1 && firefox localhost:3000 &
     cd -
+
+# Brave
+    sudo apt install brave-browser
 
 # Theming
 
@@ -119,7 +132,8 @@
     yes | sudo apt install feh
     yes | sudo apt install imagemagick
 
-# Audio
+# Media
+    yes | sudo apt install obs-studio
     yes | sudo apt install mpv
     yes | sudo apt install vlc
     yes | sudo apt install ffmpegthumbnailer
