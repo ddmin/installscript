@@ -83,6 +83,7 @@
     yes | sudo apt install neovim
 
 # Install system tools
+    yes | sudo apt install zsh
     yes | sudo apt install git
     yes | sudo apt install openssh-server
     yes | sudo apt install curl
