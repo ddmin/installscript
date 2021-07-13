@@ -1,7 +1,7 @@
 # Shortcut Mappings in Linux Mint
 
 1. rofi (mod+d)
-    - rofi -disable-history  -columns 4 -modi drun -show drun -show-icons -icon-theme Papirus
+    - rofi -disable-history  -columns 3 -modi drun -show drun -show-icons -icon-theme Papirus -sorting-method fzf
 
 2. screenshot (prt sc)
     - /usr/bin/gnome-screenshot
