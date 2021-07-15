@@ -36,7 +36,7 @@
 
 9. Red error indication in powerline every time I open terminal
 
-    Probably because I didn't install fzf
+    Probably because I didn't install fzf or node or something else
 
 10. Change screenshot to show more options
 
@@ -54,3 +54,6 @@
 14. Firefox backspace to go back a page
         1. about:config
         2. browser.backspace_action = 0
+
+15. Connect to WiFi with redirect page.
+    Try 192.168.1.1 (https://unix.stackexchange.com/questions/89630/how-to-sign-into-an-open-wireless-network)
