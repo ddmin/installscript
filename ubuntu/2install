@@ -92,7 +92,6 @@
     yes | sudo apt install openssh-server
     yes | sudo apt install curl
     yes | sudo apt install wget
-    yes | sudo apt install lynx
     yes | sudo apt install xsel
     yes | sudo apt install xdotool
 
