@@ -84,6 +84,10 @@
 
 # Install system tools
     yes | sudo apt install zsh
+
+        # syntax highlighting
+        git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.zsh/zsh-syntax-highlighting
+
     yes | sudo apt install git
     yes | sudo apt install openssh-server
     yes | sudo apt install curl
