@@ -160,5 +160,7 @@
     yes | sudo apt install pandoc
     yes | sudo apt install zathura
 
+sudo chsh -s $(which zsh) ddmin
+
 echo 'Setup Complete'
 echo 'Please reboot your machine.'
