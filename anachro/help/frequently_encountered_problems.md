@@ -57,3 +57,6 @@
 
 15. Connect to WiFi with redirect page.
     Try 192.168.1.1 (https://unix.stackexchange.com/questions/89630/how-to-sign-into-an-open-wireless-network)
+
+16. Prettier not working / npm not found
+    Turn on node, `nvm use node`
