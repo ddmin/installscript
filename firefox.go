@@ -46,6 +46,7 @@ func index(w http.ResponseWriter, r *http.Request) {
 		{"Enable Right Click", "https://chrome.google.com/webstore/detail/enable-right-click/hhojmcideegachlhfgfdhailpfhgknjm?hl=en"},
 		{"LastPass", "https://chrome.google.com/webstore/detail/lastpass-free-password-ma/hdokiejnpimakedhajhdlcegeplioahd?hl=en-US"},
 		{"Stylus", "https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne?hl=en"},
+		{"Tabliss", "https://chrome.google.com/webstore/detail/tabliss-a-beautiful-new-t/hipekcciheckooncpjeljhnekcoolahp"},
 	}
 
 	SOURCES := []string{"Software", "Firefox", "Chrome"}
