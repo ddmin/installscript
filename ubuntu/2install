@@ -38,8 +38,18 @@
         curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
         export PATH="$PATH:$HOME/.cargo/bin"
 
-    # node-version-manager
+    # Node
         curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
+        export NVM_DIR="$HOME/.nvm"
+        [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
+
+    # code formatting
+
+        # autopep8
+        pip3 install autopep8
+
+        # js-beautify
+        npm install -g js-beautify
 
 # Firefox Addons
     cd ..
