@@ -63,3 +63,6 @@
 
 17. Wifi not detected on fresh install
     Copy b43 onto a flashdrive (https://askubuntu.com/questions/730799/installing-firmware-b43-installer-offline)
+
+18. Slow wifi on iMac
+    Install drivers (https://archived.forum.manjaro.org/t/solved-bcm4331-inconsistent-and-slow-wifi-on-mac/95386/2)
