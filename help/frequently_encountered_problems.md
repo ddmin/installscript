@@ -14,7 +14,7 @@
 
 4. What's the command for rofi?
 
-        `rofi -disable-history  -columns 3 -modi drun -show drun -show-icons -icon-theme Papirus`
+        `rofi -show drun`
 
 5. Get rid of Gnome-Terminal titlebar?
 
