@@ -66,3 +66,6 @@
 
 18. Slow wifi on iMac
     Install drivers (https://archived.forum.manjaro.org/t/solved-bcm4331-inconsistent-and-slow-wifi-on-mac/95386/2)
+
+19. SSH not working in rofi?
+    Add ~/.ssh/config file (https://linuxize.com/post/using-the-ssh-config-file/)
