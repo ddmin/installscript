@@ -19,6 +19,7 @@ func index(w http.ResponseWriter, r *http.Request) {
 		{"CAVA", "https://github.com/karlstav/cava"},
 		{"GIMP Resynthesizer", "https://github.com/bootchk/resynthesizer"},
 		{"Gogh", "https://github.com/Mayccoll/Gogh"},
+		{"KDE Connect", "https://kdeconnect.kde.org/"},
 		{"ProtonVPN", "https://protonvpn.com/download"},
 		{"RetroArch", "https://github.com/libretro/RetroArch"},
 		{"SauceCode Pro", "https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/SourceCodePro/Semibold/complete/Sauce%20Code%20Pro%20Semibold%20Nerd%20Font%20Complete%20Mono.ttf"},
