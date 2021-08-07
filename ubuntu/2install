@@ -79,8 +79,8 @@
 
         mv PowerlineSymbols.otf ~/.local/share/fonts/
         sudo fc-cache -vf ~/.local/share/fonts/
-        mkdir -p /home/ddmin/.config/fontconfig
-        mv 10-powerline-symbols.conf /home/ddmin/.config/fontconfig/conf.d
+        mkdir -p "$HOME/.config/fontconfig"
+        mv 10-powerline-symbols.conf "$HOME/.config/fontconfig/conf.d"
 
         # Microsoft Fonts
         # yes | sudo apt install ttf-mscorefonts-installer
@@ -179,7 +179,7 @@
     yes | sudo apt install pandoc
     yes | sudo apt install zathura
 
-sudo chsh -s $(which zsh) ddmin
+sudo chsh -s $(which zsh) "$USER"
 
 echo 'Setup Complete'
 echo 'Please reboot your machine.'
