@@ -43,32 +43,42 @@
     Set shortcut to `/usr/bin/gnome-screenshot --interactive`
 
 11. Go Autocomplete in YouCompleteMe
+
     Run `./.vim/plugged/YouCompleteMe/install.py --go-completer`
 
 12. Applications not showing up in rofi
+
     Add .desktop files to ~/.local/share/applications
 
 13. Icons for rofi?
+
     `~/.icons`
 
 14. Firefox backspace to go back a page
+
         1. about:config
         2. browser.backspace_action = 0
 
 15. Connect to WiFi with redirect page.
+
     Try 192.168.1.1 (https://unix.stackexchange.com/questions/89630/how-to-sign-into-an-open-wireless-network)
 
 16. Prettier not working / npm not found
+
     Turn on node, `nvm use node`
 
 17. Wifi not detected on fresh install
+
     Copy b43 onto a flashdrive (https://askubuntu.com/questions/730799/installing-firmware-b43-installer-offline)
 
 18. Slow wifi on iMac
+
     Install drivers (https://archived.forum.manjaro.org/t/solved-bcm4331-inconsistent-and-slow-wifi-on-mac/95386/2)
 
 19. SSH not working in rofi?
+
     Add ~/.ssh/config file (https://linuxize.com/post/using-the-ssh-config-file/)
 
 20. No sound from iMac headphone jack
+
     Add `options snd-hda-intel model=imac27_122` to `/etc/modprobe.d/sound.conf` (https://linux-tips.com/t/how-to-fix-apple-imac-headphone-sound-problem/285)
