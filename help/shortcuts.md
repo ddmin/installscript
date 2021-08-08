@@ -1,4 +1,4 @@
-# Shortcut Mappings in Linux Mint
+# Shortcuts
 
 1. rofi (mod+d)
     - rofi -show drun

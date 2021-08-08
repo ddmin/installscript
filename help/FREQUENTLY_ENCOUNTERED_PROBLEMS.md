@@ -69,3 +69,6 @@
 
 19. SSH not working in rofi?
     Add ~/.ssh/config file (https://linuxize.com/post/using-the-ssh-config-file/)
+
+20. No sound from iMac headphone jack
+    Add `options snd-hda-intel model=imac27_122` to `/etc/modprobe.d/sound.conf` (https://linux-tips.com/t/how-to-fix-apple-imac-headphone-sound-problem/285)
