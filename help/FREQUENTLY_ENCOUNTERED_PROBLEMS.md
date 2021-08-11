@@ -85,3 +85,9 @@
 
 21. Connect to wifi automatically (wpa_supplicant)
     `https://www.linuxbabe.com/command-line/ubuntu-server-16-04-wifi-wpa-supplicant`
+
+22. Automatic updates on Ubuntu
+    ```
+    1. apt install unattended-upgrades
+    2. dpkg-reconfigure --priority=low unattended-upgrades
+    ```
