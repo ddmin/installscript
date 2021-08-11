@@ -84,10 +84,23 @@
     Add `options snd-hda-intel model=imac27_122` to `/etc/modprobe.d/sound.conf` (https://linux-tips.com/t/how-to-fix-apple-imac-headphone-sound-problem/285)
 
 21. Connect to wifi automatically (wpa_supplicant)
+
     `https://www.linuxbabe.com/command-line/ubuntu-server-16-04-wifi-wpa-supplicant`
 
 22. Automatic updates on Ubuntu
+
     ```
     1. apt install unattended-upgrades
     2. dpkg-reconfigure --priority=low unattended-upgrades
     ```
+
+23. Ctrl-G for fzf?
+
+    ```
+    bind '"\C-t": transpose-chars'
+    bind -x '"\C-g": fzf-file-widget'
+    ```
+
+24. No emojis on Arch?
+
+    Install `extra/noto-fonts-emoji`
