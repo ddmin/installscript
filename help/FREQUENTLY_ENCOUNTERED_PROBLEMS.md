@@ -106,3 +106,11 @@
 24. No emojis on Arch?
 
     Install `extra/noto-fonts-emoji`
+
+25. SSH permission denied?
+
+    Probably an issue on my end.
+    ```
+    # /etc/ssh/ssh_config
+    PasswordAuthentication yes
+    ```
