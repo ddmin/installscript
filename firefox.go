@@ -33,6 +33,7 @@ func index(w http.ResponseWriter, r *http.Request) {
 		{"Crono", "https://addons.mozilla.org/en-US/firefox/addon/crono-app/"},
 		{"Ctrl+Number", "https://addons.mozilla.org/en-US/firefox/addon/ctrl-number-to-switch-tabs/"},
 		{"Custom New Tabs", "https://addons.mozilla.org/en-US/firefox/addon/custom-new-tabs/"},
+		{"Dark Reader", "https://addons.mozilla.org/en-US/firefox/addon/darkreader/"},
 		{"Duplicate Tab", "https://addons.mozilla.org/en-US/firefox/addon/duplicate-tab-shortcut/"},
 		{"Stylus Themes", "https://github.com/StylishThemes"},
 		{"Stylus", "https://addons.mozilla.org/en-US/firefox/addon/styl-us/"},
