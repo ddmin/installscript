@@ -110,6 +110,7 @@
     yes | sudo apt install wget
     yes | sudo apt install xsel
     yes | sudo apt install xdotool
+    yes | sudo apt install tlp
 
 # Install utilities
 
