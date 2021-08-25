@@ -179,6 +179,7 @@
     yes | sudo apt install texlive-xetex
     yes | sudo apt install pandoc
     yes | sudo apt install zathura
+    yes | sudo apt install zathura-pdf-poppler
 
 sudo chsh -s $(which zsh) "$USER"
 
