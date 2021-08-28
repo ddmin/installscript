@@ -5,9 +5,6 @@ import (
 	"net/http"
 )
 
-// TO_INSTALL
-// Mozc - alternate language keyboard
-
 type link struct {
 	name    string
 	address string
