@@ -17,14 +17,14 @@ func index(w http.ResponseWriter, r *http.Request) {
 		{"GIMP Resynthesizer", "https://github.com/bootchk/resynthesizer"},
 		{"Gogh", "https://github.com/Mayccoll/Gogh"},
 		{"KDE Connect", "https://kdeconnect.kde.org/"},
+		{"Kdenlive", "https://kdenlive.org/en/"},
 		{"ProtonVPN", "https://protonvpn.com/download"},
 		{"RetroArch", "https://github.com/libretro/RetroArch"},
 		{"SauceCode Pro", "https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/SourceCodePro/Semibold/complete/Sauce%20Code%20Pro%20Semibold%20Nerd%20Font%20Complete%20Mono.ttf"},
-		{"Shotcut", "https://shotcut.org/download/"},
+		{"Ventoy", "https://github.com/ventoy/Ventoy"},
 		{"VirtualBox", "https://www.virtualbox.org/wiki/Linux_Downloads"},
 		{"Webcamoid", "http://webcamoid.github.io/"},
 		{"youtube-dl", "https://youtube-dl.org/"},
-		{"Ventoy", "https://github.com/ventoy/Ventoy"},
 	}
 
 	FIREFOX := []link{
