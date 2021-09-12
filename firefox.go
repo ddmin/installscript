@@ -24,7 +24,7 @@ func index(w http.ResponseWriter, r *http.Request) {
 		{"Ventoy", "https://github.com/ventoy/Ventoy"},
 		{"VirtualBox", "https://www.virtualbox.org/wiki/Linux_Downloads"},
 		{"Webcamoid", "http://webcamoid.github.io/"},
-		{"youtube-dl", "https://youtube-dl.org/"},
+		{"youtube-dlp", "https://github.com/yt-dlp/yt-dlp"},
 	}
 
 	FIREFOX := []link{
