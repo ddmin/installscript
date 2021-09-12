@@ -133,10 +133,6 @@
         # syntax highlighting
         yes | sudo apt install highlight
 
-    # fzf
-        git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
-        yes | ~/.fzf/install
-
 # Golang
     # logo-ls
     go get github.com/ddmin/logo-ls
@@ -145,6 +141,9 @@
     go get -u github.com/justjanne/powerline-go
 
 # Rust
+    # skim
+    cargo install skim
+
     # bat
     cargo install bat
 
