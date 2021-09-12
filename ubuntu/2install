@@ -159,7 +159,6 @@
 
 # Graphics
     pip3 install ueberzug
-    pip3 install pywal
     yes | sudo apt install w3m-img
     yes | sudo apt install gimp
     yes | sudo apt install feh
