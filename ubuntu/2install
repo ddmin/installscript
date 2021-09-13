@@ -125,14 +125,9 @@
     yes | sudo apt install tlp
 
 # Install utilities
-
-    # rofi
         yes | sudo apt install rofi
-
-    # neofetch
         yes | sudo apt install neofetch
 
-    # ranger
         yes | sudo apt install ranger
         ranger --copy-config=all
 
@@ -164,16 +159,9 @@
     cd -
 
 # Rust
-    # bat
     cargo install bat
-
-    # ripgrep
     cargo install ripgrep
-
-    # exa
     cargo install exa
-
-    # fd-find
     cargo install fd-find
 
 # Graphics
