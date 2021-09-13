@@ -101,14 +101,20 @@
 
 # Install vim
     yes | sudo apt install vim
-    yes | sudo apt install neovim
 
-# Install system tools
+# Install neovim
+    wget https://github.com/neovim/neovim/releases/download/v0.5.0/nvim.appimage
+    mv nvim.appimage nvim
+    chmod u+x nvim
+    sudo mv nvim /usr/bin/nvim
+
+# Install zsh
     yes | sudo apt install zsh
 
         # syntax highlighting
         git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.zsh/zsh-syntax-highlighting
 
+# Install system tools
     yes | sudo apt install git
     yes | sudo apt install openssh-server
     yes | sudo apt install curl
