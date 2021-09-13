@@ -82,6 +82,11 @@
         mkdir -p "$HOME/.config/fontconfig"
         mv 10-powerline-symbols.conf "$HOME/.config/fontconfig/conf.d"
 
+        # SauceCodePro
+        wget "https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/SourceCodePro/Semibold/complete/Sauce%20Code%20Pro%20Semibold%20Nerd%20Font%20Complete%20Mono.ttf"
+        mv Sauce\ Code\ Pro\ Semibold\ Nerd\ Font\ Complete\ Mono.ttf ~/.local/share/fonts/
+        sudo fc-cache -vf ~/.local/share/fonts/
+
         # Microsoft Fonts
         # yes | sudo apt install ttf-mscorefonts-installer
 
@@ -138,11 +143,18 @@
         yes | ~/.fzf/install
 
 # Golang
-    # logo-ls
-    go get github.com/ddmin/logo-ls
-
     # powerline-go
     go get -u github.com/justjanne/powerline-go
+
+    # logo-ls
+    LOGO_LS="$HOME/Code/Go/src/github.com/ddmin/"
+    mkdir -p "$LOGO_LS"
+    git clone https://github.com/ddmin/logo-ls "$LOGO_LS"
+
+    cd "$LOGO_LS"
+    go build
+    go install
+    cd -
 
 # Rust
     # bat
@@ -171,7 +183,6 @@
     yes | sudo apt install ffmpegthumbnailer
     yes | sudo apt install cmus
     yes | sudo apt install id3v2
-    yes | sudo apt install lame
 
 # Documents
     yes | sudo apt install texlive-full
