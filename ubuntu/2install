@@ -1,6 +1,15 @@
 #!/bin/bash
 # 2install - installs and configure machine automatically (Ubuntu)
 
+# Variables
+    export PATH="$PATH:/usr/local/go/bin"
+    export PATH="$PATH:$GOPATH/bin"
+    export PATH="$PATH:$HOME/.cargo/bin"
+    export GOPATH="$HOME/Code/Go"
+    export GOBIN="$GOPATH/bin"
+    export NVM_DIR="$HOME/.nvm"
+    export LOGO_LS="$HOME/Code/Go/src/github.com/ddmin/"
+
 # PPA
     # Papirus
         sudo add-apt-repository ppa:papirus/papirus
@@ -29,27 +38,13 @@
     # Golang
         wget "https://golang.org/dl/go1.17.1.linux-amd64.tar.gz"
         sudo tar -C /usr/local -xzf go1.*17*.1.linux-amd64.tar.gz
-        export PATH="$PATH:/usr/local/go/bin"
-        export GOPATH="$HOME/Code/Go"
-        export PATH="$PATH:$GOPATH/bin"
-        export GOBIN="$GOPATH/bin"
 
     # Rust
         curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
-        export PATH="$PATH:$HOME/.cargo/bin"
 
     # Node
         curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
-        export NVM_DIR="$HOME/.nvm"
         [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
-
-    # code formatting
-
-        # autopep8
-        pip3 install autopep8
-
-        # js-beautify
-        npm install -g js-beautify
 
 # Firefox Addons
     cd ..
@@ -148,7 +143,6 @@
     go get -u github.com/justjanne/powerline-go
 
     # logo-ls
-    LOGO_LS="$HOME/Code/Go/src/github.com/ddmin/"
     mkdir -p "$LOGO_LS"
     git clone https://github.com/ddmin/logo-ls "$LOGO_LS"
 
