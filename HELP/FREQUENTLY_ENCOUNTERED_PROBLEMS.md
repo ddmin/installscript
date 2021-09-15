@@ -129,6 +129,7 @@
     ```
 
 28. Trouble converting images to PDF with ImageMagick
+
     [Cache exhausted](https://stackoverflow.com/questions/31407010/cache-resources-exhausted-imagemagick)
     ```
     # /etc/ImageMagick-6/policy.xml
