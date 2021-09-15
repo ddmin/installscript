@@ -120,3 +120,12 @@
     ```
     rsync -e 'ssh -p 8022' <FILES> u0_a500@192.168.1.XXX:/data/data/com.termux/files/home/storage/
     ```
+
+27. Set folding in files
+    Add this to the bottom of the file
+
+    ```
+    # vim: foldmethod=marker
+    # vim: foldmarker={{{,}}}
+
+    ```
