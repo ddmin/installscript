@@ -30,9 +30,7 @@
 
         2. `map bg shell wal --vte -q -i %f && xfconf-query -c xfce4-desktop -p /backdrop/screen0/monitoreDP1/workspace0/last-image -s %d/%f`
 
-8. Set Google as default search engine in Linux Mint?
-
-	https://www.linuxmint.com/searchengines.php
+8. [Set Google as default search engine in Linux Mint?](https://www.linuxmint.com/searchengines.php)
 
 9. Red error indication in powerline every time I open terminal
 
@@ -61,7 +59,7 @@
 
 15. Connect to WiFi with redirect page.
 
-    Try 192.168.1.1 (https://unix.stackexchange.com/questions/89630/how-to-sign-into-an-open-wireless-network)
+    [Try 192.168.1.1](https://unix.stackexchange.com/questions/89630/how-to-sign-into-an-open-wireless-network)
 
 16. Prettier not working / npm not found
 
@@ -69,19 +67,19 @@
 
 17. Wifi not detected on fresh install
 
-    Copy b43 onto a flashdrive (https://askubuntu.com/questions/730799/installing-firmware-b43-installer-offline)
+    [Copy b43 onto a flashdrive](https://askubuntu.com/questions/730799/installing-firmware-b43-installer-offline)
 
-18. Slow wifi on iMac
+18. Slow WiFi on iMac
 
-    Install drivers (https://archived.forum.manjaro.org/t/solved-bcm4331-inconsistent-and-slow-wifi-on-mac/95386/2)
+    [Install drivers](https://archived.forum.manjaro.org/t/solved-bcm4331-inconsistent-and-slow-wifi-on-mac/95386/2)
 
 19. SSH not working in rofi?
 
-    Add ~/.ssh/config file (https://linuxize.com/post/using-the-ssh-config-file/)
+    [Add ~/.ssh/config file](https://linuxize.com/post/using-the-ssh-config-file/)
 
-20. No sound from iMac headphone jack
+20. [No sound from iMac headphone jack](https://linux-tips.com/t/how-to-fix-apple-imac-headphone-sound-problem/285)
 
-    Add `options snd-hda-intel model=imac27_122` to `/etc/modprobe.d/sound.conf` (https://linux-tips.com/t/how-to-fix-apple-imac-headphone-sound-problem/285)
+    Add `options snd-hda-intel model=imac27_122` to `/etc/modprobe.d/sound.conf`
 
 21. Connect to wifi automatically (wpa_supplicant)
 
