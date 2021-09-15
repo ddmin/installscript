@@ -125,8 +125,7 @@
     Add this to the bottom of the file
 
     ```
-    # vim: foldmethod=marker
-    # vim: foldmarker={{{,}}}
+    # vim: foldmethod=marker:foldlevel=0
     ```
 
 28. Trouble converting images to PDF with ImageMagick
