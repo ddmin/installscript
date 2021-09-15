@@ -127,5 +127,21 @@
     ```
     # vim: foldmethod=marker
     # vim: foldmarker={{{,}}}
+    ```
 
+28. Trouble converting images to PDF with ImageMagick
+    [Cache exhausted](https://stackoverflow.com/questions/31407010/cache-resources-exhausted-imagemagick)
+    ```
+    # /etc/ImageMagick-6/policy.xml
+    <policy domain="resource" name="disk" value="8GiB"/>
+    <policy domain="resource" name="area" value="1GiB"/>
+    ```
+
+    [PDF blocked security policy](https://stackoverflow.com/questions/52998331/imagemagick-security-policy-pdf-blocking-conversion)
+    ```
+    # /etc/ImageMagick-6/policy.xml
+    ...
+    <policy domain="coder" rights="read | write" pattern="PDF" />
+    ...
+    </policymap>
     ```
