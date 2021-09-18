@@ -1,5 +1,5 @@
 # installscript
-Automatically configure machine and install appropriate applications and dotfiles
+Automatic installscript to install and configure programs and other applications.
 
 ## Charlie (Linux Mint 20)
 ![](./IMG/mint.png)
