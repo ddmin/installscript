@@ -94,6 +94,8 @@
     yes | sudo apt install cmake
     yes | sudo apt install build-essential
     yes | sudo apt-get install dconf-cli uuid-runtime
+    yes | sudo apt install pkg-config
+    yes | sudo apt install libssl-dev
 
 # Install vim
     yes | sudo apt install vim
@@ -153,6 +155,7 @@
     cd -
 
 # Rust
+    cargo install cargo-edit
     cargo install bat
     cargo install ripgrep
     cargo install exa
