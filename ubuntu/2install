@@ -142,6 +142,9 @@
     # powerline-go
     go get -u github.com/justjanne/powerline-go
 
+    # lazygit
+    go get github.com/jesseduffield/lazygit
+
     # logo-ls
     mkdir -p "$LOGO_LS"
     git clone https://github.com/ddmin/logo-ls "$LOGO_LS"
