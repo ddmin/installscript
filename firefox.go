@@ -41,8 +41,9 @@ func index(w http.ResponseWriter, r *http.Request) {
 	}
 
 	CHROME := []link{
-		{"Bypass Paywalls", "https://github.com/iamadamdev/bypass-paywalls-chrome"},
 		{"Allow Right-Click", "https://chrome.google.com/webstore/detail/allow-right-click/hompjdfbfmmmgflfjdlnkohcplmboaeo?hl=en"},
+		{"Bypass Paywalls", "https://github.com/iamadamdev/bypass-paywalls-chrome"},
+		{"Image Downloader", "https://chrome.google.com/webstore/detail/image-downloader/cnpniohnfphhjihaiiggeabnkjhpaldj?hl=en-US"},
 		{"LastPass", "https://chrome.google.com/webstore/detail/lastpass-free-password-ma/hdokiejnpimakedhajhdlcegeplioahd?hl=en-US"},
 		{"Stylus", "https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne?hl=en"},
 		{"Tabliss", "https://chrome.google.com/webstore/detail/tabliss-a-beautiful-new-t/hipekcciheckooncpjeljhnekcoolahp"},
