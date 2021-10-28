@@ -182,12 +182,12 @@
     yes | sudo apt install zathura
     yes | sudo apt install zathura-pdf-poppler
 
-# Microsoft Fonts
-    yes | sudo apt install ttf-mscorefonts-installer
-
 # LaTeX
     yes | sudo apt install texlive-full
     yes | sudo apt install texlive-xetex
+
+# Microsoft Fonts
+    # yes | sudo apt install ttf-mscorefonts-installer
 
 sudo chsh -s $(which zsh) "$USER"
 
