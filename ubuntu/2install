@@ -156,11 +156,13 @@
     cd -
 
 # Rust
-    cargo install cargo-edit
     cargo install bat
     cargo install ripgrep
     cargo install exa
     cargo install fd-find
+
+    cargo install cargo-edit
+    cargo install cargo-watch
 
 # Graphics
     pip3 install ueberzug
