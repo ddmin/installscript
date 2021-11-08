@@ -107,8 +107,8 @@
 # Install zsh
     yes | sudo apt install zsh
 
-        # syntax highlighting
-        git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.zsh/zsh-syntax-highlighting
+    # syntax highlighting
+    git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.zsh/zsh-syntax-highlighting
 
 # Install system tools
     yes | sudo apt install git
@@ -161,6 +161,7 @@
     cargo install exa
     cargo install fd-find
 
+    # cargo extensions
     cargo install cargo-edit
     cargo install cargo-watch
 
@@ -172,12 +173,12 @@
     yes | sudo apt install imagemagick
 
 # Media
+    yes | sudo apt install mpd
+    yes | sudo apt install ncmpcpp
     yes | sudo apt install obs-studio
     yes | sudo apt install mpv
     yes | sudo apt install vlc
     yes | sudo apt install ffmpegthumbnailer
-    yes | sudo apt install cmus
-    yes | sudo apt install id3v2
 
 # Documents
     yes | sudo apt install pandoc
