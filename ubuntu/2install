@@ -87,15 +87,16 @@
         sudo fc-cache -vf ~/.local/share/fonts/
 
 # Dependencies
-    yes | sudo apt install python3-dev
-    yes | sudo apt install libjpeg-dev
-    yes | sudo apt install zlib1g-dev
-    yes | sudo apt install libxtst-dev
-    yes | sudo apt install cmake
     yes | sudo apt install build-essential
-    yes | sudo apt-get install dconf-cli uuid-runtime
-    yes | sudo apt install pkg-config
+    yes | sudo apt install cmake
+    yes | sudo apt install dconf-cli
+    yes | sudo apt install libjpeg-dev
     yes | sudo apt install libssl-dev
+    yes | sudo apt install libxtst-dev
+    yes | sudo apt install pkg-config
+    yes | sudo apt install python3-dev
+    yes | sudo apt install uuid-runtime
+    yes | sudo apt install zlib1g-dev
 
 # Install vim
     yes | sudo apt install vim
@@ -116,29 +117,31 @@
     git clone https://github.com/ddmin/zsh-tab-title.git ~/.zsh/zsh-tab-title
 
 # Install system tools
+    yes | sudo apt install bluez
+    yes | sudo apt install curl
+    yes | sudo apt install dialog
     yes | sudo apt install git
     yes | sudo apt install openssh-server
-    yes | sudo apt install curl
-    yes | sudo apt install wget
-    yes | sudo apt install xsel
-    yes | sudo apt install xdotool
     yes | sudo apt install tlp
+    yes | sudo apt install wget
+    yes | sudo apt install xdotool
+    yes | sudo apt install xsel
 
 # Install utilities
-        yes | sudo apt install rofi
-        yes | sudo apt install neofetch
+    yes | sudo apt install rofi
+    yes | sudo apt install neofetch
 
-        yes | sudo apt install ranger
-        ranger --copy-config=all
+    yes | sudo apt install ranger
+    ranger --copy-config=all
 
-        # devicons
-        git clone https://github.com/ddmin/ranger_devicons.git /tmp/devicons
-        cd /tmp/devicons
-        make install
-        cd -
+    # devicons
+    git clone https://github.com/ddmin/ranger_devicons.git /tmp/devicons
+    cd /tmp/devicons
+    make install
+    cd -
 
-        # syntax highlighting
-        yes | sudo apt install highlight
+    # syntax highlighting
+    yes | sudo apt install highlight
 
 # Golang
     # fzf
@@ -172,18 +175,18 @@
 
 # Graphics
     pip3 install ueberzug
-    yes | sudo apt install w3m-img
-    yes | sudo apt install gimp
     yes | sudo apt install feh
+    yes | sudo apt install gimp
     yes | sudo apt install imagemagick
+    yes | sudo apt install w3m-img
 
 # Media
+    yes | sudo apt install ffmpegthumbnailer
     yes | sudo apt install mpd
+    yes | sudo apt install mpv
     yes | sudo apt install ncmpcpp
     yes | sudo apt install obs-studio
-    yes | sudo apt install mpv
     yes | sudo apt install vlc
-    yes | sudo apt install ffmpegthumbnailer
 
 # Documents
     yes | sudo apt install pandoc
@@ -193,6 +196,9 @@
 # LaTeX
     yes | sudo apt install texlive-full
     yes | sudo apt install texlive-xetex
+
+# Wireguard
+    yes | sudo apt install wireguard
 
 # Microsoft Fonts
     # yes | sudo apt install ttf-mscorefonts-installer
