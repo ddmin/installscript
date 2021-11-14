@@ -110,6 +110,9 @@
     # syntax highlighting
     git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.zsh/zsh-syntax-highlighting
 
+    # tab title
+    git clone https://github.com/ddmin/zsh-tab-title.git ~/.zsh/zsh-tab-title
+
 # Install system tools
     yes | sudo apt install git
     yes | sudo apt install openssh-server
