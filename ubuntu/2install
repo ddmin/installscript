@@ -5,9 +5,11 @@
     export PATH="$PATH:/usr/local/go/bin"
     export PATH="$PATH:$GOPATH/bin"
     export PATH="$PATH:$HOME/.cargo/bin"
+
     export GO_VERSION="go1.17.2"
     export GOPATH="$HOME/Code/Go"
     export GOBIN="$GOPATH/bin"
+
     export NVM_DIR="$HOME/.nvm"
     export LOGO_LS="$HOME/Code/Go/src/github.com/ddmin/"
 
