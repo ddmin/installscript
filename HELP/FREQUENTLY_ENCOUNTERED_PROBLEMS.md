@@ -96,7 +96,7 @@
 
 23. Ctrl-G for fzf?
 
-    ```
+    ```bash
     bind '"\C-t": transpose-chars'
     bind -x '"\C-g": fzf-file-widget'
     ```
@@ -108,21 +108,21 @@
 25. SSH permission denied?
 
     Probably an issue on my end.
-    ```
+    ```bash
     # /etc/ssh/ssh_config
     PasswordAuthentication yes
     ```
 
 26. rsync into mobile?
 
-    ```
+    ```bash
     rsync -e 'ssh -p 8022' <FILES> u0_a500@192.168.1.XXX:/data/data/com.termux/files/home/storage/
     ```
 
 27. Set folding in files
     Add this to the bottom of the file
 
-    ```
+    ```vim
     # vim: foldmethod=marker:foldlevel=0
     ```
 
@@ -136,10 +136,20 @@
     ```
 
     [PDF blocked security policy](https://stackoverflow.com/questions/52998331/imagemagick-security-policy-pdf-blocking-conversion)
-    ```
+    ```bash
     # /etc/ImageMagick-6/policy.xml
     ...
     <policy domain="coder" rights="read | write" pattern="PDF" />
     ...
     </policymap>
+    ```
+
+29. Bluetooth `org.bluez.Error.Failed`
+
+    [Possibly missing packages](https://unix.stackexchange.com/questions/258074/error-when-trying-to-connect-to-bluetooth-speaker-org-bluez-error-failed)
+
+    ```bash
+    sudo apt install pulseaudio-module-bluetooth
+    pulseaudio -k
+    pulseaudio --start
     ```
