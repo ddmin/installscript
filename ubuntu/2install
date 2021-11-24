@@ -6,12 +6,12 @@
     export PATH="$PATH:$GOPATH/bin"
     export PATH="$PATH:$HOME/.cargo/bin"
 
-    export GO_VERSION="go1.17.2"
+    export GO_VERSION="go1.17.3"
     export GOPATH="$HOME/Code/Go"
     export GOBIN="$GOPATH/bin"
+    export GO_SRC="$GOPATH/src/github.com/ddmin/"
 
     export NVM_DIR="$HOME/.nvm"
-    export LOGO_LS="$HOME/Code/Go/src/github.com/ddmin/"
 
 # PPA
     # Papirus
@@ -155,10 +155,10 @@
     go get github.com/jesseduffield/lazygit
 
     # logo-ls
-    mkdir -p "$LOGO_LS"
-    git clone https://github.com/ddmin/logo-ls "$LOGO_LS"
+    mkdir -p "$GO_SRC"
+    git clone https://github.com/ddmin/logo-ls "$GO_SRC"
 
-    cd "$LOGO_LS"
+    cd "$GO_SRC"
     go build
     go install
     cd -
