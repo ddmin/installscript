@@ -89,16 +89,25 @@
 
 22. Automatic updates on Ubuntu
 
-    ```
+    ```console
     1. apt install unattended-upgrades
     2. dpkg-reconfigure --priority=low unattended-upgrades
     ```
 
 23. Ctrl-G for fzf?
 
+    ### Bash
+
     ```bash
     bind '"\C-t": transpose-chars'
     bind -x '"\C-g": fzf-file-widget'
+    ```
+
+    ### ZSH
+
+    ```zsh
+    bindkey '^G' fzf-file-widget
+    bindkey '^T' transpose-chars
     ```
 
 24. No emojis on Arch?
@@ -108,14 +117,14 @@
 25. SSH permission denied?
 
     Probably an issue on my end.
-    ```bash
+    ```console
     # /etc/ssh/ssh_config
     PasswordAuthentication yes
     ```
 
 26. rsync into mobile?
 
-    ```bash
+    ```console
     rsync -e 'ssh -p 8022' <FILES> u0_a500@192.168.1.XXX:/data/data/com.termux/files/home/storage/
     ```
 
@@ -129,14 +138,14 @@
 28. Trouble converting images to PDF with ImageMagick
 
     [Cache exhausted](https://stackoverflow.com/questions/31407010/cache-resources-exhausted-imagemagick)
-    ```
+    ```console
     # /etc/ImageMagick-6/policy.xml
     <policy domain="resource" name="disk" value="8GiB"/>
     <policy domain="resource" name="area" value="1GiB"/>
     ```
 
     [PDF blocked security policy](https://stackoverflow.com/questions/52998331/imagemagick-security-policy-pdf-blocking-conversion)
-    ```bash
+    ```console
     # /etc/ImageMagick-6/policy.xml
     ...
     <policy domain="coder" rights="read | write" pattern="PDF" />
@@ -148,7 +157,7 @@
 
     [Possibly missing packages](https://unix.stackexchange.com/questions/258074/error-when-trying-to-connect-to-bluetooth-speaker-org-bluez-error-failed)
 
-    ```bash
+    ```console
     sudo apt install pulseaudio-module-bluetooth
     pulseaudio -k
     pulseaudio --start
