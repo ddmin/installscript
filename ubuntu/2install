@@ -181,6 +181,7 @@
     yes | sudo apt install w3m-img
 
 # Media
+    yes | sudo apt install ffmpeg
     yes | sudo apt install ffmpegthumbnailer
     yes | sudo apt install mpd
     yes | sudo apt install mpv
