@@ -1,0 +1,30 @@
+#!/bin/bash
+# 3install -  minimal configurations to a fresh Arch install
+
+# update system
+    yes | sudo pacman -Syyu
+
+# dependencies
+    yes | sudo pacman -S base-devel
+    yes | sudo pacman -S curl
+    yes | sudo pacman -S xz
+    yes | sudo pacman -S git
+
+# yay
+    git clone https://aur.archlinux.org/yay.git /tmp/yay
+    cd /tmp/yay
+    makepkg -si
+    cd -
+
+# Golang
+    yes | sudo pacman -S go
+
+# Rust
+    yay -S rustup
+
+# utilities
+    yes | sudo pacman -S vim
+    yes | sudo pacman -S ranger
+
+echo 'Setup Complete'
+echo 'Please reboot your machine.'
