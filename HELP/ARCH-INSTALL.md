@@ -39,7 +39,7 @@ mount /dev/BOOT /mnt/boot
 5. Pacstrap
 
 ```shell
-pacstrap /mnt base base-devel linux linux-firmware vi
+pacstrap /mnt base base-devel linux linux-firmware vi vim
 ```
 
 6. Configure fstab
@@ -102,34 +102,32 @@ vi /etc/hostname
 ln -sf /usr/share/zoneinfo/America/New_York /etc/localtime
 ```
 
-13. Unmount partitions
-
-Exit from chroot environment and unmount partitions
-```shell
-exit
-umount -R /mnt
-```
-
-14. Enable NetworkManager
+13. Enable NetworkManager
 
 ```shell
 pacman -S networkmanager
 systemctl enable NetworkManager
 ```
 
-15. Add user
+14. Add user
 
 ```shell
 useradd -m USER
 
 passwd USER
 
-usermod -aG sudo USER
 usermod -aG wheel USER
 
 visudo
 
 # uncomment
 %wheel ALL=(ALL) ALL
-%sudo  ALL=(ALL) ALL
+```
+
+15. Unmount partitions
+
+Exit from chroot environment and unmount partitions
+```shell
+exit
+umount -R /mnt
 ```
