@@ -2,7 +2,7 @@
 
 ## 📶 WiFi
 
-[](https://www.linuxbabe.com/command-line/ubuntu-server-16-04-wifi-wpa-supplicant)
+[Using WPA_Supplicant to Connect to WPA2 Wi-fi from Terminal on Ubuntu 16.04 Server](https://www.linuxbabe.com/command-line/ubuntu-server-16-04-wifi-wpa-supplicant)
 
 ```console
 $ apt install wpasupplicant
@@ -184,4 +184,4 @@ sudo -u www-data php occ files:scan --all
 
 ## 🐡 Jellyfin
 
-[Downloads](https://jellyfin.org/downloads/)
+[Jellyfin Downloads](https://jellyfin.org/downloads/)

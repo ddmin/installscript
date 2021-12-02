@@ -39,7 +39,7 @@ mount /dev/BOOT /mnt/boot
 5. Pacstrap
 
 ```shell
-pacstrap /mnt base base-devel linux linux-firmware vim
+pacstrap /mnt base base-devel linux linux-firmware vi
 ```
 
 6. Configure fstab
@@ -71,7 +71,7 @@ passwd
 10. Set locale
 
 ```shell
-vim /etc/locale.gen
+vi /etc/locale.gen
 ```
 
 ```
@@ -82,7 +82,7 @@ en_US ISO-8859-1
 
 ```shell
 locale-gen
-vim /etc/locale.conf
+vi /etc/locale.conf
 ```
 
 ```
@@ -93,7 +93,7 @@ LANG=en-US.UTF-8
 11. Set hostname
 
 ```shell
-vim /etc/hostname
+vi /etc/hostname
 ```
 
 12. Set timezone
@@ -108,4 +108,28 @@ Exit from chroot environment and unmount partitions
 ```shell
 exit
 umount -R /mnt
+```
+
+14. Enable NetworkManager
+
+```shell
+pacman -S networkmanager
+systemctl enable NetworkManager
+```
+
+15. Add user
+
+```shell
+useradd -m USER
+
+passwd USER
+
+usermod -aG sudo USER
+usermod -aG wheel USER
+
+visudo
+
+# uncomment
+%wheel ALL=(ALL) ALL
+%sudo  ALL=(ALL) ALL
 ```
