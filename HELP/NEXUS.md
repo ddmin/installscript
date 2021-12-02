@@ -1,6 +1,6 @@
-# Nexus 👾
+# 👾 Nexus
 
-## WiFi 📶
+## 📶 WiFi
 
 [](https://www.linuxbabe.com/command-line/ubuntu-server-16-04-wifi-wpa-supplicant)
 
@@ -48,14 +48,14 @@ $ apt install network-manager
 $ nmtui
 ```
 
-## Set up automatic updates 🔄
+## 🔄 Set up automatic updates
 
 ```console
 $ apt install unattended-upgrades
 $ dpkg-reconfigure --priority=low unattended-upgrades
 ```
 
-## Turn off display 🖥️
+## 🖥️ Turn off display
 
 ```console
 # /etc/default/grub
@@ -64,7 +64,7 @@ GRUB_CMDLINE_LINUX="consoleblank=300"
 $ update-grub
 ```
 
-## Set up SSH 🔐
+## 🔐 Set up SSH
 
 ```console
 $ apt install openssh-server
@@ -78,7 +78,7 @@ PasswordAuthentication yes
 $ systemctl restart sshd
 ```
 
-# Dynamic DNS ⏩
+# ⏩ Dynamic DNS
 
 [FreeDNS - Free DNS - Dynamic DNS - Static DNS subdomain and domain hosting](https://freedns.afraid.org/)
 
@@ -86,7 +86,7 @@ $ systemctl restart sshd
 $ apt install ddclient
 ```
 
-## Wireguard 🐲
+## 🐲 Wireguard
 
 [Set up your own VPN at home with Raspberry Pi](https://notthebe.ee/raspi.html)
 
@@ -120,7 +120,7 @@ $ wg-quick up wg0
 $ systemctl enable wg-quick@wg0.service
 ```
 
-## LAMP 🪔
+## 🪔 LAMP
 
 ```console
 # Linux
@@ -138,13 +138,13 @@ $ apt install mariadb-server
 $ apt install php libapache2-mod-php php-mysql
 ```
 
-## Guacamole 🥑
+## 🥑 Guacamole
 
 [Apache Guacamole™](https://guacamole.apache.org/)
 
 [Install Apache Guacamole on Debian 10 - kifarunix.com](https://kifarunix.com/install-apache-guacamole-on-debian-10/)
 
-## Hypervisor 🕶
+## 🕶 Hypervisor
 
 [](https://www.cyberciti.biz/faq/install-kvm-server-debian-linux-9-headless-server/)
 
@@ -164,13 +164,13 @@ os-variant=generic
 $ ssh root@192.168.1.77 -L 5901:127.0.0.1:5901 -fN
 ```
 
-### Windows 🪟
+### 🪟 Windows
 
 [Create Windows KVM VM from Command Line](https://kyle.pericak.com/windows-kvm-command-line.html)
 
 [GitHub - virtio-win/virtio-win-pkg-scripts: Scripts for packaging virtio-win drivers](https://github.com/virtio-win/virtio-win-pkg-scripts)
 
-## Nextcloud ☁️
+## ☁️ Nextcloud
 
 [Example installation on Ubuntu 20.04 LTS - Nextcloud latest Administration Manual latest documentation](https://docs.nextcloud.com/server/latest/admin_manual/installation/example_ubuntu.html)
 
@@ -182,6 +182,6 @@ chown -R www-data:www-data <path/to/new/files>
 sudo -u www-data php occ files:scan --all
 ```
 
-## Jellyfin 🐡
+## 🐡 Jellyfin
 
 [Downloads](https://jellyfin.org/downloads/)
