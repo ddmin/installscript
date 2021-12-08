@@ -2,13 +2,20 @@
 # 3install -  minimal configurations to a fresh Arch install
 
 # update system
-    yes | sudo pacman -Syyu
+    yes | sudo pacman --noconfirm -Syyu
 
 # dependencies
-    yes | sudo pacman -S base-devel
-    yes | sudo pacman -S curl
-    yes | sudo pacman -S xz
-    yes | sudo pacman -S git
+    yes | sudo pacman --noconfirm -S base-devel
+    yes | sudo pacman --noconfirm -S curl
+    yes | sudo pacman --noconfirm -S xz
+    yes | sudo pacman --noconfirm -S git
+    yes | sudo pacman --noconfirm -S python
+
+# fonts
+    yes | sudo pacman --noconfirm -S noto-fonts
+
+# picom
+    yes | sudo pacman --noconfirm -S picom
 
 # yay
     git clone https://aur.archlinux.org/yay.git /tmp/yay
@@ -16,15 +23,22 @@
     makepkg -si
     cd -
 
-# Golang
-    yes | sudo pacman -S go
-
-# Rust
-    yay -S rustup
-
 # utilities
-    yes | sudo pacman -S vim
-    yes | sudo pacman -S ranger
+    yes | sudo pacman --noconfirm -S vim
+    yes | sudo pacman --noconfirm -S ranger
+
+# graphical environment
+    yes | sudo pacman --noconfirm -S xorg-server xorg-xinit xterm
+    cp /etc/X11/xinit/xinitrc ~/.xinitrc
+    echo "exec i3" >> ~/.xinitrc
+
+    pip3 install i3ipc
+
+    yes | sudo pacman --noconfirm -S i3-gaps i3-status
+    yes | sudo pacman --noconfirm -S rxvt-unicode dmenu rofi
+
+    yes | sudo pacman --noconfirm -S lightdm lightdm-gtk-greeter
+    sudo systemctl enable lightdm
 
 echo 'Setup Complete'
 echo 'Please reboot your machine.'
