@@ -15,10 +15,10 @@
     sudo pacman -S picom
 
 # utilities
-    sudo pacman -S vim ranger htop rxvt-unicode dmenu
+    sudo pacman -S vim ranger htop scrot rxvt-unicode dmenu
 
 # graphical environment
-    sudo pacman -S xorg-server xorg-xinit xorg-xrandr xterm
+    sudo pacman -S xorg-server xorg-xinit xorg-xrandr xorg-xbacklight xterm
     cp /etc/X11/xinit/xinitrc ~/.xinitrc
     echo "exec i3" >> ~/.xinitrc
 
