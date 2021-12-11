@@ -20,6 +20,12 @@
     makepkg -si
     cd -
 
+# alttab
+    git clone https://github.com/sagb/alttab.git /tmp/alttab
+    cd /tmp/alttab
+    ./configure && sudo make install
+    cd -
+
 # utilities
     sudo pacman -S vim ranger htop rxvt-unicode dmenu
 
