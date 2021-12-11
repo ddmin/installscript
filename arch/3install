@@ -5,7 +5,7 @@
     sudo pacman -Syyu
 
 # dependencies
-    sudo pacman -S base-devel curl wget xz git
+    sudo pacman -S base-devel curl wget xz uthash git
     sudo pacman -S python python-pip
 
 # fonts
@@ -30,7 +30,7 @@
     sudo pacman -S vim ranger htop rxvt-unicode dmenu
 
 # graphical environment
-    sudo pacman -S xorg-server xorg-xinit xterm
+    sudo pacman -S xorg-server xorg-xinit xorg-xrandr xterm
     cp /etc/X11/xinit/xinitrc ~/.xinitrc
     echo "exec i3" >> ~/.xinitrc
 
