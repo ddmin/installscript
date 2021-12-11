@@ -165,7 +165,7 @@ pulseaudio -k
 pulseaudio --start
 ```
 
-30 Bluetooth `Failed to pair: org.bluez.Error.AlreadyExists`
+## 30. Bluetooth `Failed to pair: org.bluez.Error.AlreadyExists`
 
 Try restarting bluetooth
 
@@ -179,4 +179,13 @@ Or maybe [rfkill is blocking bluetooth](https://stackoverflow.com/questions/5438
 # check status
 sudo service bluetooth status
 sudo rfkill unblock bluetooth
+```
+
+## 31. Bluetooth [a2dp-sink profile connect failed. Protocol not available](https://askubuntu.com/questions/1172000/a2dp-sink-profile-connect-failed)
+
+```console
+sudo apt-get install pulseaudio-module-bluetooth
+sudo killall pulseaudio
+pulseaudio --start
+sudo service bluetooth restart
 ```
