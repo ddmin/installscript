@@ -81,7 +81,7 @@ $ locale-gen
 $ vim /etc/locale.conf
 
 # /etc/locale.conf
-LANG=en-US.UTF-8
+LANG=en_US.UTF-8
 ```
 
 11. Set hostname
