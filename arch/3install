@@ -12,7 +12,7 @@
     sudo pacman -S noto-fonts
 
 # wallpaper
-    sudo pacman -S nitrogen picom
+    sudo pacman -S feh nitrogen picom
 
 # utilities
     sudo pacman -S vim ranger htop scrot rxvt-unicode dmenu
