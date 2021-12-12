@@ -11,8 +11,8 @@
 # fonts
     sudo pacman -S noto-fonts
 
-# picom
-    sudo pacman -S picom
+# wallpaper
+    sudo pacman -S nitrogen picom
 
 # utilities
     sudo pacman -S vim ranger htop scrot rxvt-unicode dmenu
@@ -39,6 +39,9 @@
     cd /tmp/alttab
     ./configure && sudo make install
     cd -
+
+# iosevka nerd font
+    yay -S ttf-iosevka-nerd
 
 echo 'Setup Complete'
 echo 'Please reboot your machine.'
