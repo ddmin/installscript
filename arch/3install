@@ -11,11 +11,11 @@
 # fonts
     sudo pacman -S noto-fonts
 
-# wallpaper
-    sudo pacman -S feh nitrogen picom
+# display
+    sudo pacman -S feh picom
 
 # utilities
-    sudo pacman -S vim ranger htop scrot rxvt-unicode dmenu
+    sudo pacman -S vim ranger emacs htop scrot rxvt-unicode dmenu firefox
 
 # graphical environment
     sudo pacman -S xorg-server xorg-xinit xorg-xrandr xorg-xbacklight xterm
