@@ -125,6 +125,7 @@
     yes | sudo apt install dialog
     yes | sudo apt install git
     yes | sudo apt install openssh-server
+    yes | sudo apt install rsync
     yes | sudo apt install tlp
     yes | sudo apt install wget
     yes | sudo apt install xdotool
