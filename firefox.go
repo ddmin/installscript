@@ -18,6 +18,7 @@ func index(w http.ResponseWriter, r *http.Request) {
 		{"Gogh", "https://github.com/Mayccoll/Gogh"},
 		{"KDE Connect", "https://kdeconnect.kde.org/"},
 		{"Kdenlive", "https://kdenlive.org/en/"},
+		{"MEGA CMD", "https://mega.nz/cmd"},
 		{"ProtonVPN", "https://protonvpn.com/download"},
 		{"RetroArch", "https://github.com/libretro/RetroArch"},
 		{"Ventoy", "https://github.com/ventoy/Ventoy"},
