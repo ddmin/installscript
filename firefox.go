@@ -13,6 +13,7 @@ type link struct {
 func index(w http.ResponseWriter, r *http.Request) {
 	SOFTWARE := []link{
 		{"BalenaEtcher", "https://www.balena.io/etcher/"},
+		{"CAVA", "https://github.com/karlstav/cava"},
 		{"GIMP Resynthesizer", "https://github.com/bootchk/resynthesizer"},
 		{"GLava", "https://github.com/bootchk/resynthesizer"},
 		{"Gogh", "https://github.com/Mayccoll/Gogh"},
