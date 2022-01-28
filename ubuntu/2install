@@ -9,7 +9,7 @@
     export GO_VERSION="go1.17.3"
     export GOPATH="$HOME/Code/Go"
     export GOBIN="$GOPATH/bin"
-    export GO_SRC="$GOPATH/src/github.com/ddmin/"
+    export GO_SRC="$GOPATH/src/github.com/ddmin"
 
     export NVM_DIR="$HOME/.nvm"
 
