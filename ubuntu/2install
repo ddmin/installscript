@@ -159,10 +159,10 @@
     go get github.com/jesseduffield/lazygit
 
     # logo-ls
-    mkdir -p "$GO_SRC"
-    git clone https://github.com/ddmin/logo-ls "$GO_SRC"
+    mkdir -p "$GO_SRC/logo-ls"
+    git clone https://github.com/ddmin/logo-ls "$GO_SRC/logo-ls"
 
-    cd "$GO_SRC"
+    cd "$GO_SRC/logo-ls"
     go build
     go install
     cd -
