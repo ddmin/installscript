@@ -85,8 +85,9 @@
         mv 10-powerline-symbols.conf "$HOME/.config/fontconfig/conf.d"
 
         # SauceCodePro
-        wget "https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/SourceCodePro/Regular/complete/Sauce%20Code%20Pro%20Nerd%20Font%20Complete%20Mono.ttf"
-        mv "Sauce Code Pro Nerd Font Complete Mono.ttf" $HOME/.local/share/fonts/
+        wget "https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/SourceCodePro.zip"
+        mkdir -p $HOME/.local/share/fonts/SauceCodePro
+        unzip SourceCodePro.zip -d $HOME/.local/share/fonts/SauceCodePro
         sudo fc-cache -vf $HOME/.local/share/fonts/
 
 # Dependencies
