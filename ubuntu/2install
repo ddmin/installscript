@@ -81,12 +81,10 @@
         wget https://github.com/powerline/powerline/raw/develop/font/10-powerline-symbols.conf
 
         mv PowerlineSymbols.otf $HOME/.local/share/fonts/
-        sudo fc-cache -vf $HOME/.local/share/fonts/
         mv 10-powerline-symbols.conf "$HOME/.config/fontconfig/conf.d"
 
         # SauceCodePro
-        wget "https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/SourceCodePro/Semibold/complete/Sauce%20Code%20Pro%20Semibold%20Nerd%20Font%20Complete%20Mono.ttf"
-        mv Sauce\ Code\ Pro\ Semibold\ Nerd\ Font\ Complete\ Mono.ttf $HOME/.local/share/fonts/
+        mv "../ASSETS/Sauce Code Pro Nerd Font Complete Mono.ttf" $HOME/.local/share/fonts/
         sudo fc-cache -vf $HOME/.local/share/fonts/
 
 # Dependencies
