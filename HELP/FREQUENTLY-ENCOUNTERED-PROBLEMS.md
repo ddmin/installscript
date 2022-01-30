@@ -189,3 +189,19 @@ sudo killall pulseaudio
 pulseaudio --start
 sudo service bluetooth restart
 ```
+
+## 32. [Multiple Github Accounts Using SSH](https://gist.github.com/oanhnn/80a89405ab9023894df7)
+
+```console
+# Account 1
+Host github-1
+   HostName github.com
+   IdentityFile ~/.ssh/key_1
+   IdentitiesOnly yes
+
+# Account 2
+Host github-2
+   HostName github.com
+   IdentityFile ~/.ssh/key_2
+   IdentitiesOnly yes
+```

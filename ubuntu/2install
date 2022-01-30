@@ -77,6 +77,7 @@
         yes | sudo apt-get install papirus-icon-theme
 
     # Fonts
+        # Powerline
         wget https://github.com/powerline/powerline/raw/develop/font/PowerlineSymbols.otf
         wget https://github.com/powerline/powerline/raw/develop/font/10-powerline-symbols.conf
 
@@ -84,7 +85,8 @@
         mv 10-powerline-symbols.conf "$HOME/.config/fontconfig/conf.d"
 
         # SauceCodePro
-        mv "../ASSETS/Sauce Code Pro Nerd Font Complete Mono.ttf" $HOME/.local/share/fonts/
+        wget "https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/SourceCodePro/Regular/complete/Sauce%20Code%20Pro%20Nerd%20Font%20Complete%20Mono.ttf"
+        mv "Sauce Code Pro Nerd Font Complete Mono.ttf" $HOME/.local/share/fonts/
         sudo fc-cache -vf $HOME/.local/share/fonts/
 
 # Dependencies
