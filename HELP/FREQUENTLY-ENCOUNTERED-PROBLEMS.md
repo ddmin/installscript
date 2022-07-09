@@ -205,3 +205,11 @@ Host github-2
    IdentityFile ~/.ssh/key_2
    IdentitiesOnly yes
 ```
+
+## 33. [ProtonVPN killswitch disables internet](https://askubuntu.com/questions/1319033/internet-stops-working-after-installing-protonvpn)
+
+```console
+nmcli device
+sudo nmcli connection delete pvpn-killswitch
+sudo nmcli connection delete pvpn-ipv6leak-protection
+```
