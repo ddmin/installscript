@@ -1,5 +1,13 @@
 # Arch Linux Installation
 
+0. Connect to the internet
+```
+$ iwctl device list
+$ iwctl station DEVICE scan
+$ iwctl station DEVICE get-networks
+$ iwctl --passphrase=PASSPHRASE station DEVICE connect SSID
+```
+
 1. Setup time
 
 ```shell
