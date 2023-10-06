@@ -221,3 +221,12 @@ sudo nmcli connection delete pvpn-ipv6leak-protection
 ```console
  MOZ_USE_XINPUT2 DEFAULT=1
 ```
+
+## 35. [Render Japanese UTF8 in Vim](https://stackoverflow.com/questions/5166652/how-to-view-utf-8-characters-in-vim-or-gvim)
+
+.vimrc
+```console
+    set encoding=utf-8
+    set fileencodings=iso-2022-jp,euc-jp,sjis,utf-8
+    set fileformats=unix,dos,mac
+```
