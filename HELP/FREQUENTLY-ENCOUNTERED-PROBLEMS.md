@@ -213,3 +213,11 @@ nmcli device
 sudo nmcli connection delete pvpn-killswitch
 sudo nmcli connection delete pvpn-ipv6leak-protection
 ```
+
+## 34. [Firefox Touch Scrolling](https://superuser.com/questions/1151161/enable-touch-scrolling-in-firefox)
+
+/etc/security/pam_env.conf
+
+```console
+ MOZ_USE_XINPUT2 DEFAULT=1
+```
