@@ -230,3 +230,6 @@ sudo nmcli connection delete pvpn-ipv6leak-protection
     set fileencodings=iso-2022-jp,euc-jp,sjis,utf-8
     set fileformats=unix,dos,mac
 ```
+
+## 36. [Open CBZ containing WEBP with evince](https://gitlab.gnome.org/GNOME/evince/-/issues/925)
+[Install webp-pixbuf-loader](https://github.com/aruiz/webp-pixbuf-loader/)
