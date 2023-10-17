@@ -234,8 +234,9 @@ sudo nmcli connection delete pvpn-ipv6leak-protection
 ## 36. [Open CBZ containing WEBP with evince](https://gitlab.gnome.org/GNOME/evince/-/issues/925)
 [Install webp-pixbuf-loader](https://github.com/aruiz/webp-pixbuf-loader/)
 
-## 37. [Install QT6 on Ubuntu](https://askubuntu.com/questions/1404353/how-to-install-qt6-on-ubuntu-21-10)
+## 37. [Install Anki on Ubuntu](https://askubuntu.com/questions/1404353/how-to-install-qt6-on-ubuntu-21-10)
 
 ```console
 sudo apt install qt6-base-dev
+sudo apt install libxcb-cursor0
 ```
