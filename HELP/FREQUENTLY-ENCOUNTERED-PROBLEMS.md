@@ -240,3 +240,15 @@ sudo nmcli connection delete pvpn-ipv6leak-protection
 sudo apt install qt6-base-dev
 sudo apt install libxcb-cursor0
 ```
+
+## 38. Run emacs as a daemon
+
+Start daemon
+```console
+/usr/bin/emacs --daemon
+```
+
+Open emacsclient
+```console
+emacsclient -c -a 'emacs'
+```
