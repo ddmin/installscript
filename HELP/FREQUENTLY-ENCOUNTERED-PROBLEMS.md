@@ -252,3 +252,7 @@ Open emacsclient
 ```console
 emacsclient -c -a 'emacs'
 ```
+
+## 39. Sound not working on Galaxy Book
+
+[necessary-verbs.sh](https://github.com/joshuagrisham/galaxy-book2-pro-linux)
