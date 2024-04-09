@@ -253,6 +253,9 @@ Open emacsclient
 emacsclient -c -a 'emacs'
 ```
 
+## 39. Website stuck on debugger while using Inspect Element
+[Set ```debugger``` ```Conditional breakpoint``` to ```false```](https://devtoolstips.org/tips/en/disable-abusive-debugger-statement/)
+
 ## 39. Sound not working on Galaxy Book
 
 [necessary-verbs.sh](https://github.com/joshuagrisham/galaxy-book2-pro-linux)
