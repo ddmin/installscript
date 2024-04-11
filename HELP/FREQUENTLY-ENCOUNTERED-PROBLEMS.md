@@ -260,3 +260,7 @@ emacsclient -c -a 'emacs'
 ## 40. Website stuck on debugger while using Inspect Element
 
 [Set ```debugger``` ```Conditional breakpoint``` to ```false```](https://devtoolstips.org/tips/en/disable-abusive-debugger-statement/)
+
+## 41. rofi application not changing after editing .desktop file
+
+For snaps check ```/var/lib/snapd/desktop/applications```
