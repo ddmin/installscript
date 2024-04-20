@@ -264,3 +264,7 @@ emacsclient -c -a 'emacs'
 ## 41. rofi application not changing after editing .desktop file
 
 For snaps check ```/var/lib/snapd/desktop/applications```
+
+## 42. Don't count underscores (_) as part of a word in Vim
+
+```:set iskeyword-=_```
