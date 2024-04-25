@@ -268,3 +268,8 @@ For snaps check ```/var/lib/snapd/desktop/applications```
 ## 42. Don't count underscores (_) as part of a word in Vim
 
 ```:set iskeyword-=_```
+
+## 43. Source virtualenv from bash script
+
+[Source the script](https://askubuntu.com/questions/813929/how-to-activate-a-virtualenv-within-bash-script-resulting-in-activated-prompt)
+```source activate.sh```
