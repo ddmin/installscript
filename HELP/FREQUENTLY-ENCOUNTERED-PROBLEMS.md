@@ -272,4 +272,5 @@ For snaps check ```/var/lib/snapd/desktop/applications```
 ## 43. Source virtualenv from bash script
 
 [Source the script](https://askubuntu.com/questions/813929/how-to-activate-a-virtualenv-within-bash-script-resulting-in-activated-prompt)
+
 ```source activate.sh```
