@@ -290,3 +290,21 @@ activate () {
 # ... snip ...
 AutoEnable=true
 ```
+
+## 45. Ctrl + Backspace
+
+[vim](https://www.reddit.com/r/neovim/comments/prp8zw/comment/hdkdd7a/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button)
+
+```console
+imap <C-H> <C-W>
+```
+
+[bash](https://unix.stackexchange.com/a/264871)
+```console
+~/.inputrc
+```
+
+```console
+"\C-h": backward-kill-word
+"\e[3;5~": kill-word
+```
