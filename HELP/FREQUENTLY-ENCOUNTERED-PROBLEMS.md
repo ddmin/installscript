@@ -268,3 +268,25 @@ For snaps check ```/var/lib/snapd/desktop/applications```
 ## 42. Don't count underscores (_) as part of a word in Vim
 
 ```:set iskeyword-=_```
+
+## 43. Source virtualenv from bash script
+
+[Source from .bashrc instead](https://stackoverflow.com/a/13122219)
+
+```bash
+activate () {
+  . ../.env/bin/activate
+}
+```
+
+## 44. [Failed to connect: org.bluez.Error.NotReady br-connection-adapter-not-powered](https://unix.stackexchange.com/a/676973)
+
+```console
+/etc/bluetooth/main.conf
+```
+
+```console
+[Policy]
+# ... snip ...
+AutoEnable=true
+```
