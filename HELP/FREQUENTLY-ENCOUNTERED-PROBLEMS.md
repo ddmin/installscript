@@ -318,3 +318,22 @@ secret-tool store --label='Keepass' database pass.xdbx
 # query and start keepassxc:
 secret-tool lookup database pass.xdbx | keepassxc --pw-stdin ~/pass.xdbx
 ```
+
+## 47. [Remove snap from Ubuntu](https://askubuntu.com/a/1035917)
+
+```console
+sudo apt autoremove --purge snapd
+sudo apt-mark hold snapd
+
+# or [this answer](https://askubuntu.com/questions/1345385/how-can-i-stop-apt-from-installing-snap-packages/1345401#1345401)
+
+cat <<EOF | sudo tee /etc/apt/preferences.d/nosnap.pref
+# To prevent repository packages from triggering the installation of Snap,
+# this file forbids snapd from being installed by APT.
+# For more information: https://linuxmint-user-guide.readthedocs.io/en/latest/snap.html
+
+Package: snapd
+Pin: release a=*
+Pin-Priority: -10
+EOF
+```
