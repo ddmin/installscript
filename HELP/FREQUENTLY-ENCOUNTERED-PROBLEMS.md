@@ -308,3 +308,13 @@ imap <C-H> <C-W>
 "\C-h": backward-kill-word
 "\e[3;5~": kill-word
 ```
+
+## 46. [KeepassXC Unlock on Login](https://github.com/keepassxreboot/keepassxc/issues/1267)
+
+```console
+# store a new password:
+secret-tool store --label='Keepass' database pass.xdbx
+
+# query and start keepassxc:
+secret-tool lookup database pass.xdbx | keepassxc --pw-stdin ~/pass.xdbx
+```
