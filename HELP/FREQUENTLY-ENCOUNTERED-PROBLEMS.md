@@ -344,3 +344,8 @@ EOF
 :set <M-A>=<press Ctrl-V><press Meta-A>
 :imap <press Ctrl-v><press Esc>a <M-A>
 ```
+## 49. [Display title in mpv playing youtube video](https://unix.stackexchange.com/questions/298492/make-mpv-display-name-of-youtube-link-when-playing-just-audio)
+
+```console
+mpv --term-playing-msg='${media-title}' <URL>
+```
