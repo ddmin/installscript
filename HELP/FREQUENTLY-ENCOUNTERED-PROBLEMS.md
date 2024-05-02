@@ -337,3 +337,10 @@ Pin: release a=*
 Pin-Priority: -10
 EOF
 ```
+
+## 48. [Remap Alt in Vim](https://vim.fandom.com/wiki/Fix_meta-keys_that_break_out_of_Insert_mode)
+
+```console
+:set <M-A>=<press Ctrl-V><press Meta-A>
+:imap <press Ctrl-v><press Esc>a <M-A>
+```
