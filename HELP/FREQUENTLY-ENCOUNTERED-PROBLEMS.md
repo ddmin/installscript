@@ -17,91 +17,110 @@ alias ranger='ranger --choosedir=$HOME/.rangerdir; LASTDIR=`cat $HOME/.rangerdir
 1. Run in Terminal: xfconf-query -c xfce4-desktop -m and change background.
 2. `map bg shell wal --vte -q -i %f && xfconf-query -c xfce4-desktop -p /backdrop/screen0/monitoreDP1/workspace0/last-image -s %d/%f`
 
-## 2. Can't access Cinnamon settings
+## 2. Proton VPN
+
+## (1.1) [ProtonVPN killswitch disables internet](https://askubuntu.com/questions/1319033/internet-stops-working-after-installing-protonvpn)
+```console
+nmcli device
+sudo nmcli connection delete pvpn-killswitch
+sudo nmcli connection delete pvpn-ipv6leak-protection
+```
+
+## (1.2) [Proton VPN asks for password](https://bbs.archlinux.org/viewtopic.php?id=270089)
+
+(this might solve it, idk)
+### Add two lines to /etc/pam.d
+
+```console
+auth       optional     pam_gnome_keyring.so
+session    optional     pam_gnome_keyring.so auto_start
+```
+
+## 3. Can't access Cinnamon settings
 
 You have to downgrade the PIL to 5.4.1
 
-## 3. Weather info not displaying in the homepage
+## 4. Weather info not displaying in the homepage
 
 Set mixed content to false in about:config
 
-## 4. What's the command for rofi?
+## 5. What's the command for rofi?
 
 `rofi -show drun`
 
-## 5. Get rid of Gnome-Terminal titlebar?
+## 6. Get rid of Gnome-Terminal titlebar?
 
 run `gsettings set org.gnome.Terminal.Legacy.Settings headerbar "@mb false"`
 
-## 6. Gnome-Terminal doesn't recognized installed Nerd Font
+## 7. Gnome-Terminal doesn't recognized installed Nerd Font
 
 Use Gnome-Tweak-Tools and change the monospace font globally
 
-## 7. [Set Google as default search engine in Linux Mint?](https://www.linuxmint.com/searchengines.php)
+## 8. [Set Google as default search engine in Linux Mint?](https://www.linuxmint.com/searchengines.php)
 
-## 8. Red error indication in powerline every time I open terminal
+## 9. Red error indication in powerline every time I open terminal
 
 Probably because I didn't install fzf or node or something else
 
-## 9. Change screenshot to show more options
+## 10. Change screenshot to show more options
 
 Set shortcut to `/usr/bin/gnome-screenshot --interactive`
 
-## 10. Go Autocomplete in YouCompleteMe
+## 11. Go Autocomplete in YouCompleteMe
 
 Run `./.vim/plugged/YouCompleteMe/install.py --go-completer`
 
-## 11. Applications not showing up in rofi
+## 12. Applications not showing up in rofi
 
 Add .desktop files to ~/.local/share/applications
 
-## 12. Icons for rofi?
+## 13. Icons for rofi?
 
 `~/.icons`
 
-## 13. Firefox backspace to go back a page
+## 14. Firefox backspace to go back a page
 
 1. about:config
 2. browser.backspace_action = 0
 
-## 14. Connect to WiFi with redirect page.
+## 15. Connect to WiFi with redirect page.
 
 [Try 192.168.1.1](https://unix.stackexchange.com/questions/89630/how-to-sign-into-an-open-wireless-network)
 
-## 15. Prettier not working / npm not found
+## 16. Prettier not working / npm not found
 
 Turn on node, `nvm use node`
 
-## 16. Wifi not detected on fresh install
+## 17. Wifi not detected on fresh install
 
 [Copy b43 onto a flashdrive](https://askubuntu.com/questions/730799/installing-firmware-b43-installer-offline)
 
-## 17. Slow WiFi on iMac
+## 18. Slow WiFi on iMac
 
 [Install drivers](https://archived.forum.manjaro.org/t/solved-bcm4331-inconsistent-and-slow-wifi-on-mac/95386/2)
 
-## 18. SSH not working in rofi?
+## 19. SSH not working in rofi?
 
 [Add ~/.ssh/config file](https://linuxize.com/post/using-the-ssh-config-file/)
 
-## 19. [No sound from iMac headphone jack](https://linux-tips.com/t/how-to-fix-apple-imac-headphone-sound-problem/285)
+## 20. [No sound from iMac headphone jack](https://linux-tips.com/t/how-to-fix-apple-imac-headphone-sound-problem/285)
 
 Add `options snd-hda-intel model=imac27_122` to `/etc/modprobe.d/sound.conf`
 
-## 20. Connect to wifi automatically (wpa_supplicant)
+## 21. Connect to wifi automatically (wpa_supplicant)
 
 ```
 https://www.linuxbabe.com/command-line/ubuntu-server-16-04-wifi-wpa-supplicant
 ```
 
-## 21. Automatic updates on Ubuntu
+## 22. Automatic updates on Ubuntu
 
 ```console
 1. apt install unattended-upgrades
 2. dpkg-reconfigure --priority=low unattended-upgrades
 ```
 
-## 22. Ctrl-G for fzf?
+## 23. Ctrl-G for fzf?
 
 ### Bash
 
@@ -117,11 +136,11 @@ bindkey '^G' fzf-file-widget
 bindkey '^T' transpose-chars
 ```
 
-## 23. No emojis on Arch?
+## 24. No emojis on Arch?
 
 Install `extra/noto-fonts-emoji`
 
-## 24. SSH permission denied?
+## 25. SSH permission denied?
 
 Probably an issue on my end.
 ```console
@@ -129,13 +148,13 @@ Probably an issue on my end.
 PasswordAuthentication yes
 ```
 
-## 25. rsync into mobile?
+## 26. rsync into mobile?
 
 ```console
 rsync -e 'ssh -p 8022' <FILES> u0_a500@192.168.1.XXX:/data/data/com.termux/files/home/storage/
 ```
 
-## 26. Set folding in files
+## 27. Set folding in files
 
 Add this to the bottom of the file
 
@@ -143,7 +162,7 @@ Add this to the bottom of the file
 # vim: foldmethod=marker:foldlevel=0
 ```
 
-## 27. Trouble converting images to PDF with ImageMagick
+## 28. Trouble converting images to PDF with ImageMagick
 
 [Cache exhausted](https://stackoverflow.com/questions/31407010/cache-resources-exhausted-imagemagick)
 
@@ -163,7 +182,7 @@ Add this to the bottom of the file
 </policymap>
 ```
 
-## 28. Bluetooth `org.bluez.Error.Failed`
+## 29. Bluetooth `org.bluez.Error.Failed`
 
 [Possibly missing packages](https://unix.stackexchange.com/questions/258074/error-when-trying-to-connect-to-bluetooth-speaker-org-bluez-error-failed)
 
@@ -173,7 +192,7 @@ pulseaudio -k
 pulseaudio --start
 ```
 
-## 29. Bluetooth `Failed to pair: org.bluez.Error.AlreadyExists`
+## 30. Bluetooth `Failed to pair: org.bluez.Error.AlreadyExists`
 
 Try restarting bluetooth
 
@@ -189,7 +208,7 @@ sudo service bluetooth status
 sudo rfkill unblock bluetooth
 ```
 
-## 30. Bluetooth [a2dp-sink profile connect failed. Protocol not available](https://askubuntu.com/questions/1172000/a2dp-sink-profile-connect-failed)
+## 31. Bluetooth [a2dp-sink profile connect failed. Protocol not available](https://askubuntu.com/questions/1172000/a2dp-sink-profile-connect-failed)
 
 ```console
 sudo apt-get install pulseaudio-module-bluetooth
@@ -198,7 +217,7 @@ pulseaudio --start
 sudo service bluetooth restart
 ```
 
-## 31. [Multiple Github Accounts Using SSH](https://gist.github.com/oanhnn/80a89405ab9023894df7)
+## 32. [Multiple Github Accounts Using SSH](https://gist.github.com/oanhnn/80a89405ab9023894df7)
 
 ```console
 # Account 1
@@ -212,14 +231,6 @@ Host github-2
    HostName github.com
    IdentityFile ~/.ssh/key_2
    IdentitiesOnly yes
-```
-
-## 32. [ProtonVPN killswitch disables internet](https://askubuntu.com/questions/1319033/internet-stops-working-after-installing-protonvpn)
-
-```console
-nmcli device
-sudo nmcli connection delete pvpn-killswitch
-sudo nmcli connection delete pvpn-ipv6leak-protection
 ```
 
 ## 33. [Firefox Touch Scrolling](https://superuser.com/questions/1151161/enable-touch-scrolling-in-firefox)
