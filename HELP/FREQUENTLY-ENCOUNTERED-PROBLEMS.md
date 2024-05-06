@@ -19,128 +19,149 @@ alias ranger='ranger --choosedir=$HOME/.rangerdir; LASTDIR=`cat $HOME/.rangerdir
 
 ## 2. Proton VPN
 
-## (1.1) [ProtonVPN killswitch disables internet](https://askubuntu.com/questions/1319033/internet-stops-working-after-installing-protonvpn)
+### (2.1) [ProtonVPN killswitch disables internet](https://askubuntu.com/questions/1319033/internet-stops-working-after-installing-protonvpn)
 ```console
 nmcli device
 sudo nmcli connection delete pvpn-killswitch
 sudo nmcli connection delete pvpn-ipv6leak-protection
 ```
 
-## (1.2) [Proton VPN asks for password](https://bbs.archlinux.org/viewtopic.php?id=270089)
+### (2.2) [Proton VPN asks for password](https://bbs.archlinux.org/viewtopic.php?id=270089)
 
 (this might solve it, idk)
-### Add two lines to /etc/pam.d
+#### Add two lines to /etc/pam.d
 
 ```console
 auth       optional     pam_gnome_keyring.so
 session    optional     pam_gnome_keyring.so auto_start
 ```
 
-## 3. Can't access Cinnamon settings
+## 3. Firefox
 
-You have to downgrade the PIL to 5.4.1
-
-## 4. Weather info not displaying in the homepage
-
-Set mixed content to false in about:config
-
-## 5. What's the command for rofi?
-
-`rofi -show drun`
-
-## 6. Get rid of Gnome-Terminal titlebar?
-
-run `gsettings set org.gnome.Terminal.Legacy.Settings headerbar "@mb false"`
-
-## 7. Gnome-Terminal doesn't recognized installed Nerd Font
-
-Use Gnome-Tweak-Tools and change the monospace font globally
-
-## 8. [Set Google as default search engine in Linux Mint?](https://www.linuxmint.com/searchengines.php)
-
-## 9. Red error indication in powerline every time I open terminal
-
-Probably because I didn't install fzf or node or something else
-
-## 10. Change screenshot to show more options
-
-Set shortcut to `/usr/bin/gnome-screenshot --interactive`
-
-## 11. Go Autocomplete in YouCompleteMe
-
-Run `./.vim/plugged/YouCompleteMe/install.py --go-completer`
-
-## 12. Applications not showing up in rofi
-
-Add .desktop files to ~/.local/share/applications
-
-## 13. Icons for rofi?
-
-`~/.icons`
-
-## 14. Firefox backspace to go back a page
+### (3.1) Firefox backspace to go back a page
 
 1. about:config
 2. browser.backspace_action = 0
 
-## 15. Connect to WiFi with redirect page.
+### (3.2) [Firefox Touch Scrolling](https://superuser.com/questions/1151161/enable-touch-scrolling-in-firefox)
+
+/etc/security/pam_env.conf
+
+```console
+ MOZ_USE_XINPUT2 DEFAULT=1
+```
+
+### (3.3) [Disable alt key to open menu](https://www.reddit.com/r/firefox/comments/129w85w/is_there_a_way_to_disable_firefox_alt_keyboard/)
+
+about:config
+
+```console
+ui.key.menuAccessKey            0
+ui.key.menuAccessKeyFocuses     false
+```
+
+## TODO: Uncategorized
+
+### Can't access Cinnamon settings
+
+You have to downgrade the PIL to 5.4.1
+
+### Weather info not displaying in the homepage
+
+Set mixed content to false in about:config
+
+### What's the command for rofi?
+
+`rofi -show drun`
+
+### Get rid of Gnome-Terminal titlebar?
+
+run `gsettings set org.gnome.Terminal.Legacy.Settings headerbar "@mb false"`
+
+### Gnome-Terminal doesn't recognized installed Nerd Font
+
+Use Gnome-Tweak-Tools and change the monospace font globally
+
+### [Set Google as default search engine in Linux Mint?](https://www.linuxmint.com/searchengines.php)
+
+### Red error indication in powerline every time I open terminal
+
+Probably because I didn't install fzf or node or something else
+
+### Change screenshot to show more options
+
+Set shortcut to `/usr/bin/gnome-screenshot --interactive`
+
+### Go Autocomplete in YouCompleteMe
+
+Run `./.vim/plugged/YouCompleteMe/install.py --go-completer`
+
+### Applications not showing up in rofi
+
+Add .desktop files to ~/.local/share/applications
+
+### Icons for rofi?
+
+`~/.icons`
+
+### Connect to WiFi with redirect page.
 
 [Try 192.168.1.1](https://unix.stackexchange.com/questions/89630/how-to-sign-into-an-open-wireless-network)
 
-## 16. Prettier not working / npm not found
+### Prettier not working / npm not found
 
 Turn on node, `nvm use node`
 
-## 17. Wifi not detected on fresh install
+### Wifi not detected on fresh install
 
 [Copy b43 onto a flashdrive](https://askubuntu.com/questions/730799/installing-firmware-b43-installer-offline)
 
-## 18. Slow WiFi on iMac
+### Slow WiFi on iMac
 
 [Install drivers](https://archived.forum.manjaro.org/t/solved-bcm4331-inconsistent-and-slow-wifi-on-mac/95386/2)
 
-## 19. SSH not working in rofi?
+### SSH not working in rofi?
 
 [Add ~/.ssh/config file](https://linuxize.com/post/using-the-ssh-config-file/)
 
-## 20. [No sound from iMac headphone jack](https://linux-tips.com/t/how-to-fix-apple-imac-headphone-sound-problem/285)
+### [No sound from iMac headphone jack](https://linux-tips.com/t/how-to-fix-apple-imac-headphone-sound-problem/285)
 
 Add `options snd-hda-intel model=imac27_122` to `/etc/modprobe.d/sound.conf`
 
-## 21. Connect to wifi automatically (wpa_supplicant)
+### Connect to wifi automatically (wpa_supplicant)
 
 ```
 https://www.linuxbabe.com/command-line/ubuntu-server-16-04-wifi-wpa-supplicant
 ```
 
-## 22. Automatic updates on Ubuntu
+### Automatic updates on Ubuntu
 
 ```console
 1. apt install unattended-upgrades
 2. dpkg-reconfigure --priority=low unattended-upgrades
 ```
 
-## 23. Ctrl-G for fzf?
+### Ctrl-G for fzf?
 
-### Bash
+#### Bash
 
 ```bash
 bind '"\C-t": transpose-chars'
 bind -x '"\C-g": fzf-file-widget'
 ```
 
-### ZSH
+#### ZSH
 
 ```zsh
 bindkey '^G' fzf-file-widget
 bindkey '^T' transpose-chars
 ```
 
-## 24. No emojis on Arch?
+### No emojis on Arch?
 
 Install `extra/noto-fonts-emoji`
 
-## 25. SSH permission denied?
+### SSH permission denied?
 
 Probably an issue on my end.
 ```console
@@ -148,13 +169,13 @@ Probably an issue on my end.
 PasswordAuthentication yes
 ```
 
-## 26. rsync into mobile?
+### rsync into mobile?
 
 ```console
 rsync -e 'ssh -p 8022' <FILES> u0_a500@192.168.1.XXX:/data/data/com.termux/files/home/storage/
 ```
 
-## 27. Set folding in files
+### Set folding in files
 
 Add this to the bottom of the file
 
@@ -162,7 +183,7 @@ Add this to the bottom of the file
 # vim: foldmethod=marker:foldlevel=0
 ```
 
-## 28. Trouble converting images to PDF with ImageMagick
+### Trouble converting images to PDF with ImageMagick
 
 [Cache exhausted](https://stackoverflow.com/questions/31407010/cache-resources-exhausted-imagemagick)
 
@@ -182,7 +203,7 @@ Add this to the bottom of the file
 </policymap>
 ```
 
-## 29. Bluetooth `org.bluez.Error.Failed`
+### Bluetooth `org.bluez.Error.Failed`
 
 [Possibly missing packages](https://unix.stackexchange.com/questions/258074/error-when-trying-to-connect-to-bluetooth-speaker-org-bluez-error-failed)
 
@@ -192,7 +213,7 @@ pulseaudio -k
 pulseaudio --start
 ```
 
-## 30. Bluetooth `Failed to pair: org.bluez.Error.AlreadyExists`
+### Bluetooth `Failed to pair: org.bluez.Error.AlreadyExists`
 
 Try restarting bluetooth
 
@@ -208,7 +229,7 @@ sudo service bluetooth status
 sudo rfkill unblock bluetooth
 ```
 
-## 31. Bluetooth [a2dp-sink profile connect failed. Protocol not available](https://askubuntu.com/questions/1172000/a2dp-sink-profile-connect-failed)
+### Bluetooth [a2dp-sink profile connect failed. Protocol not available](https://askubuntu.com/questions/1172000/a2dp-sink-profile-connect-failed)
 
 ```console
 sudo apt-get install pulseaudio-module-bluetooth
@@ -217,7 +238,7 @@ pulseaudio --start
 sudo service bluetooth restart
 ```
 
-## 32. [Multiple Github Accounts Using SSH](https://gist.github.com/oanhnn/80a89405ab9023894df7)
+### [Multiple Github Accounts Using SSH](https://gist.github.com/oanhnn/80a89405ab9023894df7)
 
 ```console
 # Account 1
@@ -233,15 +254,7 @@ Host github-2
    IdentitiesOnly yes
 ```
 
-## 33. [Firefox Touch Scrolling](https://superuser.com/questions/1151161/enable-touch-scrolling-in-firefox)
-
-/etc/security/pam_env.conf
-
-```console
- MOZ_USE_XINPUT2 DEFAULT=1
-```
-
-## 34. [Render Japanese UTF8 in Vim](https://stackoverflow.com/questions/5166652/how-to-view-utf-8-characters-in-vim-or-gvim)
+### [Render Japanese UTF8 in Vim](https://stackoverflow.com/questions/5166652/how-to-view-utf-8-characters-in-vim-or-gvim)
 
 .vimrc
 ```console
@@ -250,17 +263,17 @@ Host github-2
     set fileformats=unix,dos,mac
 ```
 
-## 35. [Open CBZ containing WEBP with evince](https://gitlab.gnome.org/GNOME/evince/-/issues/925)
+### [Open CBZ containing WEBP with evince](https://gitlab.gnome.org/GNOME/evince/-/issues/925)
 [Install webp-pixbuf-loader](https://github.com/aruiz/webp-pixbuf-loader/)
 
-## 36. [Install Anki on Ubuntu](https://askubuntu.com/questions/1404353/how-to-install-qt6-on-ubuntu-21-10)
+### [Install Anki on Ubuntu](https://askubuntu.com/questions/1404353/how-to-install-qt6-on-ubuntu-21-10)
 
 ```console
 sudo apt install qt6-base-dev
 sudo apt install libxcb-cursor0
 ```
 
-## 37. Run emacs as a daemon
+### Run emacs as a daemon
 
 Start daemon
 ```console
@@ -272,23 +285,23 @@ Open emacsclient
 emacsclient -c -a 'emacs'
 ```
 
-## 38. Sound not working on Galaxy Book
+### Sound not working on Galaxy Book
 
 [necessary-verbs.sh](https://github.com/joshuagrisham/galaxy-book2-pro-linux)
 
-## 39. Website stuck on debugger while using Inspect Element
+### Website stuck on debugger while using Inspect Element
 
 [Set ```debugger``` ```Conditional breakpoint``` to ```false```](https://devtoolstips.org/tips/en/disable-abusive-debugger-statement/)
 
-## 40. rofi application not changing after editing .desktop file
+### rofi application not changing after editing .desktop file
 
 For snaps check ```/var/lib/snapd/desktop/applications```
 
-## 41. Don't count underscores (_) as part of a word in Vim
+### Don't count underscores (_) as part of a word in Vim
 
 ```:set iskeyword-=_```
 
-## 42. Source virtualenv from bash script
+### Source virtualenv from bash script
 
 [Source from .bashrc instead](https://stackoverflow.com/a/13122219)
 
@@ -298,7 +311,7 @@ activate () {
 }
 ```
 
-## 43. [Failed to connect: org.bluez.Error.NotReady br-connection-adapter-not-powered](https://unix.stackexchange.com/a/676973)
+### [Failed to connect: org.bluez.Error.NotReady br-connection-adapter-not-powered](https://unix.stackexchange.com/a/676973)
 
 ```console
 /etc/bluetooth/main.conf
@@ -310,7 +323,7 @@ activate () {
 AutoEnable=true
 ```
 
-## 44. Ctrl + Backspace
+### Ctrl + Backspace
 
 [vim](https://www.reddit.com/r/neovim/comments/prp8zw/comment/hdkdd7a/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button)
 
@@ -328,7 +341,7 @@ imap <C-H> <C-W>
 "\e[3;5~": kill-word
 ```
 
-## 45. [KeepassXC Unlock on Login](https://github.com/keepassxreboot/keepassxc/issues/1267)
+### [KeepassXC Unlock on Login](https://github.com/keepassxreboot/keepassxc/issues/1267)
 
 ```console
 # store a new password:
@@ -338,7 +351,7 @@ secret-tool store --label='Keepass' database pass.xdbx
 secret-tool lookup database pass.xdbx | keepassxc --pw-stdin ~/pass.xdbx
 ```
 
-## 46. [Remove snap from Ubuntu](https://askubuntu.com/a/1035917)
+### [Remove snap from Ubuntu](https://askubuntu.com/a/1035917)
 
 ```console
 sudo apt autoremove --purge snapd
@@ -357,13 +370,13 @@ Pin-Priority: -10
 EOF
 ```
 
-## 47. [Remap Alt in Vim](https://vim.fandom.com/wiki/Fix_meta-keys_that_break_out_of_Insert_mode)
+### [Remap Alt in Vim](https://vim.fandom.com/wiki/Fix_meta-keys_that_break_out_of_Insert_mode)
 
 ```console
 :set <M-A>=<press Ctrl-V><press Meta-A>
 :imap <press Ctrl-v><press Esc>a <M-A>
 ```
-## 48. [Display title in mpv playing youtube video](https://unix.stackexchange.com/questions/298492/make-mpv-display-name-of-youtube-link-when-playing-just-audio)
+### [Display title in mpv playing youtube video](https://unix.stackexchange.com/questions/298492/make-mpv-display-name-of-youtube-link-when-playing-just-audio)
 
 ```console
 mpv --term-playing-msg='${media-title}' <URL>
