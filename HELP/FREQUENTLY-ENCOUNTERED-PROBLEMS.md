@@ -60,6 +60,15 @@ ui.key.menuAccessKey            0
 ui.key.menuAccessKeyFocuses     false
 ```
 
+### (3.4) [Disable WebRTC in Firefox](https://support.mozilla.org/en-US/questions/963501)
+
+about:config
+
+```console
+media.peerconnection.enabled        false
+media.navigator.enabled             false
+```
+
 ## TODO: Uncategorized
 
 ### Can't access Cinnamon settings
