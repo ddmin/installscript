@@ -1,7 +1,64 @@
 * Frequently Encountered Problems
+** 0. Linux
+*** (0.0) General
+**** (0.0.1) [[https://askubuntu.com/a/604302][Resize LVM Physical Volume]]
+
+Check the file system
+#+begin_example bash
+sudo e2fsck -f /dev/mapper/<LOGICAL VOLUME>
+#+end_example
+
+Rearrange unallocated space at the end of the LVM.
+#+begin_example bash
+sudo pvs -v --segments /dev/<PHYSICAL VOLUME>
+#+end_example
+
+Remove external fragmentation.
+#+begin_example bash
+sudo pvmove --alloc anywhere /dev/<PHYSICAL VOLUME>:YYY-ZZZ
+#+end_example
+
+Where =YYY-ZZZ= is the block after =free= space.
+
+Use =gparted= or =blivet-gui= to do the other heavy lifting.
+
+**** (0.0.2) [[https://stackoverflow.com/a/17110941][Use tar to create gzip using multiple cores]]
+
+#+begin_example
+tar -c --use-compress-program=pigz -f <DIRECTORY>{.tar.gz,}
+#+end_example
+**** (0.0.3) Map Control-Backspace to Delete Word Terminal
+
+=.inputrc=
+#+begin_example bash
+"\C-h": backward-kill-word
+#+end_example
+
+The Control-Backspace mapping (~\C-h~) can be found by pressing *Control-V* and then *Control-Backspace* in the terminal.
+
+If that doesn't work for whatever reason:
+
+=.bashrc=
+#+begin_example bash
+stty werase ^H
+#+end_example
+
+*** (0.1) Ubuntu
+**** (0.1.1) ~Skipping acquire of ... doesn't support architecture 'i386'~
+
+=/etc/apt/sources.list.d/<PACKAGE NAME>.list=
+
+#+begin_example
+deb [arch=amd64] https://.../ stable main
+#+end_example
+
+If options are already options specified, prepend it and separate it with a space.
+
+#+begin_example
+deb [arch=amd64 signed-by=...] https://.../ stable main
+#+end_example
 
 ** 1. Ranger
-
 *** (1.1) Ranger returns an error code
 
 I aliased ranger to 'ranger && wal'. Probably has something to do with
@@ -17,12 +74,8 @@ wal
 
 1. Run in Terminal: =xfconf-query -c xfce4-desktop -m= and change background.
 2. =map bg shell wal --vte -q -i %f && xfconf-query -c xfce4-desktop -p /backdrop/screen0/monitoreDP1/workspace0/last-image -s %d/%f=
-
 ** 2. Proton VPN
-
-*** (2.1)
-[[https://askubuntu.com/questions/1319033/internet-stops-working-after-installing-protonvpn][ProtonVPN
-killswitch disables internet]]
+*** (2.1) [[https://askubuntu.com/questions/1319033/internet-stops-working-after-installing-protonvpn][ProtonVPN killswitch disables internet]]
 
 #+BEGIN_EXAMPLE
   nmcli device
@@ -41,16 +94,15 @@ killswitch disables internet]]
 #+END_EXAMPLE
 
 ** 3. Firefox
-
 *** (3.1) Firefox backspace to go back a page
 
-about:config
+=about:config=
 
 =browser.backspace_action = 0=
 
 *** (3.2) [[https://superuser.com/questions/1151161/enable-touch-scrolling-in-firefox][Firefox Touch Scrolling]]
 
-/etc/security/pam_env.conf
+=/etc/security/pam_env.conf=
 
 #+BEGIN_EXAMPLE
    MOZ_USE_XINPUT2 DEFAULT=1
@@ -58,7 +110,7 @@ about:config
 
 *** (3.3) [[https://www.reddit.com/r/firefox/comments/129w85w/is_there_a_way_to_disable_firefox_alt_keyboard/][Disable alt key to open menu]]
 
-about:config
+=about:config=
 
 #+BEGIN_EXAMPLE
   ui.key.menuAccessKey            0
@@ -67,7 +119,7 @@ about:config
 
 *** (3.4) [[https://support.mozilla.org/en-US/questions/963501][Disable WebRTC in Firefox]]
 
-about:config
+=about:config=
 
 #+BEGIN_EXAMPLE
   media.peerconnection.enabled        false
@@ -76,7 +128,7 @@ about:config
 
 *** (3.5) [[https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/contextualIdentities][Firefox Contextual Identities]]
 
-about:config
+=about:config=
 
 #+BEGIN_EXAMPLE
   privacy.userContext.enabled                                     true
@@ -84,8 +136,37 @@ about:config
   privacy.userContext.ui.enabled          true
 #+END_EXAMPLE
 
-** 4. (Doom) Emacs
+*** (3.6) [[https://superuser.com/questions/363827/how-can-i-disable-add-application-for-mailto-links-bar-in-firefox][Dismiss "Add ... as an application for mailto links?"]]
 
+=about:config=
+
+#+BEGIN_EXAMPLE
+  network.protocol-handler.external.mailto              false
+#+END_EXAMPLE
+
+**** Related settings
+
+#+BEGIN_EXAMPLE
+  network.protocol-handler.expose.mailto                false
+  network.protocol-handler.warn-external.mailto         false
+#+END_EXAMPLE
+
+*** (3.7) [[https://leochavez.org/index.php/2023/03/06/make-firefoxs-tabs-smaller/][Make Firefox bar thinner]]
+
+=about:config=
+#+begin_example
+  browser.uidensity             1
+#+end_example
+
+** 3½ LibreWolf
+*** (3½.1) [[https://github.com/aclap-dev/vdhcoapp/issues/205][Use VideoDownloadHelper]]
+
+#+begin_example
+mkdir -p ~/.librewolf/native-messaging-hosts/
+cp ~/.mozilla/native-messaging-hosts/net.downloadhelper.coapp.json ~/.librewolf/native-messaging-hosts/
+#+end_example
+
+** 4. (Doom) Emacs
 *** (4.1) Running emacs as a daemon
 
 Start daemon
@@ -101,7 +182,6 @@ Open emacsclient
 #+END_EXAMPLE
 
 *** (4.2) [[https://discourse.doomemacs.org/t/how-to-re-bind-keys/56][Keyboard mapping doesn't work (Doom)]]
-
 **** (4.2.1) Major/Minor Mode overrides keybinding
 
 #+BEGIN_SRC lisp
@@ -126,34 +206,48 @@ Open emacsclient
       :g  global
 #+END_EXAMPLE
 
-** 5. Virtual Machines
+**** (4.2.3) [[https://github.com/doomemacs/doomemacs/issues/6246][Can't add words to personal dictionary]]
 
-*** (4.1) [[https://unix.stackexchange.com/questions/109117/virt-manager-copy-paste-functionality-to-the-vm/435665#435665][QEMU Virt-Manager Shared Clipboard]]
+Check value of =ispell-personal-dictionary= and ~touch~ the file.
+
+#+begin_example
+touch $HOME/.config/emacs/.local/etc/ispell/en.pws
+#+end_example
+
+** 5. Virtual Machines
+*** (5.1) [[https://unix.stackexchange.com/questions/109117/virt-manager-copy-paste-functionality-to-the-vm/435665#435665][QEMU Virt-Manager Shared Clipboard]]
 **** Ubuntu Virtual Machine: in the guest machine install:
 
 #+BEGIN_EXAMPLE
   sudo apt install spice-vdagent
 #+END_EXAMPLE
 
-*** (4.2) [[https://www.youtube.com/watch?v=9FBhcOnCxM8][Shared folders between guest and host]]
+*** (5.2) [[https://blog.sergeantbiggs.net/posts/file-sharing-with-qemu-and-virt-manager/][Shared folders between guest and host]]
 
 1. Click =Add Hardware= in virt-manager
-2. =Filesystem=
-3. Setup filesystem passthrough
-#+BEGIN_EXAMPLE
-  Type: mount
-  Mode: mapped
-  Source path: <SHARED FOLDER>
-  Target path: <MOUNT PATH>
-#+END_EXAMPLE
-4. Run command in guest machine
+2. =Filesystem= add =virtiofs=
+3. In guest machine run:
+   =sudo mount -t virtiofs <TARGET PATH> <MOUNT PATH>=
+
+4. Automount Folder
+
+   Add the line to ~/etc/fstab~
+
+   =<TARGET PATH>       <MOUNT PATH>    virtiofs (or 9p)     defaults        0       0=
+
+*** (5.3) [[https://github.com/virtio-win/virtio-win-pkg-scripts][Can't resize Windows Virtual Machine]]
+
+Install
+=virtio-win=
+drivers on the Windows guest machine.
+** ∞. Windows
+*** (∞.1) No internet in the installer
+Install the [[when installing from live][Intel Wireless Wi-Fi Drivers]] after the installation.
 
 ** TODO: Uncategorized
-
 *** Can't access Cinnamon settings
 
 You have to downgrade the PIL to 5.4.1
-
 *** Weather info not displaying in the homepage
 
 Set mixed content to false in about:config
@@ -469,3 +563,10 @@ For snaps check =/var/lib/snapd/desktop/applications=
 #+END_EXAMPLE
 
 *** [[https://wiki.linuxquestions.org/wiki/List_of_Keysyms_Recognised_by_Xmodmap][xmodmap Key Names]]
+*** [[https://forums.ankiweb.net/t/airpods-audio-is-delayed/35712/2][Anki: Sound playback delay]]
+Play silence in the background to keep audio device active.
+
+**** [[https://stackoverflow.com/a/16715419][Generate silent mp3 from ffmpeg]]
+#+begin_example shell
+ffmpeg -f lavfi -i anullsrc=r=44100:cl=mono -t <SECONDS> -q:a 9 -acodec libmp3lame out.mp3
+#+end_example
